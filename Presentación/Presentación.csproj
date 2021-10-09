@@ -101,5 +101,15 @@
   <ItemGroup>
     <None Include="Resources\LOGO01.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DALL\DALL.csproj">
+      <Project>{cdec469b-85cf-4d5b-aa8a-fc126ded8a35}</Project>
+      <Name>DALL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{8a20f982-00eb-4ad9-9930-d7a1d3c2ae2b}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
