@@ -1,0 +1,10 @@
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\bin\Debug\Presentación.exe.config
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\bin\Debug\Presentación.exe
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\bin\Debug\Presentación.pdb
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.csproj.AssemblyReference.cache
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.FrmLogin.resources
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.Properties.Resources.resources
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.csproj.GenerateResource.cache
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.csproj.CoreCompileInputs.cache
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.exe
+C:\Users\AndresAlvarez\source\repos\ManaGLPS\Presentación\obj\Debug\Presentación.pdb
