@@ -64,5 +64,12 @@ namespace Presentacion
                 textContraseña.UseSystemPasswordChar = false;
             }
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            Form menu = new FrmPrincipal();
+            this.SetVisibleCore(false);
+            menu.Show();
+        }
     }
 }

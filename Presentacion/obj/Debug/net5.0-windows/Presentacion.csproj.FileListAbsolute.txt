@@ -22,3 +22,4 @@ D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Ent
 D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\DALL.pdb
 D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Entity.pdb
 D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmPrincipal.resources

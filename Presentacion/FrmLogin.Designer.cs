@@ -70,7 +70,7 @@ namespace Presentacion
             // 
             // PctMinimizar
             // 
-            this.PctMinimizar.Image = global::Presentacion.Properties.Resources.Minimizar;
+            this.PctMinimizar.Image = global::Presentacion.Properties.Resources.Minimizar2;
             this.PctMinimizar.Location = new System.Drawing.Point(606, 0);
             this.PctMinimizar.Name = "PctMinimizar";
             this.PctMinimizar.Size = new System.Drawing.Size(32, 31);
@@ -81,7 +81,7 @@ namespace Presentacion
             // 
             // PctCerrar
             // 
-            this.PctCerrar.Image = global::Presentacion.Properties.Resources.Cerrar;
+            this.PctCerrar.Image = global::Presentacion.Properties.Resources.Cerrar2;
             this.PctCerrar.Location = new System.Drawing.Point(644, 0);
             this.PctCerrar.Name = "PctCerrar";
             this.PctCerrar.Size = new System.Drawing.Size(32, 31);
@@ -143,6 +143,7 @@ namespace Presentacion
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // linkdeRecuperaacion
             // 
