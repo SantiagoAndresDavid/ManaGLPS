@@ -10,3 +10,15 @@ C:\Users\AndresAlvarez\source\repos\ManaGLPS\Entity\obj\Debug\net5.0\Entity.cspr
 C:\Users\AndresAlvarez\source\repos\ManaGLPS\Entity\obj\Debug\net5.0\Entity.dll
 C:\Users\AndresAlvarez\source\repos\ManaGLPS\Entity\obj\Debug\net5.0\ref\Entity.dll
 C:\Users\AndresAlvarez\source\repos\ManaGLPS\Entity\obj\Debug\net5.0\Entity.pdb
+D:\Documentos\Programas en C#\ManaGLPS\Entity\bin\Debug\net5.0\Entity.deps.json
+D:\Documentos\Programas en C#\ManaGLPS\Entity\bin\Debug\net5.0\Entity.dll
+D:\Documentos\Programas en C#\ManaGLPS\Entity\bin\Debug\net5.0\ref\Entity.dll
+D:\Documentos\Programas en C#\ManaGLPS\Entity\bin\Debug\net5.0\Entity.pdb
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.csproj.AssemblyReference.cache
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.dll
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\ref\Entity.dll
+D:\Documentos\Programas en C#\ManaGLPS\Entity\obj\Debug\net5.0\Entity.pdb

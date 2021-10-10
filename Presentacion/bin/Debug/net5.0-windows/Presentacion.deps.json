@@ -7,14 +7,41 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Presentacion/1.0.0": {
+        "dependencies": {
+          "DALL": "1.0.0",
+          "Entity": "1.0.0"
+        },
         "runtime": {
           "Presentacion.dll": {}
+        }
+      },
+      "DALL/1.0.0": {
+        "dependencies": {
+          "Entity": "1.0.0"
+        },
+        "runtime": {
+          "DALL.dll": {}
+        }
+      },
+      "Entity/1.0.0": {
+        "runtime": {
+          "Entity.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Presentacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DALL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

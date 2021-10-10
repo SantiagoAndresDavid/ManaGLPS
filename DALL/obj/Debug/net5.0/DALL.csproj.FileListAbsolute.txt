@@ -13,3 +13,18 @@ C:\Users\AndresAlvarez\source\repos\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.C
 C:\Users\AndresAlvarez\source\repos\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
 C:\Users\AndresAlvarez\source\repos\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
 C:\Users\AndresAlvarez\source\repos\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb
+D:\Documentos\Programas en C#\ManaGLPS\DALL\bin\Debug\net5.0\DALL.deps.json
+D:\Documentos\Programas en C#\ManaGLPS\DALL\bin\Debug\net5.0\DALL.dll
+D:\Documentos\Programas en C#\ManaGLPS\DALL\bin\Debug\net5.0\ref\DALL.dll
+D:\Documentos\Programas en C#\ManaGLPS\DALL\bin\Debug\net5.0\DALL.pdb
+D:\Documentos\Programas en C#\ManaGLPS\DALL\bin\Debug\net5.0\Entity.dll
+D:\Documentos\Programas en C#\ManaGLPS\DALL\bin\Debug\net5.0\Entity.pdb
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.AssemblyReference.cache
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.AssemblyInfoInputs.cache
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.AssemblyInfo.cs
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CoreCompileInputs.cache
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CopyComplete
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
+D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb

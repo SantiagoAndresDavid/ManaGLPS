@@ -1,0 +1,8 @@
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.csproj.AssemblyReference.cache
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmLogin.resources
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.Properties.Resources.resources
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.csproj.GenerateResource.cache
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.AssemblyInfoInputs.cache
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.AssemblyInfo.cs
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentación.csproj.CoreCompileInputs.cache

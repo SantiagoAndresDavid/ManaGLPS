@@ -52,9 +52,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\Programas en C#\\ManaGLPS\\Presentacion\\Presentación.csproj",
-      "projectName": "Presentación",
-      "projectPath": "D:\\Documentos\\Programas en C#\\ManaGLPS\\Presentacion\\Presentación.csproj",
+      "projectUniqueName": "D:\\Documentos\\Programas en C#\\ManaGLPS\\Presentacion\\Presentacion.csproj",
+      "projectName": "Presentacion",
+      "projectPath": "D:\\Documentos\\Programas en C#\\ManaGLPS\\Presentacion\\Presentacion.csproj",
       "packagesPath": "C:\\Users\\AndresAlvarez\\.nuget\\packages\\",
       "outputPath": "D:\\Documentos\\Programas en C#\\ManaGLPS\\Presentacion\\obj\\",
       "projectStyle": "PackageReference",

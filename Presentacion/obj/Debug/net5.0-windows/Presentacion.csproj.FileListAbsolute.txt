@@ -17,3 +17,8 @@ D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Pre
 D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
 D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
 D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\DALL.dll
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Entity.dll
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\DALL.pdb
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Entity.pdb
+D:\Documentos\Programas en C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete

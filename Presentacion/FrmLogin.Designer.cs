@@ -29,20 +29,21 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.PctFondo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PctNombre = new System.Windows.Forms.PictureBox();
-            this.PctCerrar = new System.Windows.Forms.PictureBox();
             this.PctMinimizar = new System.Windows.Forms.PictureBox();
+            this.PctCerrar = new System.Windows.Forms.PictureBox();
+            this.PctNombre = new System.Windows.Forms.PictureBox();
             this.textUsuario = new System.Windows.Forms.TextBox();
             this.textContraseña = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.linkdeRecuperaacion = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PctFondo)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctNombre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctNombre)).BeginInit();
             this.SuspendLayout();
             // 
             // PctFondo
@@ -57,7 +58,7 @@ namespace Presentacion
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(109)))), ((int)(((byte)(193)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(109)))), ((int)(((byte)(190)))));
             this.panel1.Controls.Add(this.PctMinimizar);
             this.panel1.Controls.Add(this.PctCerrar);
             this.panel1.Controls.Add(this.PctNombre);
@@ -67,15 +68,16 @@ namespace Presentacion
             this.panel1.Size = new System.Drawing.Size(676, 32);
             this.panel1.TabIndex = 1;
             // 
-            // PctNombre
+            // PctMinimizar
             // 
-            this.PctNombre.Image = global::Presentacion.Properties.Resources.LOGO0;
-            this.PctNombre.Location = new System.Drawing.Point(2, 0);
-            this.PctNombre.Name = "PctNombre";
-            this.PctNombre.Size = new System.Drawing.Size(135, 31);
-            this.PctNombre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctNombre.TabIndex = 0;
-            this.PctNombre.TabStop = false;
+            this.PctMinimizar.Image = global::Presentacion.Properties.Resources.Minimizar;
+            this.PctMinimizar.Location = new System.Drawing.Point(606, 0);
+            this.PctMinimizar.Name = "PctMinimizar";
+            this.PctMinimizar.Size = new System.Drawing.Size(32, 31);
+            this.PctMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctMinimizar.TabIndex = 2;
+            this.PctMinimizar.TabStop = false;
+            this.PctMinimizar.Click += new System.EventHandler(this.PctMinimizar_Click);
             // 
             // PctCerrar
             // 
@@ -88,16 +90,15 @@ namespace Presentacion
             this.PctCerrar.TabStop = false;
             this.PctCerrar.Click += new System.EventHandler(this.PctCerrar_Click);
             // 
-            // PctMinimizar
+            // PctNombre
             // 
-            this.PctMinimizar.Image = global::Presentacion.Properties.Resources.Minimizar;
-            this.PctMinimizar.Location = new System.Drawing.Point(606, 0);
-            this.PctMinimizar.Name = "PctMinimizar";
-            this.PctMinimizar.Size = new System.Drawing.Size(32, 31);
-            this.PctMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctMinimizar.TabIndex = 2;
-            this.PctMinimizar.TabStop = false;
-            this.PctMinimizar.Click += new System.EventHandler(this.PctMinimizar_Click);
+            this.PctNombre.Image = global::Presentacion.Properties.Resources.LOGO0;
+            this.PctNombre.Location = new System.Drawing.Point(2, 0);
+            this.PctNombre.Name = "PctNombre";
+            this.PctNombre.Size = new System.Drawing.Size(135, 31);
+            this.PctNombre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctNombre.TabIndex = 0;
+            this.PctNombre.TabStop = false;
             // 
             // textUsuario
             // 
@@ -127,21 +128,21 @@ namespace Presentacion
             this.textContraseña.Enter += new System.EventHandler(this.textContraseña_Enter);
             this.textContraseña.Leave += new System.EventHandler(this.textContraseña_Leave);
             // 
-            // button1
+            // btnIngresar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(116)))), ((int)(((byte)(185)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(68, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(316, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "INGRESAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(116)))), ((int)(((byte)(180)))));
+            this.btnIngresar.FlatAppearance.BorderSize = 0;
+            this.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(116)))), ((int)(((byte)(50)))));
+            this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnIngresar.Location = new System.Drawing.Point(68, 239);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(316, 38);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "INGRESAR";
+            this.btnIngresar.UseVisualStyleBackColor = false;
             // 
             // linkdeRecuperaacion
             // 
@@ -157,26 +158,27 @@ namespace Presentacion
             this.linkdeRecuperaacion.TabStop = true;
             this.linkdeRecuperaacion.Text = "¿Olvidaste tu contraseña?";
             // 
-            // Form1
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 430);
             this.Controls.Add(this.linkdeRecuperaacion);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.textContraseña);
             this.Controls.Add(this.textUsuario);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PctFondo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Inicio de sesion";
             ((System.ComponentModel.ISupportInitialize)(this.PctFondo)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PctNombre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctNombre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +193,7 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox PctCerrar;
         private System.Windows.Forms.TextBox textUsuario;
         private System.Windows.Forms.TextBox textContraseña;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.LinkLabel linkdeRecuperaacion;
     }
 }
