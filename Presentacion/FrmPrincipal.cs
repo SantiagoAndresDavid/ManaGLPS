@@ -118,6 +118,14 @@ namespace Presentacion
             PctMaximizar.Visible = true;
         }
 
+        private void BtnRegistrarUsuarios_Click(object sender, EventArgs e)
+        {
+            PnlContenedor.Size.Height.Equals(991);
+            PnlContenedor.Size.Width.Equals(595);
+            Abrir(new FrmRegistrarUsuario());
+            OcultarSubMenus();
+        }
+
         private void PctMinimizar_Click(object sender, EventArgs e)
         {
             PctRestaurar.Visible = true;

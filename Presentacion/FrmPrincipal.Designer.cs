@@ -190,6 +190,7 @@ namespace Presentacion
             this.BtnRegistrarUsuarios.TabIndex = 15;
             this.BtnRegistrarUsuarios.Text = "Registrar Usuario";
             this.BtnRegistrarUsuarios.UseVisualStyleBackColor = false;
+            this.BtnRegistrarUsuarios.Click += new System.EventHandler(this.BtnRegistrarUsuarios_Click);
             // 
             // BtnAgregar
             // 
@@ -482,6 +483,7 @@ namespace Presentacion
             // 
             // PnlContenedor
             // 
+            this.PnlContenedor.BackColor = System.Drawing.Color.White;
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(199, 41);
             this.PnlContenedor.Name = "PnlContenedor";

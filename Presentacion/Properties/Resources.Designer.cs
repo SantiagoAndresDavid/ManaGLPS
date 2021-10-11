@@ -173,9 +173,29 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RegistrarUsuario {
+            get {
+                object obj = ResourceManager.GetObject("RegistrarUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap restaurar_menu {
             get {
                 object obj = ResourceManager.GetObject("restaurar menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Usuario {
+            get {
+                object obj = ResourceManager.GetObject("Usuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
