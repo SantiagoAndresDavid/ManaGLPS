@@ -394,7 +394,7 @@ namespace Presentacion
             this.btnActivarDesactivar.TabIndex = 25;
             this.btnActivarDesactivar.Text = "Activar o Desactivar";
             this.btnActivarDesactivar.UseVisualStyleBackColor = false;
-            this.btnActivarDesactivar.Click += new System.EventHandler(this.btnActivarDesactivar_Click);
+            this.btnActivarDesactivar.Click += new System.EventHandler(this.BtnActivarDesactivar_Click);
             // 
             // PnlSubMenuActivarDesactivar
             // 

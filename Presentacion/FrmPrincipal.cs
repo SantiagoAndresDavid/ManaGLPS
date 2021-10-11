@@ -79,7 +79,7 @@ namespace Presentacion
             MostrarSubMenus(PnlSubMenuModificar);
         }
 
-        private void btnActivarDesactivar_Click(object sender, EventArgs e)
+        private void BtnActivarDesactivar_Click(object sender, EventArgs e)
         {
             MostrarSubMenus(PnlSubMenuActivarDesactivar);
         }
@@ -87,10 +87,12 @@ namespace Presentacion
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
+            
             FrmLogin login = new FrmLogin();
             login.Show();
             this.Visible = false;
         }
+        
 
         private void PctCerrar_Click(object sender, EventArgs e)
         {
