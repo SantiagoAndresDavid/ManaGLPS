@@ -165,7 +165,7 @@ namespace Presentacion
             this.BtnCerrarSesion.BackColor = System.Drawing.Color.DarkGray;
             this.BtnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BtnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.BtnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.BtnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BtnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrarSesion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnCerrarSesion.Location = new System.Drawing.Point(0, 823);
@@ -181,7 +181,7 @@ namespace Presentacion
             this.BtnRegistrarUsuarios.BackColor = System.Drawing.Color.DarkGray;
             this.BtnRegistrarUsuarios.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnRegistrarUsuarios.FlatAppearance.BorderSize = 0;
-            this.BtnRegistrarUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.BtnRegistrarUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnRegistrarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrarUsuarios.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnRegistrarUsuarios.Location = new System.Drawing.Point(0, 206);
@@ -196,7 +196,7 @@ namespace Presentacion
             this.BtnAgregar.BackColor = System.Drawing.Color.DarkGray;
             this.BtnAgregar.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnAgregar.FlatAppearance.BorderSize = 0;
-            this.BtnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.BtnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnAgregar.Location = new System.Drawing.Point(0, 250);
@@ -220,7 +220,7 @@ namespace Presentacion
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panel5.Location = new System.Drawing.Point(34, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(14, 84);
@@ -230,7 +230,7 @@ namespace Presentacion
             // 
             this.BtnAgregarDatosConsulta.BackColor = System.Drawing.Color.Silver;
             this.BtnAgregarDatosConsulta.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnAgregarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnAgregarDatosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarDatosConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnAgregarDatosConsulta.Location = new System.Drawing.Point(45, 42);
@@ -244,7 +244,7 @@ namespace Presentacion
             // 
             this.BtnAgregarExpediente.BackColor = System.Drawing.Color.Silver;
             this.BtnAgregarExpediente.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnAgregarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnAgregarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarExpediente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnAgregarExpediente.Location = new System.Drawing.Point(45, 0);
@@ -259,7 +259,7 @@ namespace Presentacion
             this.BtnConsulta.BackColor = System.Drawing.Color.DarkGray;
             this.BtnConsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnConsulta.FlatAppearance.BorderSize = 0;
-            this.BtnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.BtnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnConsulta.Location = new System.Drawing.Point(0, 373);
@@ -283,7 +283,7 @@ namespace Presentacion
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panel4.Location = new System.Drawing.Point(34, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(14, 83);
@@ -293,7 +293,7 @@ namespace Presentacion
             // 
             this.BtnConsultarExpediente.BackColor = System.Drawing.Color.Silver;
             this.BtnConsultarExpediente.FlatAppearance.BorderSize = 0;
-            this.BtnConsultarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnConsultarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnConsultarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsultarExpediente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnConsultarExpediente.Location = new System.Drawing.Point(45, 0);
@@ -307,7 +307,7 @@ namespace Presentacion
             // 
             this.BtnConsultarDatosConsulta.BackColor = System.Drawing.Color.Silver;
             this.BtnConsultarDatosConsulta.FlatAppearance.BorderSize = 0;
-            this.BtnConsultarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnConsultarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnConsultarDatosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsultarDatosConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnConsultarDatosConsulta.Location = new System.Drawing.Point(45, 41);
@@ -322,7 +322,7 @@ namespace Presentacion
             this.BtnModificar.BackColor = System.Drawing.Color.DarkGray;
             this.BtnModificar.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnModificar.FlatAppearance.BorderSize = 0;
-            this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnModificar.Location = new System.Drawing.Point(0, 499);
@@ -346,7 +346,7 @@ namespace Presentacion
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panel7.Location = new System.Drawing.Point(34, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(14, 83);
@@ -356,7 +356,7 @@ namespace Presentacion
             // 
             this.BtnModificarDatosConsulta.BackColor = System.Drawing.Color.Silver;
             this.BtnModificarDatosConsulta.FlatAppearance.BorderSize = 0;
-            this.BtnModificarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnModificarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnModificarDatosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificarDatosConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnModificarDatosConsulta.Location = new System.Drawing.Point(45, 41);
@@ -370,7 +370,7 @@ namespace Presentacion
             // 
             this.BtnModificarExpediente.BackColor = System.Drawing.Color.Silver;
             this.BtnModificarExpediente.FlatAppearance.BorderSize = 0;
-            this.BtnModificarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnModificarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnModificarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificarExpediente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnModificarExpediente.Location = new System.Drawing.Point(45, 0);
@@ -385,7 +385,7 @@ namespace Presentacion
             this.btnActivarDesactivar.BackColor = System.Drawing.Color.DarkGray;
             this.btnActivarDesactivar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnActivarDesactivar.FlatAppearance.BorderSize = 0;
-            this.btnActivarDesactivar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.btnActivarDesactivar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.btnActivarDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActivarDesactivar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnActivarDesactivar.Location = new System.Drawing.Point(0, 620);
@@ -409,7 +409,7 @@ namespace Presentacion
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panel6.Location = new System.Drawing.Point(34, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(14, 83);
@@ -419,7 +419,7 @@ namespace Presentacion
             // 
             this.BtnDescativarDatosConsulta.BackColor = System.Drawing.Color.Silver;
             this.BtnDescativarDatosConsulta.FlatAppearance.BorderSize = 0;
-            this.BtnDescativarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnDescativarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnDescativarDatosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDescativarDatosConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnDescativarDatosConsulta.Location = new System.Drawing.Point(45, 41);
@@ -433,7 +433,7 @@ namespace Presentacion
             // 
             this.BtnDescativarExpediente.BackColor = System.Drawing.Color.Silver;
             this.BtnDescativarExpediente.FlatAppearance.BorderSize = 0;
-            this.BtnDescativarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
+            this.BtnDescativarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnDescativarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDescativarExpediente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnDescativarExpediente.Location = new System.Drawing.Point(45, 0);
@@ -448,7 +448,7 @@ namespace Presentacion
             this.BtnAcercaDe.BackColor = System.Drawing.Color.DarkGray;
             this.BtnAcercaDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnAcercaDe.FlatAppearance.BorderSize = 0;
-            this.BtnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(110)))), ((int)(((byte)(216)))));
+            this.BtnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnAcercaDe.Location = new System.Drawing.Point(0, 742);
