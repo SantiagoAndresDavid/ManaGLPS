@@ -29,8 +29,8 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LblUsuario = new System.Windows.Forms.Label();
             this.LblContraseña = new System.Windows.Forms.Label();
             this.LblConfirmarContrseña = new System.Windows.Forms.Label();
@@ -119,32 +119,42 @@ namespace Presentacion
             // TextConfirmarContraseña
             // 
             this.TextConfirmarContraseña.BackColor = System.Drawing.Color.White;
-            this.TextConfirmarContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextConfirmarContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.TextConfirmarContraseña.ForeColor = System.Drawing.Color.DimGray;
             this.TextConfirmarContraseña.Location = new System.Drawing.Point(246, 279);
             this.TextConfirmarContraseña.Name = "TextConfirmarContraseña";
             this.TextConfirmarContraseña.Size = new System.Drawing.Size(315, 33);
             this.TextConfirmarContraseña.TabIndex = 13;
             this.TextConfirmarContraseña.TabStop = false;
+            this.TextConfirmarContraseña.Text = "Confirma tu contraseña";
+            this.TextConfirmarContraseña.Enter += new System.EventHandler(this.TextConfirmarContraseña_Enter);
+            this.TextConfirmarContraseña.Leave += new System.EventHandler(this.TextConfirmarContraseña_Leave);
             // 
             // TextContraseña
             // 
             this.TextContraseña.BackColor = System.Drawing.Color.White;
-            this.TextContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.TextContraseña.ForeColor = System.Drawing.Color.DimGray;
             this.TextContraseña.Location = new System.Drawing.Point(246, 226);
             this.TextContraseña.Name = "TextContraseña";
             this.TextContraseña.Size = new System.Drawing.Size(315, 33);
             this.TextContraseña.TabIndex = 12;
             this.TextContraseña.TabStop = false;
+            this.TextContraseña.Text = "Ingresa tu contraseña";
+            this.TextContraseña.Enter += new System.EventHandler(this.TextContraseña_Enter);
+            this.TextContraseña.Leave += new System.EventHandler(this.TextContraseña_Leave);
             // 
             // TextCorreoElectronico
             // 
-            this.TextCorreoElectronico.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextCorreoElectronico.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TextCorreoElectronico.ForeColor = System.Drawing.Color.DimGray;
             this.TextCorreoElectronico.Location = new System.Drawing.Point(246, 41);
             this.TextCorreoElectronico.Name = "TextCorreoElectronico";
             this.TextCorreoElectronico.Size = new System.Drawing.Size(472, 33);
             this.TextCorreoElectronico.TabIndex = 11;
+            this.TextCorreoElectronico.Text = "usuario@ejemplo.com";
+            this.TextCorreoElectronico.Enter += new System.EventHandler(this.TextCorreoElectronico_Enter);
+            this.TextCorreoElectronico.Leave += new System.EventHandler(this.TextCorreoElectronico_Leave);
             // 
             // LblEmail
             // 
@@ -179,11 +189,15 @@ namespace Presentacion
             // 
             // TextNombreDeUsuario
             // 
-            this.TextNombreDeUsuario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextNombreDeUsuario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TextNombreDeUsuario.ForeColor = System.Drawing.Color.DimGray;
             this.TextNombreDeUsuario.Location = new System.Drawing.Point(246, 101);
             this.TextNombreDeUsuario.Name = "TextNombreDeUsuario";
             this.TextNombreDeUsuario.Size = new System.Drawing.Size(316, 33);
             this.TextNombreDeUsuario.TabIndex = 5;
+            this.TextNombreDeUsuario.Text = "Nombre de usuario";
+            this.TextNombreDeUsuario.Enter += new System.EventHandler(this.TextNombreDeUsuario_Enter);
+            this.TextNombreDeUsuario.Leave += new System.EventHandler(this.TextNombreDeUsuario_Leave);
             // 
             // dataGridView1
             // 
@@ -195,28 +209,28 @@ namespace Presentacion
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.email,
             this.Usuario,
             this.TipoUsuario});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(73, 489);
             this.dataGridView1.Name = "dataGridView1";
@@ -299,9 +313,9 @@ namespace Presentacion
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox TextConfirmarContraseña;
-        private System.Windows.Forms.TextBox TextContraseña;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoUsuario;
+        private System.Windows.Forms.TextBox TextContraseña;
     }
 }
