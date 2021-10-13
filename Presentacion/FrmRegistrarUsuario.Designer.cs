@@ -36,18 +36,18 @@ namespace Presentacion
             this.LblConfirmarContrseña = new System.Windows.Forms.Label();
             this.LblTipoUsuario = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TextConfirmarContraseña = new System.Windows.Forms.TextBox();
+            this.TextContraseña = new System.Windows.Forms.TextBox();
             this.TextCorreoElectronico = new System.Windows.Forms.TextBox();
             this.LblEmail = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CmbTipoDeUsuario = new System.Windows.Forms.ComboBox();
             this.TextNombreDeUsuario = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.TextContraseña = new System.Windows.Forms.TextBox();
-            this.TextConfirmarContraseña = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,40 +57,40 @@ namespace Presentacion
             // LblUsuario
             // 
             this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblUsuario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblUsuario.Location = new System.Drawing.Point(43, 105);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(215, 25);
+            this.LblUsuario.Size = new System.Drawing.Size(193, 23);
             this.LblUsuario.TabIndex = 0;
             this.LblUsuario.Text = "Nombre de Usuario:";
             // 
             // LblContraseña
             // 
             this.LblContraseña.AutoSize = true;
-            this.LblContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblContraseña.Location = new System.Drawing.Point(122, 230);
+            this.LblContraseña.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblContraseña.Location = new System.Drawing.Point(117, 230);
             this.LblContraseña.Name = "LblContraseña";
-            this.LblContraseña.Size = new System.Drawing.Size(136, 25);
+            this.LblContraseña.Size = new System.Drawing.Size(122, 23);
             this.LblContraseña.TabIndex = 1;
             this.LblContraseña.Text = "Contraseña:";
             // 
             // LblConfirmarContrseña
             // 
             this.LblConfirmarContrseña.AutoSize = true;
-            this.LblConfirmarContrseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblConfirmarContrseña.Location = new System.Drawing.Point(15, 282);
+            this.LblConfirmarContrseña.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblConfirmarContrseña.Location = new System.Drawing.Point(18, 283);
             this.LblConfirmarContrseña.Name = "LblConfirmarContrseña";
-            this.LblConfirmarContrseña.Size = new System.Drawing.Size(243, 25);
+            this.LblConfirmarContrseña.Size = new System.Drawing.Size(218, 23);
             this.LblConfirmarContrseña.TabIndex = 2;
             this.LblConfirmarContrseña.Text = "Confirmar Contraseña:";
             // 
             // LblTipoUsuario
             // 
             this.LblTipoUsuario.AutoSize = true;
-            this.LblTipoUsuario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblTipoUsuario.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblTipoUsuario.Location = new System.Drawing.Point(86, 165);
             this.LblTipoUsuario.Name = "LblTipoUsuario";
-            this.LblTipoUsuario.Size = new System.Drawing.Size(172, 25);
+            this.LblTipoUsuario.Size = new System.Drawing.Size(154, 23);
             this.LblTipoUsuario.TabIndex = 4;
             this.LblTipoUsuario.Text = "Tipo de usuario:";
             // 
@@ -116,21 +116,43 @@ namespace Presentacion
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion de Registro";
             // 
+            // TextConfirmarContraseña
+            // 
+            this.TextConfirmarContraseña.BackColor = System.Drawing.Color.White;
+            this.TextConfirmarContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextConfirmarContraseña.ForeColor = System.Drawing.Color.DimGray;
+            this.TextConfirmarContraseña.Location = new System.Drawing.Point(246, 279);
+            this.TextConfirmarContraseña.Name = "TextConfirmarContraseña";
+            this.TextConfirmarContraseña.Size = new System.Drawing.Size(315, 33);
+            this.TextConfirmarContraseña.TabIndex = 13;
+            this.TextConfirmarContraseña.TabStop = false;
+            // 
+            // TextContraseña
+            // 
+            this.TextContraseña.BackColor = System.Drawing.Color.White;
+            this.TextContraseña.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextContraseña.ForeColor = System.Drawing.Color.DimGray;
+            this.TextContraseña.Location = new System.Drawing.Point(246, 226);
+            this.TextContraseña.Name = "TextContraseña";
+            this.TextContraseña.Size = new System.Drawing.Size(315, 33);
+            this.TextContraseña.TabIndex = 12;
+            this.TextContraseña.TabStop = false;
+            // 
             // TextCorreoElectronico
             // 
-            this.TextCorreoElectronico.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextCorreoElectronico.Location = new System.Drawing.Point(264, 33);
+            this.TextCorreoElectronico.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextCorreoElectronico.Location = new System.Drawing.Point(246, 41);
             this.TextCorreoElectronico.Name = "TextCorreoElectronico";
-            this.TextCorreoElectronico.Size = new System.Drawing.Size(472, 41);
+            this.TextCorreoElectronico.Size = new System.Drawing.Size(472, 33);
             this.TextCorreoElectronico.TabIndex = 11;
             // 
             // LblEmail
             // 
             this.LblEmail.AutoSize = true;
-            this.LblEmail.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblEmail.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblEmail.Location = new System.Drawing.Point(53, 44);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(205, 25);
+            this.LblEmail.Size = new System.Drawing.Size(186, 23);
             this.LblEmail.TabIndex = 10;
             this.LblEmail.Text = "Correo Electronico:";
             // 
@@ -148,19 +170,19 @@ namespace Presentacion
             // CmbTipoDeUsuario
             // 
             this.CmbTipoDeUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbTipoDeUsuario.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CmbTipoDeUsuario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CmbTipoDeUsuario.FormattingEnabled = true;
-            this.CmbTipoDeUsuario.Location = new System.Drawing.Point(264, 154);
+            this.CmbTipoDeUsuario.Location = new System.Drawing.Point(246, 162);
             this.CmbTipoDeUsuario.Name = "CmbTipoDeUsuario";
-            this.CmbTipoDeUsuario.Size = new System.Drawing.Size(316, 41);
+            this.CmbTipoDeUsuario.Size = new System.Drawing.Size(316, 32);
             this.CmbTipoDeUsuario.TabIndex = 9;
             // 
             // TextNombreDeUsuario
             // 
-            this.TextNombreDeUsuario.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextNombreDeUsuario.Location = new System.Drawing.Point(264, 94);
+            this.TextNombreDeUsuario.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextNombreDeUsuario.Location = new System.Drawing.Point(246, 102);
             this.TextNombreDeUsuario.Name = "TextNombreDeUsuario";
-            this.TextNombreDeUsuario.Size = new System.Drawing.Size(316, 41);
+            this.TextNombreDeUsuario.Size = new System.Drawing.Size(316, 33);
             this.TextNombreDeUsuario.TabIndex = 5;
             // 
             // dataGridView1
@@ -208,39 +230,6 @@ namespace Presentacion
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::Presentacion.Properties.Resources.Usuario;
-            this.pictureBox2.Location = new System.Drawing.Point(73, 74);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(262, 334);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // TextContraseña
-            // 
-            this.TextContraseña.BackColor = System.Drawing.Color.White;
-            this.TextContraseña.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextContraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.TextContraseña.Location = new System.Drawing.Point(264, 219);
-            this.TextContraseña.Name = "TextContraseña";
-            this.TextContraseña.Size = new System.Drawing.Size(315, 41);
-            this.TextContraseña.TabIndex = 12;
-            this.TextContraseña.TabStop = false;
-            // 
-            // TextConfirmarContraseña
-            // 
-            this.TextConfirmarContraseña.BackColor = System.Drawing.Color.White;
-            this.TextConfirmarContraseña.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TextConfirmarContraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.TextConfirmarContraseña.Location = new System.Drawing.Point(264, 271);
-            this.TextConfirmarContraseña.Name = "TextConfirmarContraseña";
-            this.TextConfirmarContraseña.Size = new System.Drawing.Size(315, 41);
-            this.TextConfirmarContraseña.TabIndex = 13;
-            this.TextConfirmarContraseña.TabStop = false;
-            // 
             // email
             // 
             this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -262,6 +251,17 @@ namespace Presentacion
             this.TipoUsuario.Name = "TipoUsuario";
             this.TipoUsuario.ReadOnly = true;
             this.TipoUsuario.Width = 173;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::Presentacion.Properties.Resources.Usuario;
+            this.pictureBox2.Location = new System.Drawing.Point(73, 74);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(262, 334);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // FrmRegistrarUsuario
             // 
