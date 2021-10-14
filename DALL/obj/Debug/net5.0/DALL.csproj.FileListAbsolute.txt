@@ -28,3 +28,18 @@ D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CopyCom
 D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
 D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
 D:\Documentos\Programas en C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\bin\Debug\net5.0\DALL.deps.json
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\bin\Debug\net5.0\DALL.dll
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\bin\Debug\net5.0\ref\DALL.dll
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\bin\Debug\net5.0\DALL.pdb
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\bin\Debug\net5.0\Entity.dll
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\bin\Debug\net5.0\Entity.pdb
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.AssemblyReference.cache
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.AssemblyInfoInputs.cache
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.AssemblyInfo.cs
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CoreCompileInputs.cache
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CopyComplete
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb
