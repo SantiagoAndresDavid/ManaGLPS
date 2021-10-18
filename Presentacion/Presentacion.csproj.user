@@ -10,5 +10,11 @@
     <Compile Update="FrmRegistrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmRegistroDeExamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmRegistroExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -43,3 +43,18 @@ C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DAL
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\bin\Debug\net5.0\DALL.deps.json
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\bin\Debug\net5.0\DALL.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\bin\Debug\net5.0\ref\DALL.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\bin\Debug\net5.0\DALL.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\bin\Debug\net5.0\Entity.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\bin\Debug\net5.0\Entity.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.AssemblyReference.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.AssemblyInfoInputs.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.AssemblyInfo.cs
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CopyComplete
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb

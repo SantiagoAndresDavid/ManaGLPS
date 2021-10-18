@@ -36,6 +36,7 @@ namespace Presentacion
             this.LblConfirmarContrseña = new System.Windows.Forms.Label();
             this.LblTipoUsuario = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.TextConfirmarContraseña = new System.Windows.Forms.TextBox();
             this.TextContraseña = new System.Windows.Forms.TextBox();
             this.TextCorreoElectronico = new System.Windows.Forms.TextBox();
@@ -49,10 +50,9 @@ namespace Presentacion
             this.TipoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -116,12 +116,25 @@ namespace Presentacion
             this.groupBox1.Controls.Add(this.LblConfirmarContrseña);
             this.groupBox1.Controls.Add(this.LblContraseña);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(341, 74);
+            this.groupBox1.Location = new System.Drawing.Point(341, 58);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(869, 334);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion de Registro";
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = global::Presentacion.Properties.Resources.Buscar_32;
+            this.button4.Location = new System.Drawing.Point(724, 41);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(40, 33);
+            this.button4.TabIndex = 14;
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // TextConfirmarContraseña
             // 
@@ -239,7 +252,7 @@ namespace Presentacion
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(73, 489);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 473);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -277,7 +290,7 @@ namespace Presentacion
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Presentacion.Properties.Resources.Usuario;
-            this.pictureBox2.Location = new System.Drawing.Point(73, 74);
+            this.pictureBox2.Location = new System.Drawing.Point(73, 58);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 334);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -295,35 +308,7 @@ namespace Presentacion
             this.groupBox2.Size = new System.Drawing.Size(459, 186);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Acciones Posible";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Presentacion.Properties.Resources.Guardar_48;
-            this.button1.Location = new System.Drawing.Point(46, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 90);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Presentacion.Properties.Resources.Editar_48;
-            this.button2.Location = new System.Drawing.Point(184, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 90);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Editar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.groupBox2.Text = "Acciones Posibles";
             // 
             // button3
             // 
@@ -339,25 +324,40 @@ namespace Presentacion
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button2
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::Presentacion.Properties.Resources.Buscar_32;
-            this.button4.Location = new System.Drawing.Point(724, 41);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 33);
-            this.button4.TabIndex = 14;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = global::Presentacion.Properties.Resources.Editar_48;
+            this.button2.Location = new System.Drawing.Point(184, 50);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 90);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Editar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::Presentacion.Properties.Resources.Guardar_48;
+            this.button1.Location = new System.Drawing.Point(46, 50);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 90);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Guardar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmRegistrarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1302, 821);
+            this.ClientSize = new System.Drawing.Size(1302, 788);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView1);
@@ -382,7 +382,6 @@ namespace Presentacion
         private System.Windows.Forms.Label LblConfirmarContrseña;
         private System.Windows.Forms.Label LblTipoUsuario;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TextCorreoElectronico;
         private System.Windows.Forms.Label LblEmail;
         private System.Windows.Forms.ComboBox CmbTipoDeUsuario;
         private System.Windows.Forms.TextBox TextNombreDeUsuario;
@@ -399,5 +398,6 @@ namespace Presentacion
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TextCorreoElectronico;
     }
 }

@@ -49,3 +49,30 @@ C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\ne
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Presentacion.exe
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Presentacion.deps.json
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Presentacion.runtimeconfig.json
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Presentacion.runtimeconfig.dev.json
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Presentacion.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\ref\Presentacion.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Presentacion.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\DALL.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Entity.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\DALL.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Entity.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.AssemblyReference.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmLogin.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmPrincipal.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistrarUsuario.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroDeExamen.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.GenerateResource.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.AssemblyInfoInputs.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.AssemblyInfo.cs
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroExpediente.resources
