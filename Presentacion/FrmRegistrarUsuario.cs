@@ -17,11 +17,6 @@ namespace Presentacion
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void TextCorreoElectronico_Enter(object sender, EventArgs e)
         {
             if (TextCorreoElectronico.Text == "usuario@ejemplo.com")
@@ -185,6 +180,7 @@ namespace Presentacion
             }
             else
             {
+
                 errorProvider1.SetError(TextNombreDeUsuario, "");
             }
         }
