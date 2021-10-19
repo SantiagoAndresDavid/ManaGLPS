@@ -33,8 +33,6 @@ namespace Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,9 +41,11 @@ namespace Presentacion
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.TBCTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBCFechaCierre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBDUltimaModificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,6 +103,7 @@ namespace Presentacion
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
@@ -113,6 +114,7 @@ namespace Presentacion
             this.groupBox1.Controls.Add(this.dateTimePicker6);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.dateTimePicker5);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(63, 26);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(438, 554);
@@ -120,26 +122,9 @@ namespace Presentacion
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion de Registro";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(76, -97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 23);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Fecha de Creacion";
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(50, -62);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(244, 23);
-            this.dateTimePicker5.TabIndex = 27;
-            // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.Color.DimGray;
             this.textBox1.Location = new System.Drawing.Point(27, 453);
             this.textBox1.Name = "textBox1";
@@ -169,9 +154,10 @@ namespace Presentacion
             // 
             // dateTimePicker3
             // 
+            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker3.Location = new System.Drawing.Point(50, 335);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(244, 23);
+            this.dateTimePicker3.Size = new System.Drawing.Size(244, 33);
             this.dateTimePicker3.TabIndex = 33;
             // 
             // label5
@@ -186,9 +172,10 @@ namespace Presentacion
             // 
             // dateTimePicker4
             // 
+            this.dateTimePicker4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker4.Location = new System.Drawing.Point(50, 222);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(244, 23);
+            this.dateTimePicker4.Size = new System.Drawing.Size(244, 33);
             this.dateTimePicker4.TabIndex = 31;
             // 
             // label7
@@ -203,13 +190,32 @@ namespace Presentacion
             // 
             // dateTimePicker6
             // 
+            this.dateTimePicker6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker6.Location = new System.Drawing.Point(50, 103);
             this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(244, 23);
+            this.dateTimePicker6.Size = new System.Drawing.Size(244, 33);
             this.dateTimePicker6.TabIndex = 29;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(76, -97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(188, 23);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Fecha de Creacion";
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Location = new System.Drawing.Point(50, -62);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(244, 33);
+            this.dateTimePicker5.TabIndex = 27;
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -219,20 +225,6 @@ namespace Presentacion
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones Posibles";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Presentacion.Properties.Resources.Guardar_48;
-            this.button1.Location = new System.Drawing.Point(92, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 90);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -248,6 +240,20 @@ namespace Presentacion
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::Presentacion.Properties.Resources.Guardar_48;
+            this.button1.Location = new System.Drawing.Point(92, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 90);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Guardar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // TBCTitulo
             // 
             this.TBCTitulo.HeaderText = "Titulo";
@@ -262,7 +268,7 @@ namespace Presentacion
             // 
             // TBDUltimaModificacion
             // 
-            this.TBDUltimaModificacion.HeaderText = "UltimaModificacion";
+            this.TBDUltimaModificacion.HeaderText = "Ultima Modificacion";
             this.TBDUltimaModificacion.Name = "TBDUltimaModificacion";
             this.TBDUltimaModificacion.ReadOnly = true;
             // 

@@ -104,6 +104,7 @@ namespace Presentacion
         {
             LX = this.Location.X;
             LY = this.Location.Y;
+
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             PctMaximizar.Visible = false;
@@ -124,6 +125,16 @@ namespace Presentacion
             PnlContenedor.Size.Width.Equals(595);
             Abrir(new FrmRegistrarUsuario());
             OcultarSubMenus();
+        }
+
+        private void BtnAgregarExpediente_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmRegistroExpediente());
+        }
+
+        private void BtnAgregarDatosConsulta_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmRegistroDeCitaMedica());
         }
 
         private void PctMinimizar_Click(object sender, EventArgs e)

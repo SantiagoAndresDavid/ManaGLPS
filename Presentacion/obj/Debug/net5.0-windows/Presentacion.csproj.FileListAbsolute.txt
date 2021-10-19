@@ -76,3 +76,6 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroExpediente.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroExpediente.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FmrRegistroPaciente.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroDeCitaMedica.resources

@@ -62,6 +62,7 @@ namespace Presentacion
             this.BtnAcercaDe = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PnlContenedor = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
@@ -213,10 +214,11 @@ namespace Presentacion
             this.PnlSubMenuAgregar.Controls.Add(this.panel5);
             this.PnlSubMenuAgregar.Controls.Add(this.BtnAgregarDatosConsulta);
             this.PnlSubMenuAgregar.Controls.Add(this.BtnAgregarExpediente);
+            this.PnlSubMenuAgregar.Controls.Add(this.button1);
             this.PnlSubMenuAgregar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlSubMenuAgregar.Location = new System.Drawing.Point(0, 289);
             this.PnlSubMenuAgregar.Name = "PnlSubMenuAgregar";
-            this.PnlSubMenuAgregar.Size = new System.Drawing.Size(199, 84);
+            this.PnlSubMenuAgregar.Size = new System.Drawing.Size(199, 124);
             this.PnlSubMenuAgregar.TabIndex = 20;
             // 
             // panel5
@@ -224,7 +226,7 @@ namespace Presentacion
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panel5.Location = new System.Drawing.Point(34, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(14, 84);
+            this.panel5.Size = new System.Drawing.Size(14, 125);
             this.panel5.TabIndex = 12;
             // 
             // BtnAgregarDatosConsulta
@@ -234,12 +236,13 @@ namespace Presentacion
             this.BtnAgregarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnAgregarDatosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarDatosConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnAgregarDatosConsulta.Location = new System.Drawing.Point(45, 42);
+            this.BtnAgregarDatosConsulta.Location = new System.Drawing.Point(45, 82);
             this.BtnAgregarDatosConsulta.Name = "BtnAgregarDatosConsulta";
             this.BtnAgregarDatosConsulta.Size = new System.Drawing.Size(154, 42);
             this.BtnAgregarDatosConsulta.TabIndex = 11;
-            this.BtnAgregarDatosConsulta.Text = "Consulta";
+            this.BtnAgregarDatosConsulta.Text = "Cita Medica";
             this.BtnAgregarDatosConsulta.UseVisualStyleBackColor = false;
+            this.BtnAgregarDatosConsulta.Click += new System.EventHandler(this.BtnAgregarDatosConsulta_Click);
             // 
             // BtnAgregarExpediente
             // 
@@ -248,12 +251,13 @@ namespace Presentacion
             this.BtnAgregarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnAgregarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAgregarExpediente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnAgregarExpediente.Location = new System.Drawing.Point(45, 0);
+            this.BtnAgregarExpediente.Location = new System.Drawing.Point(45, 40);
             this.BtnAgregarExpediente.Name = "BtnAgregarExpediente";
             this.BtnAgregarExpediente.Size = new System.Drawing.Size(154, 42);
             this.BtnAgregarExpediente.TabIndex = 10;
             this.BtnAgregarExpediente.Text = "Expediente";
             this.BtnAgregarExpediente.UseVisualStyleBackColor = false;
+            this.BtnAgregarExpediente.Click += new System.EventHandler(this.BtnAgregarExpediente_Click);
             // 
             // BtnConsulta
             // 
@@ -263,7 +267,7 @@ namespace Presentacion
             this.BtnConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnConsulta.Location = new System.Drawing.Point(0, 373);
+            this.BtnConsulta.Location = new System.Drawing.Point(0, 413);
             this.BtnConsulta.Name = "BtnConsulta";
             this.BtnConsulta.Size = new System.Drawing.Size(199, 44);
             this.BtnConsulta.TabIndex = 21;
@@ -277,7 +281,7 @@ namespace Presentacion
             this.PnlSubMenuConsultar.Controls.Add(this.BtnConsultarExpediente);
             this.PnlSubMenuConsultar.Controls.Add(this.BtnConsultarDatosConsulta);
             this.PnlSubMenuConsultar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlSubMenuConsultar.Location = new System.Drawing.Point(0, 417);
+            this.PnlSubMenuConsultar.Location = new System.Drawing.Point(0, 457);
             this.PnlSubMenuConsultar.Name = "PnlSubMenuConsultar";
             this.PnlSubMenuConsultar.Size = new System.Drawing.Size(199, 82);
             this.PnlSubMenuConsultar.TabIndex = 22;
@@ -326,7 +330,7 @@ namespace Presentacion
             this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnModificar.Location = new System.Drawing.Point(0, 499);
+            this.BtnModificar.Location = new System.Drawing.Point(0, 539);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(199, 39);
             this.BtnModificar.TabIndex = 23;
@@ -340,7 +344,7 @@ namespace Presentacion
             this.PnlSubMenuModificar.Controls.Add(this.BtnModificarDatosConsulta);
             this.PnlSubMenuModificar.Controls.Add(this.BtnModificarExpediente);
             this.PnlSubMenuModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlSubMenuModificar.Location = new System.Drawing.Point(0, 538);
+            this.PnlSubMenuModificar.Location = new System.Drawing.Point(0, 578);
             this.PnlSubMenuModificar.Name = "PnlSubMenuModificar";
             this.PnlSubMenuModificar.Size = new System.Drawing.Size(199, 82);
             this.PnlSubMenuModificar.TabIndex = 24;
@@ -389,7 +393,7 @@ namespace Presentacion
             this.btnActivarDesactivar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.btnActivarDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActivarDesactivar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnActivarDesactivar.Location = new System.Drawing.Point(0, 620);
+            this.btnActivarDesactivar.Location = new System.Drawing.Point(0, 660);
             this.btnActivarDesactivar.Name = "btnActivarDesactivar";
             this.btnActivarDesactivar.Size = new System.Drawing.Size(199, 39);
             this.btnActivarDesactivar.TabIndex = 25;
@@ -403,7 +407,7 @@ namespace Presentacion
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarDatosConsulta);
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarExpediente);
             this.PnlSubMenuActivarDesactivar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlSubMenuActivarDesactivar.Location = new System.Drawing.Point(0, 659);
+            this.PnlSubMenuActivarDesactivar.Location = new System.Drawing.Point(0, 699);
             this.PnlSubMenuActivarDesactivar.Name = "PnlSubMenuActivarDesactivar";
             this.PnlSubMenuActivarDesactivar.Size = new System.Drawing.Size(199, 83);
             this.PnlSubMenuActivarDesactivar.TabIndex = 26;
@@ -452,7 +456,7 @@ namespace Presentacion
             this.BtnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnAcercaDe.Location = new System.Drawing.Point(0, 742);
+            this.BtnAcercaDe.Location = new System.Drawing.Point(0, 782);
             this.BtnAcercaDe.Name = "BtnAcercaDe";
             this.BtnAcercaDe.Size = new System.Drawing.Size(199, 39);
             this.BtnAcercaDe.TabIndex = 27;
@@ -489,6 +493,20 @@ namespace Presentacion
             this.PnlContenedor.Name = "PnlContenedor";
             this.PnlContenedor.Size = new System.Drawing.Size(1302, 821);
             this.PnlContenedor.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(45, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(154, 42);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Paciente";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FrmPrincipal
             // 
@@ -553,5 +571,6 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox PctMinimizar;
         private System.Windows.Forms.PictureBox PctRestaurar;
         private System.Windows.Forms.PictureBox PctCerrar;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -19,7 +19,7 @@ namespace Presentacion
              Application.SetCompatibleTextRenderingDefault(false);
              Application.Run(new FrmLogin());*/
 
-            Application.Run(new FrmRegistroDeExamen());
+            Application.Run(new FrmPrincipal());
            
         }
     }

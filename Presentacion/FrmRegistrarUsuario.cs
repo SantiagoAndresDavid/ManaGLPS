@@ -105,5 +105,88 @@ namespace Presentacion
                 TextConfirmarContraseña.UseSystemPasswordChar = false;
             }
         }
+        public void BorrarMensaje()
+        {
+            errorProvider1.SetError(TextCorreoElectronico, "");
+            errorProvider1.SetError(TextNombreDeUsuario, "");
+            errorProvider1.SetError(CmbTipoDeUsuario, "");
+            errorProvider1.SetError(TextContraseña, "");
+            errorProvider1.SetError(TextConfirmarContraseña, "");
+
+        }
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+            if (TextCorreoElectronico.Text.Equals("usuario@ejemplo.com"))
+            {
+                ok = false;
+                errorProvider1.SetError(TextCorreoElectronico, "Ingrese Correo Electronico");
+
+            }
+            else
+            {
+                BorrarMensaje();
+            }
+            if (TextNombreDeUsuario.Text.Equals("Nombre de usuario"))
+            {
+                ok = false;
+                errorProvider1.SetError(TextNombreDeUsuario, "Ingrese un Nombre de usuario");
+
+            }
+            else
+            {
+                BorrarMensaje();
+            }
+            if (CmbTipoDeUsuario.SelectedItem == null)
+            {
+                ok = false;
+                errorProvider1.SetError(CmbTipoDeUsuario, "Selecione una opcion");
+
+            }
+            else
+            {
+                BorrarMensaje();
+            }
+            if (TextContraseña.Text.Equals("Ingresa tu contraseña"))
+            {
+                ok = false;
+                errorProvider1.SetError(TextContraseña, "Ingrese una contraseña");
+
+            }
+            else
+            {
+                BorrarMensaje();
+            }
+            if (TextConfirmarContraseña.Text.Equals("Confirma tu contraseña"))
+            {
+                ok = false;
+                errorProvider1.SetError(TextConfirmarContraseña, "las contraseñas no inciden");
+
+            }
+            else
+            {
+                BorrarMensaje();
+            }
+            return ok;
+
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            ValidarCampos();
+        }
+
+        private void TextNombreDeUsuario_Validating(object sender, CancelEventArgs e)
+        {
+            int num;
+            if (int.TryParse(TextNombreDeUsuario.Text, out num))
+            {
+                errorProvider1.SetError(TextNombreDeUsuario, "Solo se permite Letra");
+            }
+            else
+            {
+                errorProvider1.SetError(TextNombreDeUsuario, "");
+            }
+        }
     }
 }
