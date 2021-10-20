@@ -60,16 +60,18 @@ namespace Presentacion
             this.label10 = new System.Windows.Forms.Label();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.TextObservacionesExtra = new System.Windows.Forms.RichTextBox();
+            this.CLBFrecuenciaDisminucion = new System.Windows.Forms.CheckedListBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.CLB = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TextCorreoElectronico = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.TextAntecedentes = new System.Windows.Forms.RichTextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.tab.SuspendLayout();
             this.pagina1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -276,6 +278,8 @@ namespace Presentacion
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.TextAntecedentes);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -284,10 +288,10 @@ namespace Presentacion
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.richTextBox5);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.richTextBox4);
-            this.tabPage1.Controls.Add(this.checkedListBox3);
+            this.tabPage1.Controls.Add(this.TextObservacionesExtra);
+            this.tabPage1.Controls.Add(this.CLBFrecuenciaDisminucion);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.checkedListBox2);
+            this.tabPage1.Controls.Add(this.CLB);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.TextCorreoElectronico);
             this.tabPage1.Controls.Add(this.label6);
@@ -438,38 +442,38 @@ namespace Presentacion
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(792, 73);
+            this.label9.Location = new System.Drawing.Point(759, 73);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(261, 23);
+            this.label9.Size = new System.Drawing.Size(200, 23);
             this.label9.TabIndex = 35;
-            this.label9.Text = "Caracteristicas de la lesion";
+            this.label9.Text = "Observaciones Extra";
             // 
-            // richTextBox4
+            // TextObservacionesExtra
             // 
-            this.richTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox4.Location = new System.Drawing.Point(792, 99);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(269, 440);
-            this.richTextBox4.TabIndex = 34;
-            this.richTextBox4.Text = "";
+            this.TextObservacionesExtra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextObservacionesExtra.Location = new System.Drawing.Point(759, 99);
+            this.TextObservacionesExtra.Name = "TextObservacionesExtra";
+            this.TextObservacionesExtra.Size = new System.Drawing.Size(269, 202);
+            this.TextObservacionesExtra.TabIndex = 34;
+            this.TextObservacionesExtra.Text = "";
             // 
-            // checkedListBox3
+            // CLBFrecuenciaDisminucion
             // 
-            this.checkedListBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkedListBox3.CheckOnClick = true;
-            this.checkedListBox3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.CLBFrecuenciaDisminucion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CLBFrecuenciaDisminucion.CheckOnClick = true;
+            this.CLBFrecuenciaDisminucion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CLBFrecuenciaDisminucion.FormattingEnabled = true;
+            this.CLBFrecuenciaDisminucion.Items.AddRange(new object[] {
             "0. Nada",
             "1. Un Poco",
             "2. Poco",
             "3. Medio",
             "4. Mucho",
             "5. En Exeso "});
-            this.checkedListBox3.Location = new System.Drawing.Point(459, 415);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(193, 124);
-            this.checkedListBox3.TabIndex = 33;
+            this.CLBFrecuenciaDisminucion.Location = new System.Drawing.Point(459, 415);
+            this.CLBFrecuenciaDisminucion.Name = "CLBFrecuenciaDisminucion";
+            this.CLBFrecuenciaDisminucion.Size = new System.Drawing.Size(193, 124);
+            this.CLBFrecuenciaDisminucion.TabIndex = 33;
             // 
             // label8
             // 
@@ -482,23 +486,23 @@ namespace Presentacion
             this.label8.TabIndex = 32;
             this.label8.Text = "Frecuencia de disminucion";
             // 
-            // checkedListBox2
+            // CLB
             // 
-            this.checkedListBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkedListBox2.CheckOnClick = true;
-            this.checkedListBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.CLB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CLB.CheckOnClick = true;
+            this.CLB.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CLB.FormattingEnabled = true;
+            this.CLB.Items.AddRange(new object[] {
             "0. Nada",
             "1. Un Poco",
             "2. Poco",
             "3. Medio",
             "4. Mucho",
             "5. En Exeso "});
-            this.checkedListBox2.Location = new System.Drawing.Point(108, 411);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(193, 124);
-            this.checkedListBox2.TabIndex = 31;
+            this.CLB.Location = new System.Drawing.Point(108, 411);
+            this.CLB.Name = "CLB";
+            this.CLB.Size = new System.Drawing.Size(193, 124);
+            this.CLB.TabIndex = 31;
             // 
             // label7
             // 
@@ -562,6 +566,26 @@ namespace Presentacion
             this.label5.TabIndex = 25;
             this.label5.Text = "Escala de dolor ";
             // 
+            // TextAntecedentes
+            // 
+            this.TextAntecedentes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextAntecedentes.Location = new System.Drawing.Point(759, 368);
+            this.TextAntecedentes.Name = "TextAntecedentes";
+            this.TextAntecedentes.Size = new System.Drawing.Size(269, 202);
+            this.TextAntecedentes.TabIndex = 50;
+            this.TextAntecedentes.Text = "";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(759, 342);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(139, 23);
+            this.label14.TabIndex = 51;
+            this.label14.Text = "Antecedentes";
+            // 
             // FrmRegistroDeCitaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -611,15 +635,15 @@ namespace Presentacion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.CheckedListBox CLBFrecuenciaDisminucion;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.CheckedListBox CLB;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TextCorreoElectronico;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox TextObservacionesExtra;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox textBox2;
@@ -634,5 +658,7 @@ namespace Presentacion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label LblFechaModificada;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.RichTextBox TextAntecedentes;
     }
 }
