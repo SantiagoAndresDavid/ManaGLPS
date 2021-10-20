@@ -22,7 +22,7 @@ namespace Presentacion
         {
             PnlSubMenuAgregar.Visible = false;
             PnlSubMenuConsultar.Visible = false;
-            PnlSubMenuModificar.Visible = false;
+            PnlSubMenuModificar.Visible = false; 
             PnlSubMenuActivarDesactivar.Visible = false;
 
         }
