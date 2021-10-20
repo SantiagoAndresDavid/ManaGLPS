@@ -44,6 +44,7 @@ namespace Presentacion
             this.panel5 = new System.Windows.Forms.Panel();
             this.BtnAgregarDatosConsulta = new System.Windows.Forms.Button();
             this.BtnAgregarExpediente = new System.Windows.Forms.Button();
+            this.BtnPaciente = new System.Windows.Forms.Button();
             this.BtnConsulta = new System.Windows.Forms.Button();
             this.PnlSubMenuConsultar = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -62,7 +63,6 @@ namespace Presentacion
             this.BtnAcercaDe = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PnlContenedor = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
@@ -214,7 +214,7 @@ namespace Presentacion
             this.PnlSubMenuAgregar.Controls.Add(this.panel5);
             this.PnlSubMenuAgregar.Controls.Add(this.BtnAgregarDatosConsulta);
             this.PnlSubMenuAgregar.Controls.Add(this.BtnAgregarExpediente);
-            this.PnlSubMenuAgregar.Controls.Add(this.button1);
+            this.PnlSubMenuAgregar.Controls.Add(this.BtnPaciente);
             this.PnlSubMenuAgregar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlSubMenuAgregar.Location = new System.Drawing.Point(0, 289);
             this.PnlSubMenuAgregar.Name = "PnlSubMenuAgregar";
@@ -258,6 +258,21 @@ namespace Presentacion
             this.BtnAgregarExpediente.Text = "Expediente";
             this.BtnAgregarExpediente.UseVisualStyleBackColor = false;
             this.BtnAgregarExpediente.Click += new System.EventHandler(this.BtnAgregarExpediente_Click);
+            // 
+            // BtnPaciente
+            // 
+            this.BtnPaciente.BackColor = System.Drawing.Color.Silver;
+            this.BtnPaciente.FlatAppearance.BorderSize = 0;
+            this.BtnPaciente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.BtnPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPaciente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPaciente.Location = new System.Drawing.Point(45, 0);
+            this.BtnPaciente.Name = "BtnPaciente";
+            this.BtnPaciente.Size = new System.Drawing.Size(154, 42);
+            this.BtnPaciente.TabIndex = 15;
+            this.BtnPaciente.Text = "Paciente";
+            this.BtnPaciente.UseVisualStyleBackColor = false;
+            this.BtnPaciente.Click += new System.EventHandler(this.BtnPaciente_Click);
             // 
             // BtnConsulta
             // 
@@ -494,20 +509,6 @@ namespace Presentacion
             this.PnlContenedor.Size = new System.Drawing.Size(1302, 821);
             this.PnlContenedor.TabIndex = 4;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(45, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 42);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Paciente";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -571,6 +572,6 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox PctMinimizar;
         private System.Windows.Forms.PictureBox PctRestaurar;
         private System.Windows.Forms.PictureBox PctCerrar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnPaciente;
     }
 }

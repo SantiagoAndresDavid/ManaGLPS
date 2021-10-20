@@ -137,6 +137,11 @@ namespace Presentacion
             Abrir(new FrmRegistroDeCitaMedica());
         }
 
+        private void BtnPaciente_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmRegistrarPaciente());
+        }
+
         private void PctMinimizar_Click(object sender, EventArgs e)
         {
             PctRestaurar.Visible = true;

@@ -31,28 +31,30 @@ namespace Presentacion
         {
             this.tab = new System.Windows.Forms.TabControl();
             this.pagina1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnExaminar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.LblFechaModificada = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.LblFechaCreacion = new System.Windows.Forms.Label();
             this.TimerFechaCreada = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pagina2 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -70,59 +72,79 @@ namespace Presentacion
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tab.SuspendLayout();
             this.pagina1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.pagina2.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // tab
             // 
-            this.tab.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tab.Controls.Add(this.pagina1);
             this.tab.Controls.Add(this.pagina2);
             this.tab.Controls.Add(this.tabPage1);
             this.tab.Location = new System.Drawing.Point(0, 2);
             this.tab.Name = "tab";
             this.tab.SelectedIndex = 0;
-            this.tab.Size = new System.Drawing.Size(1365, 774);
+            this.tab.Size = new System.Drawing.Size(1302, 821);
             this.tab.TabIndex = 0;
             // 
             // pagina1
             // 
-            this.pagina1.Controls.Add(this.label2);
-            this.pagina1.Controls.Add(this.BtnExaminar);
+            this.pagina1.BackColor = System.Drawing.Color.White;
+            this.pagina1.Controls.Add(this.pictureBox2);
+            this.pagina1.Controls.Add(this.groupBox3);
             this.pagina1.Controls.Add(this.label1);
             this.pagina1.Controls.Add(this.richTextBox1);
-            this.pagina1.Controls.Add(this.LblFechaModificada);
-            this.pagina1.Controls.Add(this.dateTimePicker1);
-            this.pagina1.Controls.Add(this.LblFechaCreacion);
-            this.pagina1.Controls.Add(this.TimerFechaCreada);
             this.pagina1.Location = new System.Drawing.Point(4, 24);
             this.pagina1.Name = "pagina1";
             this.pagina1.Padding = new System.Windows.Forms.Padding(3);
-            this.pagina1.Size = new System.Drawing.Size(1357, 746);
+            this.pagina1.Size = new System.Drawing.Size(1294, 793);
             this.pagina1.TabIndex = 0;
             this.pagina1.Text = "Pagina 1 ";
-            this.pagina1.UseVisualStyleBackColor = true;
             this.pagina1.Click += new System.EventHandler(this.pagina1_Click);
             // 
-            // label2
+            // pictureBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(869, 447);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 23);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Agregar imagenes diagnosticas ";
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.Image = global::Presentacion.Properties.Resources.giphy_preview1;
+            this.pictureBox2.Location = new System.Drawing.Point(804, 544);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(370, 148);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 50;
+            this.pictureBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.groupBox3.Controls.Add(this.BtnExaminar);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.LblFechaModificada);
+            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.LblFechaCreacion);
+            this.groupBox3.Controls.Add(this.TimerFechaCreada);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.Location = new System.Drawing.Point(804, 132);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(370, 406);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Acciones Posibles";
             // 
             // BtnExaminar
             // 
             this.BtnExaminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnExaminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
-            this.BtnExaminar.Location = new System.Drawing.Point(904, 486);
+            this.BtnExaminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnExaminar.Location = new System.Drawing.Point(63, 327);
             this.BtnExaminar.Name = "BtnExaminar";
             this.BtnExaminar.Size = new System.Drawing.Size(244, 37);
             this.BtnExaminar.TabIndex = 21;
@@ -130,29 +152,21 @@ namespace Presentacion
             this.BtnExaminar.UseVisualStyleBackColor = true;
             this.BtnExaminar.Click += new System.EventHandler(this.BtnExaminar_Click);
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(280, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 23);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Diagnostico de Remision";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(39, 125);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(760, 532);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(35, 286);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(313, 23);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Agregar imagenes diagnosticas ";
             // 
             // LblFechaModificada
             // 
             this.LblFechaModificada.AutoSize = true;
             this.LblFechaModificada.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblFechaModificada.Location = new System.Drawing.Point(930, 332);
+            this.LblFechaModificada.Location = new System.Drawing.Point(89, 173);
             this.LblFechaModificada.Name = "LblFechaModificada";
             this.LblFechaModificada.Size = new System.Drawing.Size(197, 23);
             this.LblFechaModificada.TabIndex = 18;
@@ -160,16 +174,17 @@ namespace Presentacion
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(904, 367);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Location = new System.Drawing.Point(63, 208);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(244, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(244, 29);
             this.dateTimePicker1.TabIndex = 17;
             // 
             // LblFechaCreacion
             // 
             this.LblFechaCreacion.AutoSize = true;
             this.LblFechaCreacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblFechaCreacion.Location = new System.Drawing.Point(930, 213);
+            this.LblFechaCreacion.Location = new System.Drawing.Point(89, 54);
             this.LblFechaCreacion.Name = "LblFechaCreacion";
             this.LblFechaCreacion.Size = new System.Drawing.Size(188, 23);
             this.LblFechaCreacion.TabIndex = 16;
@@ -177,13 +192,35 @@ namespace Presentacion
             // 
             // TimerFechaCreada
             // 
-            this.TimerFechaCreada.Location = new System.Drawing.Point(904, 248);
+            this.TimerFechaCreada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerFechaCreada.Location = new System.Drawing.Point(63, 89);
             this.TimerFechaCreada.Name = "TimerFechaCreada";
-            this.TimerFechaCreada.Size = new System.Drawing.Size(244, 23);
+            this.TimerFechaCreada.Size = new System.Drawing.Size(244, 29);
             this.TimerFechaCreada.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(257, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(237, 23);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Diagnostico de Remision";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(40, 132);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(697, 560);
+            this.richTextBox1.TabIndex = 19;
+            this.richTextBox1.Text = "";
             // 
             // pagina2
             // 
+            this.pagina2.BackColor = System.Drawing.Color.White;
             this.pagina2.Controls.Add(this.label4);
             this.pagina2.Controls.Add(this.richTextBox3);
             this.pagina2.Controls.Add(this.label3);
@@ -191,13 +228,13 @@ namespace Presentacion
             this.pagina2.Location = new System.Drawing.Point(4, 24);
             this.pagina2.Name = "pagina2";
             this.pagina2.Padding = new System.Windows.Forms.Padding(3);
-            this.pagina2.Size = new System.Drawing.Size(1357, 746);
+            this.pagina2.Size = new System.Drawing.Size(1294, 793);
             this.pagina2.TabIndex = 1;
             this.pagina2.Text = "Pagina 2 ";
-            this.pagina2.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(898, 28);
@@ -209,6 +246,7 @@ namespace Presentacion
             // 
             // richTextBox3
             // 
+            this.richTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.richTextBox3.Location = new System.Drawing.Point(687, 54);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(529, 626);
@@ -217,6 +255,7 @@ namespace Presentacion
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(177, 28);
@@ -227,6 +266,7 @@ namespace Presentacion
             // 
             // richTextBox2
             // 
+            this.richTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.richTextBox2.Location = new System.Drawing.Point(27, 54);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(520, 626);
@@ -235,8 +275,10 @@ namespace Presentacion
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.numericUpDown1);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label10);
@@ -254,11 +296,48 @@ namespace Presentacion
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1357, 746);
+            this.tabPage1.Size = new System.Drawing.Size(1294, 793);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Page 3";
-            this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Presentacion.Properties.Resources.giphy_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(1079, 106);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(172, 433);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Location = new System.Drawing.Point(792, 585);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(426, 145);
+            this.groupBox2.TabIndex = 48;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Acciones Posibles";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::Presentacion.Properties.Resources.Guardar_481;
+            this.button1.Location = new System.Drawing.Point(151, 43);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 93);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Guardar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -315,48 +394,6 @@ namespace Presentacion
             this.label12.TabIndex = 40;
             this.label12.Text = "Codigo";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(792, 575);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(332, 145);
-            this.groupBox2.TabIndex = 46;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Acciones Posibles";
-            // 
-            // button2
-            // 
-            this.button2.AutoSize = true;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Presentacion.Properties.Resources.Guardar_48;
-            this.button2.Location = new System.Drawing.Point(151, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 93);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Limpiar Campos";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Presentacion.Properties.Resources.Guardar_48;
-            this.button1.Location = new System.Drawing.Point(33, 39);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 90);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -401,7 +438,7 @@ namespace Presentacion
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(825, 73);
+            this.label9.Location = new System.Drawing.Point(792, 73);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(261, 23);
             this.label9.TabIndex = 35;
@@ -410,7 +447,7 @@ namespace Presentacion
             // richTextBox4
             // 
             this.richTextBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox4.Location = new System.Drawing.Point(817, 99);
+            this.richTextBox4.Location = new System.Drawing.Point(792, 99);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.Size = new System.Drawing.Size(269, 440);
             this.richTextBox4.TabIndex = 34;
@@ -538,14 +575,17 @@ namespace Presentacion
             this.tab.ResumeLayout(false);
             this.pagina1.ResumeLayout(false);
             this.pagina1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.pagina2.ResumeLayout(false);
             this.pagina2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
@@ -561,8 +601,6 @@ namespace Presentacion
         private System.Windows.Forms.Button BtnExaminar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label LblFechaModificada;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label LblFechaCreacion;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label4;
@@ -588,9 +626,13 @@ namespace Presentacion
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label LblFechaModificada;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
