@@ -2,20 +2,22 @@
 
 namespace Entity
 {
-    class CitaMedica
+    class ConsultaMedica
     {
-        public int codigo { get; set; }
+        public int Codigo { get; set; }
         public Boolean Estado { get; set; }
+        public int FaseTratamiento { get; set; }
         public Diagnostico Diagnostico { get; set; }
         public Temporalidad Temporalidad { get; set; }
         public Medicacion Medicacion { get; set; }
         public ValoracionMultiDiciplinar ValoracionMultiDiciplinar { get; set; }
         public ValoracionIngreso ValoracionIngreso { get; set; }
 
-        public CitaMedica(int codigo, bool estado, Diagnostico diagnostico, Temporalidad temporalidad, Medicacion medicacion, ValoracionMultiDiciplinar valoracionMultiDiciplinar, ValoracionIngreso valoracionIngreso)
+        public ConsultaMedica(int codigo, bool estado, int faseTratamiento, Diagnostico diagnostico, Temporalidad temporalidad, Medicacion medicacion, ValoracionMultiDiciplinar valoracionMultiDiciplinar, ValoracionIngreso valoracionIngreso)
         {
-            this.codigo = codigo;
+            Codigo = codigo;
             Estado = estado;
+            FaseTratamiento = faseTratamiento;
             Diagnostico = diagnostico;
             Temporalidad = temporalidad;
             Medicacion = medicacion;

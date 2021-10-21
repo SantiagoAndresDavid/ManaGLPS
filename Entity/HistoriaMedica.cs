@@ -12,19 +12,19 @@ namespace Entity
         public DateTime UltimaFechaDeEdicion{ get; set; }
         public DateTime FechaDeFinalizacion { get; set; }
         public string Titutlo{ get; set; }
-        public int Id { get; set; }
+        public int Codigo { get; set; }
         public bool Estado { get; set; }
-        public List<CitaMedica> CitasMedicas { get; set; }
+        public List<ConsultaMedica> Consultas { get; set; }
 
-        public HistoriaMediaca(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion, string titutlo, int id, bool estado, List<CitaMedica> consultas)
+        public HistoriaMediaca(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion, string titutlo, int codigo, bool estado, List<ConsultaMedica> consultas)
         {
             FechaDeCreacion = fechaDeCreacion;
             UltimaFechaDeEdicion = ultimaFechaDeEdicion;
             FechaDeFinalizacion = fechaDeFinalizacion;
             Titutlo = titutlo;
-            Id = id;
+            Codigo = codigo;
             Estado = estado;
-            CitasMedicas = consultas;
+            Consultas = consultas;
         }
     }
 }

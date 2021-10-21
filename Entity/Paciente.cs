@@ -13,17 +13,18 @@ namespace Entity
         public string Apellido { get; set; }
         public int Edad { get; set; }
         public int Telefono { get; set; }
+        public Afiliacion Afiliacion { get; set; }
+        public List<HistoriaMediaca> HistoriasMedicas { get; set; }
 
-
-        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono)
+        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, Afiliacion afiliacion, List<HistoriaMediaca> historiasMedicas)
         {
-
-            this.Identificacion = identificacion;
-            this.Nombre = Nombre;
-            this.Apellido = apellido;
-            this.Edad = edad;
-            this.Telefono = telefono;
-
+            Identificacion = identificacion;
+            Nombre = nombre;
+            Apellido = apellido;
+            Edad = edad;
+            Telefono = telefono;
+            Afiliacion = afiliacion;
+            HistoriasMedicas = historiasMedicas;
         }
     }
 }

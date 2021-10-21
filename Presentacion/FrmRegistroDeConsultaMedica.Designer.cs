@@ -1,7 +1,7 @@
 ﻿
 namespace Presentacion
 {
-    partial class FrmRegistroDeCitaMedica
+    partial class FrmRegistroDeConsultaMedica
     {
         /// <summary>
         /// Required designer variable.
@@ -47,6 +47,8 @@ namespace Presentacion
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
+            this.TextAntecedentes = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -70,8 +72,6 @@ namespace Presentacion
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.TextAntecedentes = new System.Windows.Forms.RichTextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.tab.SuspendLayout();
             this.pagina1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -305,6 +305,26 @@ namespace Presentacion
             this.tabPage1.Text = "Page 3";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(759, 330);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(139, 23);
+            this.label14.TabIndex = 51;
+            this.label14.Text = "Antecedentes";
+            // 
+            // TextAntecedentes
+            // 
+            this.TextAntecedentes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextAntecedentes.Location = new System.Drawing.Point(759, 356);
+            this.TextAntecedentes.Name = "TextAntecedentes";
+            this.TextAntecedentes.Size = new System.Drawing.Size(269, 202);
+            this.TextAntecedentes.TabIndex = 50;
+            this.TextAntecedentes.Text = "";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -351,7 +371,7 @@ namespace Presentacion
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(46, 567);
+            this.groupBox1.Location = new System.Drawing.Point(49, 585);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(720, 163);
             this.groupBox1.TabIndex = 47;
@@ -565,26 +585,6 @@ namespace Presentacion
             this.label5.Size = new System.Drawing.Size(159, 23);
             this.label5.TabIndex = 25;
             this.label5.Text = "Escala de dolor ";
-            // 
-            // TextAntecedentes
-            // 
-            this.TextAntecedentes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextAntecedentes.Location = new System.Drawing.Point(759, 368);
-            this.TextAntecedentes.Name = "TextAntecedentes";
-            this.TextAntecedentes.Size = new System.Drawing.Size(269, 202);
-            this.TextAntecedentes.TabIndex = 50;
-            this.TextAntecedentes.Text = "";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(759, 342);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(139, 23);
-            this.label14.TabIndex = 51;
-            this.label14.Text = "Antecedentes";
             // 
             // FrmRegistroDeCitaMedica
             // 

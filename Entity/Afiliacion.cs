@@ -8,5 +8,11 @@ namespace Entity
 {
     class Afiliacion
     {
+        public Boolean Estado { get; set; }
+
+        public Afiliacion(bool estado)
+        {
+            Estado = estado;
+        }
     }
 }

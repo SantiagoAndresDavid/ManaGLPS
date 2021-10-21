@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmRegistroDeCitaMedica : Form
+    public partial class FrmRegistroDeConsultaMedica : Form
     {
-        public FrmRegistroDeCitaMedica()
+        public FrmRegistroDeConsultaMedica()
         {
             InitializeComponent();
         }
