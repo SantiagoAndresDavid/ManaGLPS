@@ -31,8 +31,8 @@ namespace Presentacion
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscarExpediente));
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.RTBusquedaPaciente = new System.Windows.Forms.RichTextBox();
             this.PnlContenedor = new System.Windows.Forms.Panel();
+            this.RTBusquedaPaciente = new System.Windows.Forms.RichTextBox();
             this.PnlContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,20 +51,6 @@ namespace Presentacion
             this.BtnGuardar.UseVisualStyleBackColor = true;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
-            // RTBusquedaPaciente
-            // 
-            this.RTBusquedaPaciente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.RTBusquedaPaciente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBusquedaPaciente.Location = new System.Drawing.Point(246, 328);
-            this.RTBusquedaPaciente.Name = "RTBusquedaPaciente";
-            this.RTBusquedaPaciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.RTBusquedaPaciente.Size = new System.Drawing.Size(705, 35);
-            this.RTBusquedaPaciente.TabIndex = 2;
-            this.RTBusquedaPaciente.Text = "Ingrese el codigo del paciente";
-            this.RTBusquedaPaciente.TextChanged += new System.EventHandler(this.RTBusquedaExpediente_TextChanged);
-            this.RTBusquedaPaciente.Enter += new System.EventHandler(this.RTBusquedaExpediente_Enter);
-            this.RTBusquedaPaciente.Leave += new System.EventHandler(this.RTBusquedaPaciente_Leave);
-            // 
             // PnlContenedor
             // 
             this.PnlContenedor.Controls.Add(this.BtnGuardar);
@@ -73,6 +59,20 @@ namespace Presentacion
             this.PnlContenedor.Name = "PnlContenedor";
             this.PnlContenedor.Size = new System.Drawing.Size(1302, 747);
             this.PnlContenedor.TabIndex = 4;
+            // 
+            // RTBusquedaPaciente
+            // 
+            this.RTBusquedaPaciente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.RTBusquedaPaciente.ForeColor = System.Drawing.Color.DimGray;
+            this.RTBusquedaPaciente.Location = new System.Drawing.Point(257, 333);
+            this.RTBusquedaPaciente.Name = "RTBusquedaPaciente";
+            this.RTBusquedaPaciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RTBusquedaPaciente.Size = new System.Drawing.Size(705, 35);
+            this.RTBusquedaPaciente.TabIndex = 2;
+            this.RTBusquedaPaciente.Text = "Ingrese el codigo del paciente";
+            this.RTBusquedaPaciente.TextChanged += new System.EventHandler(this.RTBusquedaExpediente_TextChanged);
+            this.RTBusquedaPaciente.Enter += new System.EventHandler(this.RTBusquedaExpediente_Enter);
+            this.RTBusquedaPaciente.Leave += new System.EventHandler(this.RTBusquedaPaciente_Leave);
             // 
             // FrmBuscarExpediente
             // 
@@ -91,7 +91,7 @@ namespace Presentacion
         #endregion
 
         private System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.RichTextBox RTBusquedaPaciente;
         private System.Windows.Forms.Panel PnlContenedor;
+        private System.Windows.Forms.RichTextBox RTBusquedaPaciente;
     }
 }

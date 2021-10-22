@@ -320,6 +320,7 @@ namespace Presentacion
             this.BtnDescativarDatosConsulta.TabIndex = 13;
             this.BtnDescativarDatosConsulta.Text = "Consulta";
             this.BtnDescativarDatosConsulta.UseVisualStyleBackColor = false;
+            this.BtnDescativarDatosConsulta.Click += new System.EventHandler(this.BtnDescativarDatosConsulta_Click);
             // 
             // BtnDescativarExpediente
             // 
@@ -334,6 +335,7 @@ namespace Presentacion
             this.BtnDescativarExpediente.TabIndex = 12;
             this.BtnDescativarExpediente.Text = "Expediente";
             this.BtnDescativarExpediente.UseVisualStyleBackColor = false;
+            this.BtnDescativarExpediente.Click += new System.EventHandler(this.BtnDescativarExpediente_Click);
             // 
             // BtnAcercaDe
             // 

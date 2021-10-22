@@ -161,6 +161,16 @@ namespace Presentacion
 
         }
 
+        private void BtnDescativarExpediente_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmDesactivarOActivarExpediente() );
+        }
+
+        private void BtnDescativarDatosConsulta_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmDesactivarOActivarCitaMedica());
+        }
+
         private void PctMinimizar_Click(object sender, EventArgs e)
         {
             PctRestaurar.Visible = true;

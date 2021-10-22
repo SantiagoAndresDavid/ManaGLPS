@@ -82,3 +82,5 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistrarPaciente.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioConsultaMedica.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioExpediente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarExpediente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarCitaMedica.resources
