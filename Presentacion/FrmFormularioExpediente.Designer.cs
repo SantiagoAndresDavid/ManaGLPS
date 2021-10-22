@@ -29,12 +29,15 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnGuardar1 = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnGuarda2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,9 +52,6 @@ namespace Presentacion
             this.TBCFechaCreada = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBDUltimaModificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBCFechaCierre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnGuardar1 = new System.Windows.Forms.Button();
-            this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnGuarda2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,9 +64,9 @@ namespace Presentacion
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::Presentacion.Properties.Resources.finalloader;
-            this.pictureBox3.Location = new System.Drawing.Point(60, 293);
+            this.pictureBox3.Location = new System.Drawing.Point(31, 319);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(678, 131);
+            this.pictureBox3.Size = new System.Drawing.Size(639, 131);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
@@ -75,9 +75,9 @@ namespace Presentacion
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Presentacion.Properties.Resources.c0c9c2a6b0a99053b87b14114c876000;
-            this.pictureBox2.Location = new System.Drawing.Point(60, 33);
+            this.pictureBox2.Location = new System.Drawing.Point(31, 59);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(299, 244);
+            this.pictureBox2.Size = new System.Drawing.Size(260, 244);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
@@ -86,7 +86,7 @@ namespace Presentacion
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Presentacion.Properties.Resources._0021;
-            this.pictureBox1.Location = new System.Drawing.Point(405, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(337, 59);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 244);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -100,13 +100,57 @@ namespace Presentacion
             this.groupBox2.Controls.Add(this.BtnEditar);
             this.groupBox2.Controls.Add(this.BtnGuarda2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(784, 452);
+            this.groupBox2.Location = new System.Drawing.Point(716, 478);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(459, 186);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones Posibles";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // BtnGuardar1
+            // 
+            this.BtnGuardar1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnGuardar1.FlatAppearance.BorderSize = 0;
+            this.BtnGuardar1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.BtnGuardar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardar1.Image = global::Presentacion.Properties.Resources.Guardar_481;
+            this.BtnGuardar1.Location = new System.Drawing.Point(174, 47);
+            this.BtnGuardar1.Name = "BtnGuardar1";
+            this.BtnGuardar1.Size = new System.Drawing.Size(143, 93);
+            this.BtnGuardar1.TabIndex = 9;
+            this.BtnGuardar1.Text = "Guardar";
+            this.BtnGuardar1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnGuardar1.UseVisualStyleBackColor = true;
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.FlatAppearance.BorderSize = 0;
+            this.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditar.Image = global::Presentacion.Properties.Resources.Editar_481;
+            this.BtnEditar.Location = new System.Drawing.Point(281, 47);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(143, 93);
+            this.BtnEditar.TabIndex = 8;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            // 
+            // BtnGuarda2
+            // 
+            this.BtnGuarda2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnGuarda2.FlatAppearance.BorderSize = 0;
+            this.BtnGuarda2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.BtnGuarda2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuarda2.Image = global::Presentacion.Properties.Resources.Guardar_481;
+            this.BtnGuarda2.Location = new System.Drawing.Point(52, 47);
+            this.BtnGuarda2.Name = "BtnGuarda2";
+            this.BtnGuarda2.Size = new System.Drawing.Size(143, 93);
+            this.BtnGuarda2.TabIndex = 7;
+            this.BtnGuarda2.Text = "Guardar";
+            this.BtnGuarda2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnGuarda2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -120,7 +164,7 @@ namespace Presentacion
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.dateTimePicker5);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(794, 24);
+            this.groupBox1.Location = new System.Drawing.Point(726, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(438, 400);
             this.groupBox1.TabIndex = 34;
@@ -209,14 +253,14 @@ namespace Presentacion
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -224,16 +268,16 @@ namespace Presentacion
             this.TBCFechaCreada,
             this.TBDUltimaModificacion,
             this.TBCFechaCierre});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 432);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 458);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -241,7 +285,7 @@ namespace Presentacion
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(678, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(639, 219);
             this.dataGridView1.TabIndex = 33;
             // 
             // TBCTitulo
@@ -268,56 +312,12 @@ namespace Presentacion
             this.TBCFechaCierre.Name = "TBCFechaCierre";
             this.TBCFechaCierre.ReadOnly = true;
             // 
-            // BtnGuardar1
-            // 
-            this.BtnGuardar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnGuardar1.FlatAppearance.BorderSize = 0;
-            this.BtnGuardar1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnGuardar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuardar1.Image = global::Presentacion.Properties.Resources.Guardar_481;
-            this.BtnGuardar1.Location = new System.Drawing.Point(174, 47);
-            this.BtnGuardar1.Name = "BtnGuardar1";
-            this.BtnGuardar1.Size = new System.Drawing.Size(143, 93);
-            this.BtnGuardar1.TabIndex = 9;
-            this.BtnGuardar1.Text = "Guardar";
-            this.BtnGuardar1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnGuardar1.UseVisualStyleBackColor = true;
-            // 
-            // BtnEditar
-            // 
-            this.BtnEditar.FlatAppearance.BorderSize = 0;
-            this.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditar.Image = global::Presentacion.Properties.Resources.Editar_481;
-            this.BtnEditar.Location = new System.Drawing.Point(281, 47);
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(143, 93);
-            this.BtnEditar.TabIndex = 8;
-            this.BtnEditar.Text = "Editar";
-            this.BtnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnEditar.UseVisualStyleBackColor = true;
-            // 
-            // BtnGuarda2
-            // 
-            this.BtnGuarda2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnGuarda2.FlatAppearance.BorderSize = 0;
-            this.BtnGuarda2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnGuarda2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuarda2.Image = global::Presentacion.Properties.Resources.Guardar_481;
-            this.BtnGuarda2.Location = new System.Drawing.Point(52, 47);
-            this.BtnGuarda2.Name = "BtnGuarda2";
-            this.BtnGuarda2.Size = new System.Drawing.Size(143, 93);
-            this.BtnGuarda2.TabIndex = 7;
-            this.BtnGuarda2.Text = "Guardar";
-            this.BtnGuarda2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnGuarda2.UseVisualStyleBackColor = true;
-            // 
             // FrmFormularioExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1303, 674);
+            this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

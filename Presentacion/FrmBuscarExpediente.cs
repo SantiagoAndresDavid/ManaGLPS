@@ -36,24 +36,52 @@ namespace Presentacion
 
         }
 
+        private bool ValidarCampos()
+        {
+
+            bool ok = true;
+            if (RTBusquedaPaciente.Text == "Ingrese el codigo del paciente" || RTBusquedaPaciente.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(RTBusquedaPaciente, "Este campo esta vacio, Por favor ingrese un codigo");
+
+            }
+            else
+            {
+                errorProvider1.SetError(RTBusquedaPaciente, "");
+            }
+            return ok;
+        }
+
+
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+            ValidarCampos();
             if (RTBusquedaPaciente.Text == "1234")
             {
-                Abrir(new FrmRegistrarPaciente());
+                Abrir(new FrmFormularioExpediente());
                 RTBusquedaPaciente.Visible = false;
                 BtnGuardar.Visible = false;
             }
             else
             {
-                MessageBoxButtons botones = MessageBoxButtons.OK;
-                DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente","Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                if (dr == DialogResult.OK)
+                if (!(RTBusquedaPaciente.Text == "1234") && (!(RTBusquedaPaciente.Text == "")) && (!(RTBusquedaPaciente.Text == "Ingrese el codigo del paciente")))
                 {
-                    RTBusquedaPaciente.Text = "";
-                    RTBusquedaPaciente.Visible = true;
-                    BtnGuardar.Visible = true;
+                    MessageBoxButtons botones = MessageBoxButtons.OK;
+                    DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
+                    if (dr == DialogResult.OK)
+                    {
+                        RTBusquedaPaciente.Text = "Ingrese el codigo del paciente";
+                        RTBusquedaPaciente.ForeColor = Color.DimGray;
+                        RTBusquedaPaciente.Font = new Font(RTBusquedaPaciente.Font, FontStyle.Italic);
+                        RTBusquedaPaciente.Visible = true;
+                        BtnGuardar.Visible = true;
+                    }
                 }
+                  
+
+            
+
             }
         }
  
@@ -63,6 +91,8 @@ namespace Presentacion
             {
                 RTBusquedaPaciente.Text = "";
                 RTBusquedaPaciente.ForeColor = Color.Black;
+                RTBusquedaPaciente.Font = new Font(RTBusquedaPaciente.Font, FontStyle.Regular);
+
             }
         }
 
@@ -72,6 +102,7 @@ namespace Presentacion
             {
                 RTBusquedaPaciente.Text = "Ingrese el codigo del paciente";
                 RTBusquedaPaciente.ForeColor = Color.DimGray;
+                RTBusquedaPaciente.Font = new Font(RTBusquedaPaciente.Font, FontStyle.Italic);
             }
         }
     }

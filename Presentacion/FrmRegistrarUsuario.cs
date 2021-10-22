@@ -184,5 +184,10 @@ namespace Presentacion
                 errorProvider1.SetError(TextNombreDeUsuario, "");
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

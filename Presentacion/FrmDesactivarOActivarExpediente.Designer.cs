@@ -44,9 +44,10 @@ namespace Presentacion
             this.PnlContenedor.Controls.Add(this.RTBuscarPaciente);
             this.PnlContenedor.Controls.Add(this.BtnBuscarExpediente);
             this.PnlContenedor.Controls.Add(this.RTBuscarExpediente);
-            this.PnlContenedor.Location = new System.Drawing.Point(2, 3);
+            this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.PnlContenedor.Name = "PnlContenedor";
-            this.PnlContenedor.Size = new System.Drawing.Size(1268, 591);
+            this.PnlContenedor.Size = new System.Drawing.Size(1167, 727);
             this.PnlContenedor.TabIndex = 0;
             this.PnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlContenedor_Paint);
             // 
@@ -111,7 +112,8 @@ namespace Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1271, 596);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDesactivarOActivarExpediente";

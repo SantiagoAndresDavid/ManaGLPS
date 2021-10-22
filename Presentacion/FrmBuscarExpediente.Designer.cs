@@ -29,11 +29,14 @@ namespace Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscarExpediente));
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.PnlContenedor = new System.Windows.Forms.Panel();
             this.RTBusquedaPaciente = new System.Windows.Forms.RichTextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnGuardar
@@ -42,7 +45,7 @@ namespace Presentacion
             this.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
-            this.BtnGuardar.Location = new System.Drawing.Point(968, 309);
+            this.BtnGuardar.Location = new System.Drawing.Point(1005, 311);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(84, 69);
             this.BtnGuardar.TabIndex = 3;
@@ -55,9 +58,10 @@ namespace Presentacion
             // 
             this.PnlContenedor.Controls.Add(this.BtnGuardar);
             this.PnlContenedor.Controls.Add(this.RTBusquedaPaciente);
-            this.PnlContenedor.Location = new System.Drawing.Point(12, 29);
+            this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.PnlContenedor.Name = "PnlContenedor";
-            this.PnlContenedor.Size = new System.Drawing.Size(1302, 747);
+            this.PnlContenedor.Size = new System.Drawing.Size(1167, 727);
             this.PnlContenedor.TabIndex = 4;
             // 
             // RTBusquedaPaciente
@@ -74,16 +78,22 @@ namespace Presentacion
             this.RTBusquedaPaciente.Enter += new System.EventHandler(this.RTBusquedaExpediente_Enter);
             this.RTBusquedaPaciente.Leave += new System.EventHandler(this.RTBusquedaPaciente_Leave);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmBuscarExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 788);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmBuscarExpediente";
             this.Text = "FrmBuscarExpediente";
             this.PnlContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,5 +103,6 @@ namespace Presentacion
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Panel PnlContenedor;
         private System.Windows.Forms.RichTextBox RTBusquedaPaciente;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

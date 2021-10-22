@@ -119,9 +119,9 @@ namespace Presentacion
             this.groupBox1.Controls.Add(this.LblConfirmarContrseña);
             this.groupBox1.Controls.Add(this.LblContraseña);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(341, 58);
+            this.groupBox1.Location = new System.Drawing.Point(317, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(869, 334);
+            this.groupBox1.Size = new System.Drawing.Size(825, 334);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion de Registro";
@@ -138,6 +138,7 @@ namespace Presentacion
             this.button4.TabIndex = 14;
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // TextConfirmarContraseña
             // 
@@ -193,9 +194,9 @@ namespace Presentacion
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Presentacion.Properties.Resources.RegistrarUsuario;
-            this.pictureBox1.Location = new System.Drawing.Point(602, 101);
+            this.pictureBox1.Location = new System.Drawing.Point(615, 101);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 211);
+            this.pictureBox1.Size = new System.Drawing.Size(190, 211);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -260,7 +261,7 @@ namespace Presentacion
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(73, 473);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 442);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -268,7 +269,7 @@ namespace Presentacion
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(733, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(697, 219);
             this.dataGridView1.TabIndex = 7;
             // 
             // email
@@ -297,7 +298,7 @@ namespace Presentacion
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Presentacion.Properties.Resources.Usuario;
-            this.pictureBox2.Location = new System.Drawing.Point(73, 58);
+            this.pictureBox2.Location = new System.Drawing.Point(41, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(262, 334);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -310,9 +311,9 @@ namespace Presentacion
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.BtnGuardar);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(815, 505);
+            this.groupBox2.Location = new System.Drawing.Point(757, 460);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(459, 186);
+            this.groupBox2.Size = new System.Drawing.Size(385, 186);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones Posibles";
@@ -323,7 +324,7 @@ namespace Presentacion
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Presentacion.Properties.Resources.Eliminar_48;
-            this.button3.Location = new System.Drawing.Point(317, 50);
+            this.button3.Location = new System.Drawing.Point(285, 50);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 90);
             this.button3.TabIndex = 2;
@@ -337,7 +338,7 @@ namespace Presentacion
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Presentacion.Properties.Resources.Editar_48;
-            this.button2.Location = new System.Drawing.Point(184, 50);
+            this.button2.Location = new System.Drawing.Point(152, 50);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 90);
             this.button2.TabIndex = 1;
@@ -351,7 +352,7 @@ namespace Presentacion
             this.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Image = global::Presentacion.Properties.Resources.Guardar_48;
-            this.BtnGuardar.Location = new System.Drawing.Point(46, 50);
+            this.BtnGuardar.Location = new System.Drawing.Point(14, 50);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(87, 90);
             this.BtnGuardar.TabIndex = 0;
@@ -369,7 +370,7 @@ namespace Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1302, 788);
+            this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView1);

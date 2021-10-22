@@ -44,7 +44,6 @@ C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\ne
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.AssemblyInfoInputs.cache
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.AssemblyInfo.cs
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.CopyComplete
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.dll
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
@@ -74,8 +73,6 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
-C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroExpediente.resources
-C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroDeCitaMedica.resources
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistrarPaciente.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBuscarConsultaMedica.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBuscarExpediente.resources
@@ -84,3 +81,9 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioExpediente.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarExpediente.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarCitaMedica.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBuscarConsultaMedica.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBuscarExpediente.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarCitaMedica.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarExpediente.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioConsultaMedica.resources
+C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioExpediente.resources
