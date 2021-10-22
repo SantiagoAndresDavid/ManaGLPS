@@ -22,7 +22,6 @@ namespace Presentacion
         {
             PnlSubMenuAgregar.Visible = false;
             PnlSubMenuConsultar.Visible = false;
-            PnlSubMenuModificar.Visible = false; 
             PnlSubMenuActivarDesactivar.Visible = false;
 
         }
@@ -32,8 +31,6 @@ namespace Presentacion
                 PnlSubMenuAgregar.Visible = false;
             if (PnlSubMenuConsultar.Visible == true)
                 PnlSubMenuConsultar.Visible = false;
-            if (PnlSubMenuModificar.Visible == true)
-                PnlSubMenuModificar.Visible = false;
             if (PnlSubMenuActivarDesactivar.Visible == true)
                 PnlSubMenuActivarDesactivar.Visible = false;
         }
@@ -74,10 +71,6 @@ namespace Presentacion
             MostrarSubMenus(PnlSubMenuConsultar);
         }
 
-        private void BtnModificar_Click(object sender, EventArgs e)
-        {
-            MostrarSubMenus(PnlSubMenuModificar);
-        }
 
         private void BtnActivarDesactivar_Click(object sender, EventArgs e)
         {
@@ -129,17 +122,43 @@ namespace Presentacion
 
         private void BtnAgregarExpediente_Click(object sender, EventArgs e)
         {
-            Abrir(new FrmRegistroExpediente());
+            Abrir(new FrmBuscarExpediente());
+
         }
 
         private void BtnAgregarDatosConsulta_Click(object sender, EventArgs e)
         {
-            Abrir(new FrmRegistroDeConsultaMedica());
+            Abrir(new FrmBuscarConsultaMedica());
         }
 
         private void BtnPaciente_Click(object sender, EventArgs e)
         {
             Abrir(new FrmRegistrarPaciente());
+        }
+
+        private void BtnConsultarExpediente_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmBuscarExpediente());
+        }
+
+        private void BtnConsultarDatosConsulta_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmBuscarConsultaMedica());
+        }
+
+        private void PnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PnlContenedor_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void PctMinimizar_Click(object sender, EventArgs e)

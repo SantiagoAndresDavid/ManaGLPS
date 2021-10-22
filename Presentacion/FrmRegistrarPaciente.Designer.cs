@@ -107,7 +107,7 @@ namespace Presentacion
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Presentacion.Properties.Resources.Guardar_481;
-            this.button1.Location = new System.Drawing.Point(92, 42);
+            this.button1.Location = new System.Drawing.Point(98, 42);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 93);
             this.button1.TabIndex = 2;
@@ -272,7 +272,7 @@ namespace Presentacion
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(202, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(498, 222);
+            this.groupBox1.Size = new System.Drawing.Size(501, 222);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion basica del cliente";

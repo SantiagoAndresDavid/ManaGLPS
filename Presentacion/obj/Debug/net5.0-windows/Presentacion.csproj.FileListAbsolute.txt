@@ -64,7 +64,6 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmLogin.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmPrincipal.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistrarUsuario.resources
-C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroDeExamen.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.Properties.Resources.resources
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.csproj.GenerateResource.cache
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
@@ -75,7 +74,11 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
-C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroExpediente.resources
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroExpediente.resources
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistroDeCitaMedica.resources
 C:\Users\AndresAlvarez\Documents\Programas C#\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistrarPaciente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBuscarConsultaMedica.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBuscarExpediente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmRegistrarPaciente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioConsultaMedica.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmFormularioExpediente.resources

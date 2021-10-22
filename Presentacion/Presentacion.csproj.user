@@ -7,9 +7,6 @@
     <Compile Update="FrmBuscarExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmBuscarPaciente.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -22,10 +19,10 @@
     <Compile Update="FrmRegistrarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmRegistroDeConsultaMedica.cs">
+    <Compile Update="FrmFormularioConsultaMedica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmRegistroExpediente.cs">
+    <Compile Update="FrmFormularioExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

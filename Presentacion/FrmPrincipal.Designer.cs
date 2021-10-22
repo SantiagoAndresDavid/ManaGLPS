@@ -30,11 +30,6 @@ namespace Presentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.PctMaximizar = new System.Windows.Forms.PictureBox();
-            this.PctMinimizar = new System.Windows.Forms.PictureBox();
-            this.PctRestaurar = new System.Windows.Forms.PictureBox();
-            this.PctCerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnCerrarSesion = new System.Windows.Forms.Button();
@@ -50,11 +45,6 @@ namespace Presentacion
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnConsultarExpediente = new System.Windows.Forms.Button();
             this.BtnConsultarDatosConsulta = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.PnlSubMenuModificar = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.BtnModificarDatosConsulta = new System.Windows.Forms.Button();
-            this.BtnModificarExpediente = new System.Windows.Forms.Button();
             this.btnActivarDesactivar = new System.Windows.Forms.Button();
             this.PnlSubMenuActivarDesactivar = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -62,81 +52,24 @@ namespace Presentacion
             this.BtnDescativarExpediente = new System.Windows.Forms.Button();
             this.BtnAcercaDe = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.PctCerrar = new System.Windows.Forms.PictureBox();
+            this.PctRestaurar = new System.Windows.Forms.PictureBox();
+            this.PctMinimizar = new System.Windows.Forms.PictureBox();
+            this.PctMaximizar = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.PnlContenedor = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PnlSubMenuAgregar.SuspendLayout();
             this.PnlSubMenuConsultar.SuspendLayout();
-            this.PnlSubMenuModificar.SuspendLayout();
             this.PnlSubMenuActivarDesactivar.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctMaximizar)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(109)))), ((int)(((byte)(190)))));
-            this.panel1.Controls.Add(this.PctMaximizar);
-            this.panel1.Controls.Add(this.PctMinimizar);
-            this.panel1.Controls.Add(this.PctRestaurar);
-            this.panel1.Controls.Add(this.PctCerrar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(199, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1302, 41);
-            this.panel1.TabIndex = 3;
-            // 
-            // PctMaximizar
-            // 
-            this.PctMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PctMaximizar.Image = global::Presentacion.Properties.Resources.maximizar_menu;
-            this.PctMaximizar.Location = new System.Drawing.Point(1217, 0);
-            this.PctMaximizar.Name = "PctMaximizar";
-            this.PctMaximizar.Size = new System.Drawing.Size(39, 34);
-            this.PctMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctMaximizar.TabIndex = 3;
-            this.PctMaximizar.TabStop = false;
-            this.PctMaximizar.Click += new System.EventHandler(this.PctMaximizar_Click);
-            // 
-            // PctMinimizar
-            // 
-            this.PctMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PctMinimizar.Image = global::Presentacion.Properties.Resources.Minimizar1;
-            this.PctMinimizar.Location = new System.Drawing.Point(1172, 1);
-            this.PctMinimizar.Name = "PctMinimizar";
-            this.PctMinimizar.Size = new System.Drawing.Size(39, 34);
-            this.PctMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctMinimizar.TabIndex = 2;
-            this.PctMinimizar.TabStop = false;
-            this.PctMinimizar.Click += new System.EventHandler(this.PctMinimizar_Click);
-            // 
-            // PctRestaurar
-            // 
-            this.PctRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PctRestaurar.Image = global::Presentacion.Properties.Resources.restaurar_menu;
-            this.PctRestaurar.Location = new System.Drawing.Point(1217, 0);
-            this.PctRestaurar.Name = "PctRestaurar";
-            this.PctRestaurar.Size = new System.Drawing.Size(39, 35);
-            this.PctRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctRestaurar.TabIndex = 1;
-            this.PctRestaurar.TabStop = false;
-            this.PctRestaurar.Click += new System.EventHandler(this.PctRestaurar_Click);
-            // 
-            // PctCerrar
-            // 
-            this.PctCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PctCerrar.Image = global::Presentacion.Properties.Resources.Cerrar1;
-            this.PctCerrar.Location = new System.Drawing.Point(1262, 1);
-            this.PctCerrar.Name = "PctCerrar";
-            this.PctCerrar.Size = new System.Drawing.Size(37, 34);
-            this.PctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctCerrar.TabIndex = 0;
-            this.PctCerrar.TabStop = false;
-            this.PctCerrar.Click += new System.EventHandler(this.PctCerrar_Click);
             // 
             // pictureBox1
             // 
@@ -169,7 +102,7 @@ namespace Presentacion
             this.BtnCerrarSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BtnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrarSesion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnCerrarSesion.Location = new System.Drawing.Point(0, 823);
+            this.BtnCerrarSesion.Location = new System.Drawing.Point(0, 708);
             this.BtnCerrarSesion.Name = "BtnCerrarSesion";
             this.BtnCerrarSesion.Size = new System.Drawing.Size(199, 39);
             this.BtnCerrarSesion.TabIndex = 14;
@@ -322,6 +255,7 @@ namespace Presentacion
             this.BtnConsultarExpediente.TabIndex = 4;
             this.BtnConsultarExpediente.Text = "Expediente";
             this.BtnConsultarExpediente.UseVisualStyleBackColor = false;
+            this.BtnConsultarExpediente.Click += new System.EventHandler(this.BtnConsultarExpediente_Click);
             // 
             // BtnConsultarDatosConsulta
             // 
@@ -336,69 +270,7 @@ namespace Presentacion
             this.BtnConsultarDatosConsulta.TabIndex = 5;
             this.BtnConsultarDatosConsulta.Text = "Consulta";
             this.BtnConsultarDatosConsulta.UseVisualStyleBackColor = false;
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.BackColor = System.Drawing.Color.DarkGray;
-            this.BtnModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnModificar.FlatAppearance.BorderSize = 0;
-            this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnModificar.Location = new System.Drawing.Point(0, 539);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(199, 39);
-            this.BtnModificar.TabIndex = 23;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
-            // 
-            // PnlSubMenuModificar
-            // 
-            this.PnlSubMenuModificar.Controls.Add(this.panel7);
-            this.PnlSubMenuModificar.Controls.Add(this.BtnModificarDatosConsulta);
-            this.PnlSubMenuModificar.Controls.Add(this.BtnModificarExpediente);
-            this.PnlSubMenuModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlSubMenuModificar.Location = new System.Drawing.Point(0, 578);
-            this.PnlSubMenuModificar.Name = "PnlSubMenuModificar";
-            this.PnlSubMenuModificar.Size = new System.Drawing.Size(199, 82);
-            this.PnlSubMenuModificar.TabIndex = 24;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.panel7.Location = new System.Drawing.Point(34, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(14, 83);
-            this.panel7.TabIndex = 15;
-            // 
-            // BtnModificarDatosConsulta
-            // 
-            this.BtnModificarDatosConsulta.BackColor = System.Drawing.Color.Silver;
-            this.BtnModificarDatosConsulta.FlatAppearance.BorderSize = 0;
-            this.BtnModificarDatosConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnModificarDatosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificarDatosConsulta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnModificarDatosConsulta.Location = new System.Drawing.Point(45, 41);
-            this.BtnModificarDatosConsulta.Name = "BtnModificarDatosConsulta";
-            this.BtnModificarDatosConsulta.Size = new System.Drawing.Size(154, 42);
-            this.BtnModificarDatosConsulta.TabIndex = 15;
-            this.BtnModificarDatosConsulta.Text = "Consulta";
-            this.BtnModificarDatosConsulta.UseVisualStyleBackColor = false;
-            // 
-            // BtnModificarExpediente
-            // 
-            this.BtnModificarExpediente.BackColor = System.Drawing.Color.Silver;
-            this.BtnModificarExpediente.FlatAppearance.BorderSize = 0;
-            this.BtnModificarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnModificarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificarExpediente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnModificarExpediente.Location = new System.Drawing.Point(45, 0);
-            this.BtnModificarExpediente.Name = "BtnModificarExpediente";
-            this.BtnModificarExpediente.Size = new System.Drawing.Size(154, 42);
-            this.BtnModificarExpediente.TabIndex = 14;
-            this.BtnModificarExpediente.Text = "Expediente";
-            this.BtnModificarExpediente.UseVisualStyleBackColor = false;
+            this.BtnConsultarDatosConsulta.Click += new System.EventHandler(this.BtnConsultarDatosConsulta_Click);
             // 
             // btnActivarDesactivar
             // 
@@ -408,7 +280,7 @@ namespace Presentacion
             this.btnActivarDesactivar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.btnActivarDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActivarDesactivar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnActivarDesactivar.Location = new System.Drawing.Point(0, 660);
+            this.btnActivarDesactivar.Location = new System.Drawing.Point(0, 539);
             this.btnActivarDesactivar.Name = "btnActivarDesactivar";
             this.btnActivarDesactivar.Size = new System.Drawing.Size(199, 39);
             this.btnActivarDesactivar.TabIndex = 25;
@@ -422,7 +294,7 @@ namespace Presentacion
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarDatosConsulta);
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarExpediente);
             this.PnlSubMenuActivarDesactivar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlSubMenuActivarDesactivar.Location = new System.Drawing.Point(0, 699);
+            this.PnlSubMenuActivarDesactivar.Location = new System.Drawing.Point(0, 578);
             this.PnlSubMenuActivarDesactivar.Name = "PnlSubMenuActivarDesactivar";
             this.PnlSubMenuActivarDesactivar.Size = new System.Drawing.Size(199, 83);
             this.PnlSubMenuActivarDesactivar.TabIndex = 26;
@@ -471,7 +343,7 @@ namespace Presentacion
             this.BtnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnAcercaDe.Location = new System.Drawing.Point(0, 782);
+            this.BtnAcercaDe.Location = new System.Drawing.Point(0, 661);
             this.BtnAcercaDe.Name = "BtnAcercaDe";
             this.BtnAcercaDe.Size = new System.Drawing.Size(199, 39);
             this.BtnAcercaDe.TabIndex = 27;
@@ -484,8 +356,6 @@ namespace Presentacion
             this.panel2.Controls.Add(this.BtnAcercaDe);
             this.panel2.Controls.Add(this.PnlSubMenuActivarDesactivar);
             this.panel2.Controls.Add(this.btnActivarDesactivar);
-            this.panel2.Controls.Add(this.PnlSubMenuModificar);
-            this.panel2.Controls.Add(this.BtnModificar);
             this.panel2.Controls.Add(this.PnlSubMenuConsultar);
             this.panel2.Controls.Add(this.BtnConsulta);
             this.panel2.Controls.Add(this.PnlSubMenuAgregar);
@@ -495,10 +365,71 @@ namespace Presentacion
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(199, 862);
+            this.panel2.Size = new System.Drawing.Size(199, 747);
             this.panel2.TabIndex = 2;
+            // 
+            // PctCerrar
+            // 
+            this.PctCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PctCerrar.Image = global::Presentacion.Properties.Resources.Cerrar1;
+            this.PctCerrar.Location = new System.Drawing.Point(1354, 4);
+            this.PctCerrar.Name = "PctCerrar";
+            this.PctCerrar.Size = new System.Drawing.Size(37, 34);
+            this.PctCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctCerrar.TabIndex = 0;
+            this.PctCerrar.TabStop = false;
+            this.PctCerrar.Click += new System.EventHandler(this.PctCerrar_Click);
+            // 
+            // PctRestaurar
+            // 
+            this.PctRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PctRestaurar.Image = global::Presentacion.Properties.Resources.restaurar_menu;
+            this.PctRestaurar.Location = new System.Drawing.Point(1309, 3);
+            this.PctRestaurar.Name = "PctRestaurar";
+            this.PctRestaurar.Size = new System.Drawing.Size(39, 35);
+            this.PctRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctRestaurar.TabIndex = 1;
+            this.PctRestaurar.TabStop = false;
+            this.PctRestaurar.Click += new System.EventHandler(this.PctRestaurar_Click);
+            // 
+            // PctMinimizar
+            // 
+            this.PctMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PctMinimizar.Image = global::Presentacion.Properties.Resources.Minimizar1;
+            this.PctMinimizar.Location = new System.Drawing.Point(1264, 4);
+            this.PctMinimizar.Name = "PctMinimizar";
+            this.PctMinimizar.Size = new System.Drawing.Size(39, 34);
+            this.PctMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctMinimizar.TabIndex = 2;
+            this.PctMinimizar.TabStop = false;
+            this.PctMinimizar.Click += new System.EventHandler(this.PctMinimizar_Click);
+            // 
+            // PctMaximizar
+            // 
+            this.PctMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PctMaximizar.Image = global::Presentacion.Properties.Resources.maximizar_menu;
+            this.PctMaximizar.Location = new System.Drawing.Point(1309, 3);
+            this.PctMaximizar.Name = "PctMaximizar";
+            this.PctMaximizar.Size = new System.Drawing.Size(39, 34);
+            this.PctMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctMaximizar.TabIndex = 3;
+            this.PctMaximizar.TabStop = false;
+            this.PctMaximizar.Click += new System.EventHandler(this.PctMaximizar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(109)))), ((int)(((byte)(190)))));
+            this.panel1.Controls.Add(this.PctMaximizar);
+            this.panel1.Controls.Add(this.PctMinimizar);
+            this.panel1.Controls.Add(this.PctRestaurar);
+            this.panel1.Controls.Add(this.PctCerrar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1501, 41);
+            this.panel1.TabIndex = 3;
             // 
             // PnlContenedor
             // 
@@ -506,41 +437,38 @@ namespace Presentacion
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(199, 41);
             this.PnlContenedor.Name = "PnlContenedor";
-            this.PnlContenedor.Size = new System.Drawing.Size(1302, 821);
+            this.PnlContenedor.Size = new System.Drawing.Size(1302, 747);
             this.PnlContenedor.TabIndex = 4;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1501, 862);
+            this.ClientSize = new System.Drawing.Size(1501, 788);
             this.Controls.Add(this.PnlContenedor);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PctMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PnlSubMenuAgregar.ResumeLayout(false);
             this.PnlSubMenuConsultar.ResumeLayout(false);
-            this.PnlSubMenuModificar.ResumeLayout(false);
             this.PnlSubMenuActivarDesactivar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PctCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctMaximizar)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BtnCerrarSesion;
@@ -555,11 +483,6 @@ namespace Presentacion
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button BtnConsultarExpediente;
         private System.Windows.Forms.Button BtnConsultarDatosConsulta;
-        private System.Windows.Forms.Button BtnModificar;
-        private System.Windows.Forms.Panel PnlSubMenuModificar;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button BtnModificarDatosConsulta;
-        private System.Windows.Forms.Button BtnModificarExpediente;
         private System.Windows.Forms.Button btnActivarDesactivar;
         private System.Windows.Forms.Panel PnlSubMenuActivarDesactivar;
         private System.Windows.Forms.Panel panel6;
@@ -567,11 +490,12 @@ namespace Presentacion
         private System.Windows.Forms.Button BtnDescativarExpediente;
         private System.Windows.Forms.Button BtnAcercaDe;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel PnlContenedor;
-        private System.Windows.Forms.PictureBox PctMaximizar;
-        private System.Windows.Forms.PictureBox PctMinimizar;
-        private System.Windows.Forms.PictureBox PctRestaurar;
-        private System.Windows.Forms.PictureBox PctCerrar;
         private System.Windows.Forms.Button BtnPaciente;
+        private System.Windows.Forms.PictureBox PctCerrar;
+        private System.Windows.Forms.PictureBox PctRestaurar;
+        private System.Windows.Forms.PictureBox PctMinimizar;
+        private System.Windows.Forms.PictureBox PctMaximizar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PnlContenedor;
     }
 }
