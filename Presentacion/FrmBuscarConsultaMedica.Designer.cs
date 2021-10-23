@@ -32,10 +32,10 @@ namespace Presentacion
             this.components = new System.ComponentModel.Container();
             this.PnlContenedor = new System.Windows.Forms.Panel();
             this.LblLetrero = new System.Windows.Forms.Label();
-            this.BtnGuardarConsultaExpediente = new System.Windows.Forms.Button();
             this.BtnGuardarConsultaPaciente = new System.Windows.Forms.Button();
-            this.RTBusquedaExpediente = new System.Windows.Forms.RichTextBox();
             this.RTBuscarPaciente = new System.Windows.Forms.RichTextBox();
+            this.RTBusquedaExpediente = new System.Windows.Forms.RichTextBox();
+            this.BtnGuardarConsultaExpediente = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -66,22 +66,6 @@ namespace Presentacion
             this.LblLetrero.TabIndex = 9;
             this.LblLetrero.Text = "Ingrese el codigo del paciente";
             // 
-            // BtnGuardarConsultaExpediente
-            // 
-            this.BtnGuardarConsultaExpediente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnGuardarConsultaExpediente.FlatAppearance.BorderSize = 0;
-            this.BtnGuardarConsultaExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnGuardarConsultaExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuardarConsultaExpediente.Image = global::Presentacion.Properties.Resources.Buscar_321;
-            this.BtnGuardarConsultaExpediente.Location = new System.Drawing.Point(966, 302);
-            this.BtnGuardarConsultaExpediente.Name = "BtnGuardarConsultaExpediente";
-            this.BtnGuardarConsultaExpediente.Size = new System.Drawing.Size(70, 68);
-            this.BtnGuardarConsultaExpediente.TabIndex = 5;
-            this.BtnGuardarConsultaExpediente.Text = "Consultar";
-            this.BtnGuardarConsultaExpediente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnGuardarConsultaExpediente.UseVisualStyleBackColor = true;
-            this.BtnGuardarConsultaExpediente.Click += new System.EventHandler(this.BtnGuardarConsultaExpediente_Click);
-            // 
             // BtnGuardarConsultaPaciente
             // 
             this.BtnGuardarConsultaPaciente.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -98,6 +82,21 @@ namespace Presentacion
             this.BtnGuardarConsultaPaciente.UseVisualStyleBackColor = true;
             this.BtnGuardarConsultaPaciente.Click += new System.EventHandler(this.BtnGuardarConsultaPaciente_Click);
             // 
+            // RTBuscarPaciente
+            // 
+            this.RTBuscarPaciente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RTBuscarPaciente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.RTBuscarPaciente.ForeColor = System.Drawing.Color.DimGray;
+            this.RTBuscarPaciente.Location = new System.Drawing.Point(237, 322);
+            this.RTBuscarPaciente.Name = "RTBuscarPaciente";
+            this.RTBuscarPaciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RTBuscarPaciente.Size = new System.Drawing.Size(705, 36);
+            this.RTBuscarPaciente.TabIndex = 6;
+            this.RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
+            this.RTBuscarPaciente.TextChanged += new System.EventHandler(this.RTBuscarPaciente_TextChanged);
+            this.RTBuscarPaciente.Enter += new System.EventHandler(this.RTBuscarPaciente_Enter);
+            this.RTBuscarPaciente.Leave += new System.EventHandler(this.RTBuscarPaciente_Leave);
+            // 
             // RTBusquedaExpediente
             // 
             this.RTBusquedaExpediente.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -113,20 +112,21 @@ namespace Presentacion
             this.RTBusquedaExpediente.Enter += new System.EventHandler(this.RTBusquedaExpediente_Enter);
             this.RTBusquedaExpediente.Leave += new System.EventHandler(this.RTBusquedaExpediente_Leave);
             // 
-            // RTBuscarPaciente
+            // BtnGuardarConsultaExpediente
             // 
-            this.RTBuscarPaciente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.RTBuscarPaciente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.RTBuscarPaciente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBuscarPaciente.Location = new System.Drawing.Point(237, 322);
-            this.RTBuscarPaciente.Name = "RTBuscarPaciente";
-            this.RTBuscarPaciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.RTBuscarPaciente.Size = new System.Drawing.Size(705, 36);
-            this.RTBuscarPaciente.TabIndex = 6;
-            this.RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
-            this.RTBuscarPaciente.TextChanged += new System.EventHandler(this.RTBuscarPaciente_TextChanged);
-            this.RTBuscarPaciente.Enter += new System.EventHandler(this.RTBuscarPaciente_Enter);
-            this.RTBuscarPaciente.Leave += new System.EventHandler(this.RTBuscarPaciente_Leave);
+            this.BtnGuardarConsultaExpediente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnGuardarConsultaExpediente.FlatAppearance.BorderSize = 0;
+            this.BtnGuardarConsultaExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.BtnGuardarConsultaExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardarConsultaExpediente.Image = global::Presentacion.Properties.Resources.Buscar_321;
+            this.BtnGuardarConsultaExpediente.Location = new System.Drawing.Point(966, 302);
+            this.BtnGuardarConsultaExpediente.Name = "BtnGuardarConsultaExpediente";
+            this.BtnGuardarConsultaExpediente.Size = new System.Drawing.Size(70, 68);
+            this.BtnGuardarConsultaExpediente.TabIndex = 5;
+            this.BtnGuardarConsultaExpediente.Text = "Consultar";
+            this.BtnGuardarConsultaExpediente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnGuardarConsultaExpediente.UseVisualStyleBackColor = true;
+            this.BtnGuardarConsultaExpediente.Click += new System.EventHandler(this.BtnGuardarConsultaExpediente_Click);
             // 
             // errorProvider1
             // 

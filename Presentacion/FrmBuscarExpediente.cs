@@ -62,6 +62,7 @@ namespace Presentacion
                 Abrir(new FrmFormularioExpediente());
                 RTBusquedaPaciente.Visible = false;
                 BtnGuardar.Visible = false;
+                label1.Visible = false;
             }
             else
             {

@@ -35,6 +35,7 @@ namespace Presentacion
             this.PnlContenedor = new System.Windows.Forms.Panel();
             this.RTBusquedaPaciente = new System.Windows.Forms.RichTextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.PnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +57,7 @@ namespace Presentacion
             // 
             // PnlContenedor
             // 
+            this.PnlContenedor.Controls.Add(this.label1);
             this.PnlContenedor.Controls.Add(this.BtnGuardar);
             this.PnlContenedor.Controls.Add(this.RTBusquedaPaciente);
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -82,6 +84,17 @@ namespace Presentacion
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(454, 294);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(289, 22);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ingrese el codigo del paciente";
+            // 
             // FrmBuscarExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -93,6 +106,7 @@ namespace Presentacion
             this.Name = "FrmBuscarExpediente";
             this.Text = "FrmBuscarExpediente";
             this.PnlContenedor.ResumeLayout(false);
+            this.PnlContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -104,5 +118,6 @@ namespace Presentacion
         private System.Windows.Forms.Panel PnlContenedor;
         private System.Windows.Forms.RichTextBox RTBusquedaPaciente;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -45,21 +45,35 @@ namespace Presentacion
             fh.Show();
 
         }
-        private bool ValidarCampos()
+        private bool ValidarCamposPaciente()
         {
 
             bool ok = true;
-            if (RTBuscarPaciente.Text.Equals("Ingrese el codigo del paciente") || RTBuscarPaciente.Text.Equals(""))
+            if (RTBuscarPaciente.Text.Equals("Ingrese el codigo del Paciente") || RTBuscarPaciente.Text.Equals(""))
             {
                 ok = false;
-                errorProvider1.SetError(RTBuscarPaciente, "Este campo esta vacio, Por favor ingrese un codigo");
-
+                errorProvider1.SetError(RTBuscarPaciente, "Estes campo esta vacio, por favor ingrese un codigo");
             }
             else
             {
                 errorProvider1.SetError(RTBuscarPaciente, "");
             }
+           
             
+            return ok;
+        }
+        private bool ValidarCampoExpediente()
+        {
+            bool ok = true;
+            if (RTBusquedaExpediente.Text.Equals("Ingrese el codigo del Expediente") || RTBusquedaExpediente.Text.Equals(""))
+            {
+                ok = false;
+                errorProvider1.SetError(RTBusquedaExpediente, "este campo esta vacio por favor ingrse un codigo");
+            }
+            else
+            {
+                errorProvider1.SetError(RTBusquedaExpediente, "");
+            }
             return ok;
         }
 
@@ -70,9 +84,9 @@ namespace Presentacion
 
         private void BtnGuardarConsultaPaciente_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
+            ValidarCamposPaciente();
             if (RTBuscarPaciente.Text == "1234")
-            { 
+            {
                 RTBuscarPaciente.Visible = false;
                 BtnGuardarConsultaPaciente.Visible = false;
                 RTBusquedaExpediente.Visible = true;
@@ -87,18 +101,24 @@ namespace Presentacion
             }
             else
             {
-              
+                if (!(RTBuscarPaciente.Text == "1234") && (!(RTBuscarPaciente.Text == "")) && (!(RTBuscarPaciente.Text == "Ingrese el codigo del Paciente")))
+                { 
                     MessageBoxButtons botones = MessageBoxButtons.OK;
                     DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                     if (dr == DialogResult.OK)
                     {
-                        RTBuscarPaciente.Text = "Ingrese el codigo del paciente";
+                        RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
                         RTBuscarPaciente.ForeColor = Color.DimGray;
                         RTBuscarPaciente.Font = new Font(RTBuscarPaciente.Font, FontStyle.Italic);
                         RTBuscarPaciente.Visible = true;
                         BtnGuardarConsultaPaciente.Visible = true;
+
                     }
-               
+
+                }
+
+
+
             }
         }
 
@@ -109,7 +129,7 @@ namespace Presentacion
 
         private void BtnGuardarConsultaExpediente_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
+            ValidarCampoExpediente();
             if (RTBusquedaExpediente.Text == "1234")
             {
                 RTBusquedaExpediente.Visible = false;
@@ -118,18 +138,19 @@ namespace Presentacion
             }
             else
             {
-                
+                if (!(RTBusquedaExpediente.Text == "1234") && (!(RTBusquedaExpediente.Text == "")) && (!(RTBusquedaExpediente.Text == "Ingrese el codigo del Expediente")))
+                {
                     MessageBoxButtons botones = MessageBoxButtons.OK;
                     DialogResult dr = MessageBox.Show("Este expediente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                     if (dr == DialogResult.OK)
                     {
-                        RTBusquedaExpediente.Text = "Ingrese el codigo del expediente";
+                        RTBusquedaExpediente.Text = "Ingrese el codigo del Expediente";
                         RTBusquedaExpediente.ForeColor = Color.DimGray;
                         RTBusquedaExpediente.Font = new Font(RTBusquedaExpediente.Font, FontStyle.Italic);
                         RTBusquedaExpediente.Visible = true;
                         BtnGuardarConsultaExpediente.Visible = true;
                     }
-            
+                }
             }
         }
 
@@ -144,6 +165,7 @@ namespace Presentacion
             {
                 RTBuscarPaciente.Text = "";
                 RTBuscarPaciente.ForeColor = Color.Black;
+                RTBuscarPaciente.Font = new Font(RTBuscarPaciente.Font, FontStyle.Regular);
             }
         }
 
@@ -162,6 +184,7 @@ namespace Presentacion
             {
                 RTBusquedaExpediente.Text = "";
                 RTBusquedaExpediente.ForeColor = Color.Black;
+                RTBusquedaExpediente.Font = new Font(RTBusquedaExpediente.Font, FontStyle.Regular);
             }
         }
 
