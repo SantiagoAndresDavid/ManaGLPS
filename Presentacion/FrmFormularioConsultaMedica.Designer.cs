@@ -51,7 +51,6 @@ namespace Presentacion
             this.TextAntecedentes = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnGuardar1 = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnGuarda2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -113,7 +112,6 @@ namespace Presentacion
             this.pagina1.Size = new System.Drawing.Size(1159, 732);
             this.pagina1.TabIndex = 0;
             this.pagina1.Text = "Pagina 1 ";
-            this.pagina1.Click += new System.EventHandler(this.pagina1_Click);
             // 
             // pictureBox2
             // 
@@ -246,7 +244,6 @@ namespace Presentacion
             this.label4.Size = new System.Drawing.Size(148, 23);
             this.label4.TabIndex = 24;
             this.label4.Text = "Informe Grupal";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // richTextBox3
             // 
@@ -305,7 +302,6 @@ namespace Presentacion
             this.tabPage1.Size = new System.Drawing.Size(1159, 732);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Page 3";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // label14
             // 
@@ -341,7 +337,6 @@ namespace Presentacion
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox2.Controls.Add(this.BtnGuardar1);
             this.groupBox2.Controls.Add(this.BtnEditar);
             this.groupBox2.Controls.Add(this.BtnGuarda2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -351,21 +346,6 @@ namespace Presentacion
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones Posibles";
-            // 
-            // BtnGuardar1
-            // 
-            this.BtnGuardar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnGuardar1.FlatAppearance.BorderSize = 0;
-            this.BtnGuardar1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.BtnGuardar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuardar1.Image = global::Presentacion.Properties.Resources.Guardar_481;
-            this.BtnGuardar1.Location = new System.Drawing.Point(140, 28);
-            this.BtnGuardar1.Name = "BtnGuardar1";
-            this.BtnGuardar1.Size = new System.Drawing.Size(143, 93);
-            this.BtnGuardar1.TabIndex = 6;
-            this.BtnGuardar1.Text = "Guardar";
-            this.BtnGuardar1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnGuardar1.UseVisualStyleBackColor = true;
             // 
             // BtnEditar
             // 
@@ -500,7 +480,6 @@ namespace Presentacion
             this.label9.Size = new System.Drawing.Size(200, 23);
             this.label9.TabIndex = 35;
             this.label9.Text = "Observaciones Extra";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // TextObservacionesExtra
             // 
@@ -629,7 +608,6 @@ namespace Presentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFormularioConsultaMedica";
             this.Text = "FrmRegistroDeExamen";
-            this.Load += new System.EventHandler(this.FrmRegistroDeExamen_Load);
             this.tab.ResumeLayout(false);
             this.pagina1.ResumeLayout(false);
             this.pagina1.PerformLayout();
@@ -694,7 +672,6 @@ namespace Presentacion
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RichTextBox TextAntecedentes;
-        private System.Windows.Forms.Button BtnGuardar1;
         private System.Windows.Forms.Button BtnEditar;
     }
 }

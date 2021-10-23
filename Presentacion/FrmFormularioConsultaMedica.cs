@@ -15,22 +15,8 @@ namespace Presentacion
         public FrmFormularioConsultaMedica()
         {
             InitializeComponent();
-        }
-
-        private void FrmRegistroDeExamen_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pagina1_Click(object sender, EventArgs e)
-        {
-
-        }
+            BtnEditar.Visible = false;
+        }  
 
         private void BtnExaminar_Click(object sender, EventArgs e)
         {
@@ -52,19 +38,9 @@ namespace Presentacion
 
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
 
-        }
+        
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

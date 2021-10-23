@@ -59,10 +59,11 @@ namespace Presentacion
             ValidarCampos();
             if (RTBusquedaPaciente.Text == "1234")
             {
-                Abrir(new FrmFormularioExpediente());
+                Abrir(new FrmFormularioExpediente()) ;
                 RTBusquedaPaciente.Visible = false;
                 BtnGuardar.Visible = false;
                 label1.Visible = false;
+
             }
             else
             {
