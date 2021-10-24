@@ -47,7 +47,6 @@ namespace Presentacion
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -91,6 +90,7 @@ namespace Presentacion
             this.label13 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tab.SuspendLayout();
             this.pagina1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -264,7 +264,7 @@ namespace Presentacion
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(831, -2);
+            this.label4.Location = new System.Drawing.Point(808, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 23);
             this.label4.TabIndex = 24;
@@ -273,7 +273,7 @@ namespace Presentacion
             // richTextBox3
             // 
             this.richTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox3.Location = new System.Drawing.Point(619, 24);
+            this.richTextBox3.Location = new System.Drawing.Point(605, 51);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(529, 626);
             this.richTextBox3.TabIndex = 23;
@@ -284,7 +284,7 @@ namespace Presentacion
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(108, -2);
+            this.label3.Location = new System.Drawing.Point(163, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(181, 23);
             this.label3.TabIndex = 22;
@@ -293,7 +293,7 @@ namespace Presentacion
             // richTextBox2
             // 
             this.richTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBox2.Location = new System.Drawing.Point(-41, 24);
+            this.richTextBox2.Location = new System.Drawing.Point(35, 51);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(520, 626);
             this.richTextBox2.TabIndex = 21;
