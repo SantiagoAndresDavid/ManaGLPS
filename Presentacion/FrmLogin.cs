@@ -67,6 +67,9 @@ namespace Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            FrmBienvenida bienvenida = new FrmBienvenida();
+            bienvenida.ShowDialog();
             Form menu = new FrmPrincipal();
             this.SetVisibleCore(false);
             menu.Show();

@@ -118,56 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Minimizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="c0c9c2a6b0a99053b87b14114c876000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c0c9c2a6b0a99053b87b14114c876000.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Eliminar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Eliminar_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cerrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cerrar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restaurar menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restaurar menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_Menu-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_Menu-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LOGO0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOGO0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giphy-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giphy-preview1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Guardar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guardar_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cerrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cerrar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Editar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Editar_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Guardar_481" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Guardar_481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maximizar menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximizar menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Editar_481" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Editar_481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cerrar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cerrar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,28 +130,82 @@
   <data name="giphy-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy-preview.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RegistrarUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RegistrarUsuario.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LOGO0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0021" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0021.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Editar_481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Editar_481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Minimizar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimizar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="c0c9c2a6b0a99053b87b14114c876000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c0c9c2a6b0a99053b87b14114c876000.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Buscar_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Buscar_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Buscar_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buscar_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="00c537bdf08547f031540521892e5aa7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\00c537bdf08547f031540521892e5aa7.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maximizar menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximizar menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_Menu-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_Menu-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="finalloader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\finalloader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Minimizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eliminar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eliminar_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegistrarUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegistrarUsuario.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimizar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimizar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Buscar_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Buscar_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="giphy-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy-preview1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guardar_481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guardar_481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="66e46f_3e92f5a330f040bfb31ccbdcfac04f86_mv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\66e46f_3e92f5a330f040bfb31ccbdcfac04f86_mv2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cerrar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cerrar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0021.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expediente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Expediente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guardar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guardar_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restaurar menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restaurar menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buscar_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buscar_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Editar_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Editar_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="00c537bdf08547f031540521892e5aa7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\00c537bdf08547f031540521892e5aa7.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bienvenidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bienvenidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

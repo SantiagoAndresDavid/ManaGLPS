@@ -52,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Presentacion\\Presentacion.csproj",
+      "projectUniqueName": "D:\\Documentos\\Managips\\Presentacion\\Presentacion.csproj",
       "projectName": "Presentacion",
-      "projectPath": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Presentacion\\Presentacion.csproj",
+      "projectPath": "D:\\Documentos\\Managips\\Presentacion\\Presentacion.csproj",
       "packagesPath": "C:\\Users\\AndresAlvarez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Presentacion\\obj\\",
+      "outputPath": "D:\\Documentos\\Managips\\Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,11 +77,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\DALL\\DALL.csproj": {
-              "projectPath": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\DALL\\DALL.csproj"
+            "D:\\Documentos\\Managips\\DALL\\DALL.csproj": {
+              "projectPath": "D:\\Documentos\\Managips\\DALL\\DALL.csproj"
             },
-            "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Entity\\Entity.csproj"
+            "D:\\Documentos\\Managips\\Entity\\Entity.csproj": {
+              "projectPath": "D:\\Documentos\\Managips\\Entity\\Entity.csproj"
             }
           }
         }

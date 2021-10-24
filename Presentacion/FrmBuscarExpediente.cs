@@ -59,10 +59,11 @@ namespace Presentacion
             ValidarCampos();
             if (RTBusquedaPaciente.Text == "1234")
             {
-                Abrir(new FrmFormularioExpediente()) ;
+                Abrir(new FrmFormularioExpediente());
+                label1.Visible = false;
                 RTBusquedaPaciente.Visible = false;
                 BtnGuardar.Visible = false;
-                label1.Visible = false;
+
 
             }
             else
@@ -80,13 +81,13 @@ namespace Presentacion
                         BtnGuardar.Visible = true;
                     }
                 }
-                  
 
-            
+
+
 
             }
         }
- 
+
         private void RTBusquedaExpediente_Enter(object sender, EventArgs e)
         {
             if (RTBusquedaPaciente.Text == "Ingrese el codigo del paciente")

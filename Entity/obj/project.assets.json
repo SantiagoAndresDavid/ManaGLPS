@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Entity\\Entity.csproj",
+      "projectUniqueName": "D:\\Documentos\\Managips\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Entity\\Entity.csproj",
+      "projectPath": "D:\\Documentos\\Managips\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\AndresAlvarez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AndresAlvarez\\Documents\\Programas C#\\ManaGLPS\\Entity\\obj\\",
+      "outputPath": "D:\\Documentos\\Managips\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -83,6 +83,26 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _66e46f_3e92f5a330f040bfb31ccbdcfac04f86_mv2 {
+            get {
+                object obj = ResourceManager.GetObject("66e46f_3e92f5a330f040bfb31ccbdcfac04f86_mv2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bienvenidos {
+            get {
+                object obj = ResourceManager.GetObject("Bienvenidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buscar_32 {
             get {
                 object obj = ResourceManager.GetObject("Buscar_32", resourceCulture);
@@ -166,6 +186,16 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap Eliminar_48 {
             get {
                 object obj = ResourceManager.GetObject("Eliminar_48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Expediente {
+            get {
+                object obj = ResourceManager.GetObject("Expediente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -171,6 +171,11 @@ namespace Presentacion
             Abrir(new FrmDesactivarOActivarCitaMedica());
         }
 
+        private void BtnAcercaDe_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmAcercaDe());
+        }
+
         private void PctMinimizar_Click(object sender, EventArgs e)
         {
             PctRestaurar.Visible = true;

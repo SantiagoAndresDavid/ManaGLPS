@@ -58,8 +58,8 @@ namespace Presentacion
             {
                 errorProvider1.SetError(RTBuscarPaciente, "");
             }
-           
-            
+
+
             return ok;
         }
         private bool ValidarCampoExpediente()
@@ -89,8 +89,10 @@ namespace Presentacion
             {
                 RTBuscarPaciente.Visible = false;
                 BtnGuardarConsultaPaciente.Visible = false;
+                PctPaciente.Visible = false;
                 RTBusquedaExpediente.Visible = true;
                 BtnGuardarConsultaExpediente.Visible = true;
+                PctExpediente.Visible = true;
                 if ((RTBusquedaExpediente.Visible = true) && (BtnGuardarConsultaExpediente.Visible = true))
                 {
                     LblLetrero.Text = "Ingrese el codigo del expediente";
@@ -102,7 +104,7 @@ namespace Presentacion
             else
             {
                 if (!(RTBuscarPaciente.Text == "1234") && (!(RTBuscarPaciente.Text == "")) && (!(RTBuscarPaciente.Text == "Ingrese el codigo del Paciente")))
-                { 
+                {
                     MessageBoxButtons botones = MessageBoxButtons.OK;
                     DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                     if (dr == DialogResult.OK)
@@ -112,6 +114,7 @@ namespace Presentacion
                         RTBuscarPaciente.Font = new Font(RTBuscarPaciente.Font, FontStyle.Italic);
                         RTBuscarPaciente.Visible = true;
                         BtnGuardarConsultaPaciente.Visible = true;
+                        PctPaciente.Visible = true;
 
                     }
 
@@ -134,6 +137,8 @@ namespace Presentacion
             {
                 RTBusquedaExpediente.Visible = false;
                 BtnGuardarConsultaExpediente.Visible = false;
+                PctExpediente.Visible = false;
+                LblLetrero.Visible = false;
                 Abrir(new FrmFormularioConsultaMedica());
             }
             else
@@ -149,6 +154,8 @@ namespace Presentacion
                         RTBusquedaExpediente.Font = new Font(RTBusquedaExpediente.Font, FontStyle.Italic);
                         RTBusquedaExpediente.Visible = true;
                         BtnGuardarConsultaExpediente.Visible = true;
+                        PctExpediente.Visible = true;
+
                     }
                 }
             }

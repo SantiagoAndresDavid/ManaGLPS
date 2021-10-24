@@ -339,6 +339,7 @@ namespace Presentacion
             this.BtnAcercaDe.TabIndex = 27;
             this.BtnAcercaDe.Text = "Acerca de ";
             this.BtnAcercaDe.UseVisualStyleBackColor = false;
+            this.BtnAcercaDe.Click += new System.EventHandler(this.BtnAcercaDe_Click);
             // 
             // panel2
             // 
