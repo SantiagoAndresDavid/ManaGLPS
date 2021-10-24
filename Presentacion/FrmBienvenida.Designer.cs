@@ -43,7 +43,7 @@ namespace Presentacion
             this.pictureBox2.Image = global::Presentacion.Properties.Resources.Bienvenidos;
             this.pictureBox2.Location = new System.Drawing.Point(0, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1178, 654);
+            this.pictureBox2.Size = new System.Drawing.Size(1113, 654);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -62,7 +62,7 @@ namespace Presentacion
             // 
             this.progressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(74)))), ((int)(((byte)(173)))));
             this.progressBar1.ForeColor = System.Drawing.Color.Chartreuse;
-            this.progressBar1.Location = new System.Drawing.Point(469, 592);
+            this.progressBar1.Location = new System.Drawing.Point(439, 569);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(634, 35);
             this.progressBar1.TabIndex = 3;
@@ -71,7 +71,7 @@ namespace Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 682);
+            this.ClientSize = new System.Drawing.Size(1109, 654);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
