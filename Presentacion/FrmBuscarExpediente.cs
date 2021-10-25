@@ -63,6 +63,7 @@ namespace Presentacion
                 label1.Visible = false;
                 RTBusquedaPaciente.Visible = false;
                 BtnGuardar.Visible = false;
+                PctPaciente.Visible = false;
 
 
             }
