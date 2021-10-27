@@ -26,5 +26,10 @@ namespace Entity
             Afiliacion = afiliacion;
             HistoriasMedicas = historiasMedicas;
         }
+
+        public void añadirHistotiaMedica(HistoriaMediaca historia)
+        {
+            HistoriasMedicas.Add(historia);
+        }
     }
 }

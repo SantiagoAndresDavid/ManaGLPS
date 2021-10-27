@@ -26,5 +26,11 @@ namespace Entity
             Estado = estado;
             Consultas = consultas;
         }
+
+        public void añadirConsultaMedica(ConsultaMedica consulta)
+        {
+            Consultas.Add(consulta);
+        }
+
     }
 }

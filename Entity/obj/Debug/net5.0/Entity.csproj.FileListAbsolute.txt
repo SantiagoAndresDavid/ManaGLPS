@@ -58,3 +58,15 @@ D:\Documentos\Managips\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.c
 D:\Documentos\Managips\Entity\obj\Debug\net5.0\Entity.dll
 D:\Documentos\Managips\Entity\obj\Debug\net5.0\ref\Entity.dll
 D:\Documentos\Managips\Entity\obj\Debug\net5.0\Entity.pdb
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\bin\Debug\net5.0\Entity.deps.json
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\bin\Debug\net5.0\Entity.dll
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\bin\Debug\net5.0\ref\Entity.dll
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\bin\Debug\net5.0\Entity.pdb
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.csproj.AssemblyReference.cache
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.dll
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\ref\Entity.dll
+C:\Users\santi\Documents\Programacion3\ManaGLPS\Entity\obj\Debug\net5.0\Entity.pdb
