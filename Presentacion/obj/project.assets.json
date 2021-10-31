@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Presentacion\\Presentacion.csproj",
+      "projectUniqueName": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Presentacion\\Presentacion.csproj",
       "projectName": "Presentacion",
-      "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Presentacion\\Presentacion.csproj",
+      "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Presentacion\\Presentacion.csproj",
       "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Presentacion\\obj\\",
+      "outputPath": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,11 +72,11 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\DALL\\DALL.csproj": {
-              "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\DALL\\DALL.csproj"
+            "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\DALL\\DALL.csproj": {
+              "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\DALL\\DALL.csproj"
             },
-            "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Entity\\Entity.csproj"
+            "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Entity\\Entity.csproj"
             }
           }
         }

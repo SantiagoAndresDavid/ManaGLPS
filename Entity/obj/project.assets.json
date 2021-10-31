@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Entity\\Entity.csproj",
+      "projectPath": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\santi\\Documents\\Programacion3\\ManaGLPS\\Entity\\obj\\",
+      "outputPath": "C:\\Users\\santi\\Documents\\Programacion3\\Proyecto\\ManaGLPS\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
