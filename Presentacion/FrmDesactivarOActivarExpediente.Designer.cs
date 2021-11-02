@@ -57,7 +57,7 @@ namespace Presentacion
             this.BtnBuscarPaciente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnBuscarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscarPaciente.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscarPaciente.Image")));
-            this.BtnBuscarPaciente.Location = new System.Drawing.Point(958, 222);
+            this.BtnBuscarPaciente.Location = new System.Drawing.Point(957, 312);
             this.BtnBuscarPaciente.Name = "BtnBuscarPaciente";
             this.BtnBuscarPaciente.Size = new System.Drawing.Size(76, 69);
             this.BtnBuscarPaciente.TabIndex = 17;
@@ -70,7 +70,7 @@ namespace Presentacion
             // 
             this.RTBuscarPaciente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.RTBuscarPaciente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBuscarPaciente.Location = new System.Drawing.Point(228, 237);
+            this.RTBuscarPaciente.Location = new System.Drawing.Point(227, 327);
             this.RTBuscarPaciente.Name = "RTBuscarPaciente";
             this.RTBuscarPaciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RTBuscarPaciente.Size = new System.Drawing.Size(711, 35);
@@ -86,7 +86,7 @@ namespace Presentacion
             this.BtnBuscarExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnBuscarExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscarExpediente.Image = global::Presentacion.Properties.Resources.Buscar_321;
-            this.BtnBuscarExpediente.Location = new System.Drawing.Point(958, 216);
+            this.BtnBuscarExpediente.Location = new System.Drawing.Point(957, 306);
             this.BtnBuscarExpediente.Name = "BtnBuscarExpediente";
             this.BtnBuscarExpediente.Size = new System.Drawing.Size(76, 68);
             this.BtnBuscarExpediente.TabIndex = 19;
@@ -99,7 +99,7 @@ namespace Presentacion
             // 
             this.RTBuscarExpediente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.RTBuscarExpediente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBuscarExpediente.Location = new System.Drawing.Point(228, 237);
+            this.RTBuscarExpediente.Location = new System.Drawing.Point(227, 327);
             this.RTBuscarExpediente.Name = "RTBuscarExpediente";
             this.RTBuscarExpediente.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RTBuscarExpediente.Size = new System.Drawing.Size(711, 36);

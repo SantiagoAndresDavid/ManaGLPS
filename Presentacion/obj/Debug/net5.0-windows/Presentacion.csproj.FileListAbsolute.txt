@@ -156,3 +156,6 @@ C:\Users\santi\Documents\Programacion3\ManaGLPS\Presentacion\obj\Debug\net5.0-wi
 C:\Users\santi\Documents\Programacion3\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\ref\Presentacion.dll
 C:\Users\santi\Documents\Programacion3\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.pdb
 C:\Users\santi\Documents\Programacion3\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.genruntimeconfig.cache
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmAcercaDe.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmBienvenida.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmDesactivarOActivarPaciente.resources

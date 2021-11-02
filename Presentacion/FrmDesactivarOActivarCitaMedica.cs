@@ -50,7 +50,7 @@ namespace Presentacion
 
             if (RTBuscarExpediente.Text == "1234")
             {
-                DialogResult dr = MessageBox.Show("Se ha eliminado la Cita medica correctamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
+                DialogResult dr = MessageBox.Show("Se ha Desactvidado al paciente correctamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                 RTBuscarPaciente.Text = "";
                 RTBuscarPaciente.Visible = true;
                 BtnBuscarPaciente.Visible = true;
@@ -182,6 +182,21 @@ namespace Presentacion
                 RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
                 RTBuscarPaciente.ForeColor = Color.DimGray;
             }
+        }
+
+        private void RTBuscarCitaMedica_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RTBuscarPaciente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RTBuscarExpediente_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

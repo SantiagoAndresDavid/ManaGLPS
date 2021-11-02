@@ -13,6 +13,9 @@
     <Compile Update="FrmBuscarExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmDesactivarOActivarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmDesactivarOActivarCitaMedica.cs">
       <SubType>Form</SubType>
     </Compile>

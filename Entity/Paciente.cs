@@ -14,9 +14,9 @@ namespace Entity
         public int Edad { get; set; }
         public int Telefono { get; set; }
         public Afiliacion Afiliacion { get; set; }
-        public List<HistoriaMediaca> HistoriasMedicas { get; set; }
+        public  HistoriaMedica HistoriaMedica { get; set; }
 
-        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, Afiliacion afiliacion, List<HistoriaMediaca> historiasMedicas)
+        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, Afiliacion afiliacion)
         {
             Identificacion = identificacion;
             Nombre = nombre;
@@ -24,12 +24,6 @@ namespace Entity
             Edad = edad;
             Telefono = telefono;
             Afiliacion = afiliacion;
-            HistoriasMedicas = historiasMedicas;
-        }
-
-        public void añadirHistotiaMedica(HistoriaMediaca historia)
-        {
-            HistoriasMedicas.Add(historia);
         }
     }
 }

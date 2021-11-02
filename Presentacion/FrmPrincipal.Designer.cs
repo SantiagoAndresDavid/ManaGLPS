@@ -58,6 +58,7 @@ namespace Presentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PnlContenedor = new System.Windows.Forms.Panel();
+            this.BtnDescativarOActivarPaciente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PnlSubMenuAgregar.SuspendLayout();
             this.PnlSubMenuConsultar.SuspendLayout();
@@ -279,12 +280,13 @@ namespace Presentacion
             // PnlSubMenuActivarDesactivar
             // 
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.panel6);
+            this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarOActivarPaciente);
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarDatosConsulta);
             this.PnlSubMenuActivarDesactivar.Controls.Add(this.BtnDescativarExpediente);
             this.PnlSubMenuActivarDesactivar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlSubMenuActivarDesactivar.Location = new System.Drawing.Point(0, 537);
             this.PnlSubMenuActivarDesactivar.Name = "PnlSubMenuActivarDesactivar";
-            this.PnlSubMenuActivarDesactivar.Size = new System.Drawing.Size(199, 83);
+            this.PnlSubMenuActivarDesactivar.Size = new System.Drawing.Size(199, 129);
             this.PnlSubMenuActivarDesactivar.TabIndex = 26;
             // 
             // panel6
@@ -292,7 +294,7 @@ namespace Presentacion
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.panel6.Location = new System.Drawing.Point(34, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(14, 83);
+            this.panel6.Size = new System.Drawing.Size(14, 129);
             this.panel6.TabIndex = 14;
             // 
             // BtnDescativarDatosConsulta
@@ -333,7 +335,7 @@ namespace Presentacion
             this.BtnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.BtnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAcercaDe.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnAcercaDe.Location = new System.Drawing.Point(0, 620);
+            this.BtnAcercaDe.Location = new System.Drawing.Point(0, 666);
             this.BtnAcercaDe.Name = "BtnAcercaDe";
             this.BtnAcercaDe.Size = new System.Drawing.Size(199, 39);
             this.BtnAcercaDe.TabIndex = 27;
@@ -442,6 +444,21 @@ namespace Presentacion
             this.PnlContenedor.Size = new System.Drawing.Size(1167, 727);
             this.PnlContenedor.TabIndex = 4;
             // 
+            // BtnDescativarOActivarPaciente
+            // 
+            this.BtnDescativarOActivarPaciente.BackColor = System.Drawing.Color.Silver;
+            this.BtnDescativarOActivarPaciente.FlatAppearance.BorderSize = 0;
+            this.BtnDescativarOActivarPaciente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.BtnDescativarOActivarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDescativarOActivarPaciente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnDescativarOActivarPaciente.Location = new System.Drawing.Point(45, 84);
+            this.BtnDescativarOActivarPaciente.Name = "BtnDescativarOActivarPaciente";
+            this.BtnDescativarOActivarPaciente.Size = new System.Drawing.Size(154, 45);
+            this.BtnDescativarOActivarPaciente.TabIndex = 15;
+            this.BtnDescativarOActivarPaciente.Text = "Paciente";
+            this.BtnDescativarOActivarPaciente.UseVisualStyleBackColor = false;
+            this.BtnDescativarOActivarPaciente.Click += new System.EventHandler(this.BtnDescativarOActivarPaciente_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -500,5 +517,6 @@ namespace Presentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel PnlContenedor;
+        private System.Windows.Forms.Button BtnDescativarOActivarPaciente;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class HistoriaMediaca
+    class HistoriaMedica
     {
         public DateTime FechaDeCreacion { get; set; }
         public DateTime UltimaFechaDeEdicion{ get; set; }
@@ -16,7 +16,7 @@ namespace Entity
         public bool Estado { get; set; }
         public List<ConsultaMedica> Consultas { get; set; }
 
-        public HistoriaMediaca(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion, string titutlo, int codigo, bool estado, List<ConsultaMedica> consultas)
+        public HistoriaMedica(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion, string titutlo, int codigo, bool estado, List<ConsultaMedica> consultas)
         {
             FechaDeCreacion = fechaDeCreacion;
             UltimaFechaDeEdicion = ultimaFechaDeEdicion;

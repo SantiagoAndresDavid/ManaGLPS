@@ -176,6 +176,11 @@ namespace Presentacion
             Abrir(new FrmAcercaDe());
         }
 
+        private void BtnDescativarOActivarPaciente_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmDesactivarOActivarPaciente());
+        }
+
         private void PctMinimizar_Click(object sender, EventArgs e)
         {
             PctRestaurar.Visible = true;
@@ -186,3 +191,4 @@ namespace Presentacion
         
     }
 }
+  
