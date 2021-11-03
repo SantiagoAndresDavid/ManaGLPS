@@ -13,11 +13,11 @@ namespace Entity
 
         public CategoriaEvaluacion CategoriaEvaluacion { get; set; }
 
-        public ValoracionMultiDiciplinar(string informeIndividual, string informeGrupal, CategoriaEvaluacion categoriaEvaluacion)
+        public ValoracionMultiDiciplinar(string informeIndividual, string informeGrupal,int escala, string localizacion,int aumento,int disminucion)
         {
             InformeIndividual = informeIndividual;
             InformeGrupal = informeGrupal;
-            CategoriaEvaluacion = categoriaEvaluacion;
+            CategoriaEvaluacion = new CategoriaEvaluacion(escala,localizacion,aumento,disminucion);
         }
     }
 }

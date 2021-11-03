@@ -46,7 +46,7 @@ namespace Presentacion
 
             if (RTBuscarExpediente.Text == "1234")
             {
-                DialogResult a = MessageBox.Show("Se ha eliminado la Expediente medica", "Mensaje de informacion", botones, MessageBoxIcon.Information);
+                DialogResult a = MessageBox.Show("Se ha Desactivado la Expediente medica", "Mensaje de informacion", botones, MessageBoxIcon.Information);
                 if (a == DialogResult.OK)
                 {
                     RTBuscarPaciente.Text = "";

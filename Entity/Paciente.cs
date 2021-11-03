@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entity
 {
@@ -14,9 +10,9 @@ namespace Entity
         public int Edad { get; set; }
         public int Telefono { get; set; }
         public Afiliacion Afiliacion { get; set; }
-        public  HistoriaMedica HistoriaMedica { get; set; }
+        public HistoriaMedica HistoriaMedica { get; set; }
 
-        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, Afiliacion afiliacion)
+        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, Afiliacion afiliacion, HistoriaMedica historiaMedica, DateTime fechaCreacion, DateTime FechaEdicion, DateTime fechaFinalizacion, string tituloHistoria, int codigo, string estado)
         {
             Identificacion = identificacion;
             Nombre = nombre;
@@ -24,6 +20,11 @@ namespace Entity
             Edad = edad;
             Telefono = telefono;
             Afiliacion = afiliacion;
+            HistoriaMedica = new HistoriaMedica(fechaCreacion, FechaEdicion, fechaFinalizacion, tituloHistoria, codigo, estado);
         }
+
+
+
+
     }
 }

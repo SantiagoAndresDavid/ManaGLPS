@@ -11,10 +11,10 @@ namespace Entity
         public string ObservacionesExtra { get; set; }
         public CIE CIE { get; set; }
 
-        public Diagnostico(string observacionesExtra, CIE cIE)
+        public Diagnostico(string observacionesExtra,string codigo,string descripcion)
         {
             ObservacionesExtra = observacionesExtra;
-            CIE = cIE;
+            CIE = new CIE(codigo,descripcion) ;
         }
     }
 }

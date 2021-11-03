@@ -13,10 +13,10 @@ namespace Entity
         public DateTime FechaDeFinalizacion { get; set; }
         public string Titutlo{ get; set; }
         public int Codigo { get; set; }
-        public bool Estado { get; set; }
-        public List<ConsultaMedica> Consultas { get; set; }
+        public string Estado { get; set; }
+        public IList<ConsultaMedica> Consultas { get; set; }
 
-        public HistoriaMedica(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion, string titutlo, int codigo, bool estado, List<ConsultaMedica> consultas)
+        public HistoriaMedica(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion, string titutlo, int codigo, string estado)
         {
             FechaDeCreacion = fechaDeCreacion;
             UltimaFechaDeEdicion = ultimaFechaDeEdicion;
@@ -24,7 +24,7 @@ namespace Entity
             Titutlo = titutlo;
             Codigo = codigo;
             Estado = estado;
-            Consultas = consultas;
+            Consultas = new List<ConsultaMedica>();
         }
 
         public void añadirConsultaMedica(ConsultaMedica consulta)

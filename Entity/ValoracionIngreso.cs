@@ -12,12 +12,12 @@ namespace Entity
         public String DiagnosticoRemision { get; set; }
         public byte ImagenDiagnostico { get; set; }
         public Lesion Lesion { get; set;}
-        public ValoracionIngreso(string deportiva, string diagnosticoRemision, byte imagenDiagnostico, Lesion lesion)
+        public ValoracionIngreso(string deportiva, string diagnosticoRemision, byte imagenDiagnostico, string caracteristicas, string antecedentes)
         {
             Deportiva = deportiva;
             DiagnosticoRemision = diagnosticoRemision;
             ImagenDiagnostico = imagenDiagnostico;
-            Lesion = lesion;
+            Lesion = new Lesion(caracteristicas,antecedentes);
         }
     }
 }
