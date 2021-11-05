@@ -11,10 +11,20 @@ namespace Entity
         public string ObservacionesExtra { get; set; }
         public CIE CIE { get; set; }
 
+        public IList<CIE> Diagnosticos { get; set; }
+
         public Diagnostico(string observacionesExtra,string codigo,string descripcion)
         {
             ObservacionesExtra = observacionesExtra;
-            CIE = new CIE(codigo,descripcion) ;
+            Diagnosticos = new List<CIE>();
+            AgregarCIE(codigo,descripcion);
         }
+
+        public void AgregarCIE(string codigo,string descripcion)
+        {
+            CIE cie = new CIE(codigo,descripcion);
+            Diagnosticos.Add(cie);
+        }
+        
     }
 }

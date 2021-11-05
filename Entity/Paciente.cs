@@ -9,10 +9,9 @@ namespace Entity
         public string Apellido { get; set; }
         public int Edad { get; set; }
         public int Telefono { get; set; }
-        public Afiliacion Afiliacion { get; set; }
-        public HistoriaMedica HistoriaMedica { get; set; }
+        public string Afiliacion { get; set; }
 
-        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, Afiliacion afiliacion, HistoriaMedica historiaMedica, DateTime fechaCreacion, DateTime FechaEdicion, DateTime fechaFinalizacion, string tituloHistoria, int codigo, string estado)
+        public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, string afiliacion)
         {
             Identificacion = identificacion;
             Nombre = nombre;
@@ -20,11 +19,6 @@ namespace Entity
             Edad = edad;
             Telefono = telefono;
             Afiliacion = afiliacion;
-            HistoriaMedica = new HistoriaMedica(fechaCreacion, FechaEdicion, fechaFinalizacion, tituloHistoria, codigo, estado);
         }
-
-
-
-
     }
 }
