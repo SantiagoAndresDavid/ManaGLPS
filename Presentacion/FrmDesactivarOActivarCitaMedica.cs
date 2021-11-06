@@ -34,10 +34,9 @@ namespace Presentacion
 
         private void OcultarSubMenuIniciar()
         {
-            RTBuscarPaciente.Visible = true;
-            BtnBuscarPaciente.Visible = true;
-            RTBuscarExpediente.Visible = false;
-            BtnBuscarExpediente.Visible = false;
+
+            RTBuscarExpediente.Visible = true;
+            BtnBuscarExpediente.Visible = true;
             RTBuscarCitaMedica.Visible = false;
             BtnBuscarCitaMedica.Visible = false;
         }
@@ -50,10 +49,8 @@ namespace Presentacion
 
             if (RTBuscarExpediente.Text == "1234")
             {
-                DialogResult dr = MessageBox.Show("Se ha Desactvidado al paciente correctamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                RTBuscarPaciente.Text = "";
-                RTBuscarPaciente.Visible = true;
-                BtnBuscarPaciente.Visible = true;
+                DialogResult dr = MessageBox.Show("Se ha Desactivado la Consulta correctamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
+
                 RTBuscarExpediente.Visible = false;
                 BtnBuscarExpediente.Visible = false;
                 RTBuscarCitaMedica.Visible = false;
@@ -64,9 +61,9 @@ namespace Presentacion
                 DialogResult dr = MessageBox.Show("Este Cita Medica no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                 if (dr == DialogResult.OK)
                 {
-                    RTBuscarPaciente.Text = "";
-                    RTBuscarPaciente.Visible = true;
-                    BtnBuscarPaciente.Visible = true;
+                    
+                    RTBuscarExpediente.Visible = true;
+                    BtnBuscarExpediente.Visible = true;
                 }
             }
         }
@@ -77,9 +74,8 @@ namespace Presentacion
             if (RTBuscarExpediente.Text == "1234")
             {
 
-                RTBuscarPaciente.Text = "";
-                RTBuscarPaciente.Visible = false;
-                BtnBuscarPaciente.Visible = false;
+               
+
                 RTBuscarExpediente.Visible = false;
                 BtnBuscarExpediente.Visible = false;
                 RTBuscarCitaMedica.Visible = true;
@@ -92,38 +88,14 @@ namespace Presentacion
                 DialogResult dr = MessageBox.Show("Este Expediente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                 if (dr == DialogResult.OK)
                 {
-                    RTBuscarPaciente.Text = "";
-                    RTBuscarPaciente.Visible = true;
-                    BtnBuscarPaciente.Visible = true;
+                    
+                    RTBuscarExpediente.Visible = true;
+                    BtnBuscarExpediente.Visible = true;
                 }
             }
         }
 
-        private void BtnBuscarPaciente_Click(object sender, EventArgs e)
-        {
-            MessageBoxButtons botones = MessageBoxButtons.OK;
-            if (RTBuscarPaciente.Text == "1234")
-            {
-                RTBuscarPaciente.Text = "";
-                RTBuscarPaciente.Visible = false;
-                BtnBuscarPaciente.Visible = false;
-                RTBuscarExpediente.Visible = true;
-                BtnBuscarExpediente.Visible = true;
-                RTBuscarCitaMedica.Visible = false;
-                BtnBuscarCitaMedica.Visible = false;
-            }
-            else
-            {
 
-                DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                if (dr == DialogResult.OK)
-                {
-                    RTBuscarPaciente.Text = "";
-                    RTBuscarPaciente.Visible = true;
-                    BtnBuscarPaciente.Visible = true;
-                }
-            }
-        }
 
         private void PnlContenedor_Paint(object sender, PaintEventArgs e)
         {
@@ -166,23 +138,7 @@ namespace Presentacion
             }
         }
 
-        private void RTBuscarPaciente_Enter(object sender, EventArgs e)
-        {
-            if (RTBuscarPaciente.Text == "Ingrese el codigo del Paciente")
-            {
-                RTBuscarPaciente.Text = "";
-                RTBuscarPaciente.ForeColor = Color.Black;
-            }
-        }
 
-        private void RTBuscarPaciente_Leave(object sender, EventArgs e)
-        {
-            if (RTBuscarPaciente.Text == "")
-            {
-                RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
-                RTBuscarPaciente.ForeColor = Color.DimGray;
-            }
-        }
 
         private void RTBuscarCitaMedica_TextChanged(object sender, EventArgs e)
         {
