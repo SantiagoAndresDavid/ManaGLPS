@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entity;
 
 namespace Presentacion
 {
     public partial class FrmRegistrarPaciente : Form
     {
+        Paciente paciente = new Paciente();
+
         public FrmRegistrarPaciente()
         {
             InitializeComponent();
@@ -19,42 +22,58 @@ namespace Presentacion
 
         public void BorrarMensaje()
         {
-            errorProvider1.SetError(TextIdentificacion, "");
-            errorProvider1.SetError(TextNombre, "");
-            errorProvider1.SetError(TextApellido, "");
-            errorProvider1.SetError(TextEdad, "");
-            errorProvider1.SetError(TextTelefono, "");
-            errorProvider1.SetError(TextDireccion, "");
+            errorProvider1.SetError(TXTIdentidad, "");
+            errorProvider1.SetError(TXTNombre, "");
+            errorProvider1.SetError(TXTApellido, "");
+            errorProvider1.SetError(TXTEdad, "");
+            errorProvider1.SetError(TXTTelefono, "");
+            errorProvider1.SetError(TXTDireccion, "");
 
+        }
+        
+        public HistoriaMedica Mapear()
+        {
+
+            paciente.Identificacion = Convert.ToInt32(TXTIdentidad.Text);
+            paciente.Nombre = TXTNombre.Text;
+            paciente.Apellido = TXTApellido.Text;
+            paciente.Edad = Convert.ToInt32(TXTEdad.Text);
+            paciente.Telefono = Convert.ToInt32(TXTTelefono);
+            paciente.Afiliacion = "Activa";
+
+
+
+
+            return null;
         }
 
         private bool ValidarCampos()
         {
             bool ok = true;
-            if (TextDireccion.Text.Equals(""))
+            if (TXTDireccion.Text.Equals(""))
             {
                 ok = false;
-                errorProvider1.SetError(TextDireccion, "Este campo se encuentra vacio por favor Ingrese una Direccion");
+                errorProvider1.SetError(TXTDireccion, "Este campo se encuentra vacio por favor Ingrese una Direccion");
             
             }
             else 
             {
                 BorrarMensaje();
             }
-            if (TextIdentificacion.Text.Equals("")) 
+            if (TXTIdentidad.Text.Equals("")) 
             {
                 ok = false;
-                errorProvider1.SetError(TextIdentificacion, "Este campo se encuentra vacio, por favor ingrese una identificacion");
+                errorProvider1.SetError(TXTIdentidad, "Este campo se encuentra vacio, por favor ingrese una identificacion");
             
             }
             else 
             {
                 BorrarMensaje();
             }
-            if (TextNombre.Text.Equals("")) 
+            if (TXTNombre.Text.Equals("")) 
             {
                 ok = false;
-                errorProvider1.SetError(TextNombre, "Este campo se encuentra vacio, por favor ingrese un nombre ");
+                errorProvider1.SetError(TXTNombre, "Este campo se encuentra vacio, por favor ingrese un nombre ");
             
             }
             else 
@@ -62,29 +81,29 @@ namespace Presentacion
                 BorrarMensaje();
             
             }
-            if (TextApellido.Text.Equals("")) 
+            if (TXTApellido.Text.Equals("")) 
             {
                 ok = false;
-                errorProvider1.SetError(TextApellido, "Este campo se encuentra vacio, por favor ingrese los apellidos");
+                errorProvider1.SetError(TXTApellido, "Este campo se encuentra vacio, por favor ingrese los apellidos");
             
             }
             else 
             {
                 BorrarMensaje();
             }
-            if (TextEdad.Text.Equals("")) 
+            if (TXTEdad.Text.Equals("")) 
             {
                 ok = false;
-                errorProvider1.SetError(TextEdad, "Este campo se encuentra vacio, por favor ingrese la edad");
+                errorProvider1.SetError(TXTEdad, "Este campo se encuentra vacio, por favor ingrese la edad");
             }
             else 
             {
                 BorrarMensaje();
             }
-            if(TextTelefono.Text.Equals(""))
+            if(TXTTelefono.Text.Equals(""))
             {
                 ok = false;
-                errorProvider1.SetError(TextTelefono, "Este campo se encuentra vacio, por favor ingrese el telefono");
+                errorProvider1.SetError(TXTTelefono, "Este campo se encuentra vacio, por favor ingrese el telefono");
             }
             else
             {
@@ -102,66 +121,69 @@ namespace Presentacion
         private void TextIdentificacion_Validating(object sender, CancelEventArgs e)
         {
             int num;
-            if (!int.TryParse(TextIdentificacion.Text, out num))
+            if (!int.TryParse(TXTIdentidad.Text, out num))
             {
-                errorProvider1.SetError(TextIdentificacion, "Solo se permite valores numericos");
+                errorProvider1.SetError(TXTIdentidad, "Solo se permite valores numericos");
             }
             else
             {
-                errorProvider1.SetError(TextIdentificacion, "");
+                errorProvider1.SetError(TXTIdentidad, "");
             }
         }
 
         private void TextNombre_Validating(object sender, CancelEventArgs e)
         {
             int num;
-            if (int.TryParse(TextNombre.Text, out num))
+            if (int.TryParse(TXTNombre.Text, out num))
             {
-                errorProvider1.SetError(TextNombre, "Solo se permite valores Letra");
+                errorProvider1.SetError(TXTNombre, "Solo se permite valores Letra");
             }
             else
             {
-                errorProvider1.SetError(TextNombre, "");
+                errorProvider1.SetError(TXTNombre, "");
             }
         }
 
         private void TextApellido_Validating(object sender, CancelEventArgs e)
         {
             int num;
-            if (int.TryParse(TextApellido.Text, out num))
+            if (int.TryParse(TXTApellido.Text, out num))
             {
-                errorProvider1.SetError(TextApellido, "Solo se permite valores Letra");
+                errorProvider1.SetError(TXTApellido, "Solo se permite valores Letra");
             }
             else
             {
-                errorProvider1.SetError(TextApellido, "");
+                errorProvider1.SetError(TXTApellido, "");
             }
         }
 
         private void TextEdad_Validating(object sender, CancelEventArgs e)
         {
             int num;
-            if (!int.TryParse(TextEdad.Text, out num))
+            if (!int.TryParse(TXTEdad.Text, out num))
             {
-                errorProvider1.SetError(TextEdad, "Solo se permite valores numericos");
+                errorProvider1.SetError(TXTEdad, "Solo se permite valores numericos");
             }
             else
             {
-                errorProvider1.SetError(TextEdad, "");
+                errorProvider1.SetError(TXTEdad, "");
             }
         }
 
         private void TextTelefono_Validating(object sender, CancelEventArgs e)
         {
             int num;
-            if (!int.TryParse(TextTelefono.Text, out num))
+            if (!int.TryParse(TXTTelefono.Text, out num))
             {
-                errorProvider1.SetError(TextTelefono, "Solo se permite valores numericos");
+                errorProvider1.SetError(TXTTelefono, "Solo se permite valores numericos");
             }
             else
             {
-                errorProvider1.SetError(TextTelefono, "");
+                errorProvider1.SetError(TXTTelefono, "");
             }
         }
+
+
+
     }
 }

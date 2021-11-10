@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class ValoracionMultiDiciplinar
+    public class ValoracionMultiDiciplinar
     {
         public string InformeIndividual { get; set; }
         public string InformeGrupal { get; set; }

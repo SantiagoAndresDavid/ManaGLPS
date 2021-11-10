@@ -30,8 +30,8 @@ namespace Presentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BtnEditar = new System.Windows.Forms.Button();
@@ -44,18 +44,18 @@ namespace Presentacion
             this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.TextDireccion = new System.Windows.Forms.TextBox();
+            this.TXTDireccion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TextTelefono = new System.Windows.Forms.TextBox();
+            this.TXTTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TextEdad = new System.Windows.Forms.TextBox();
+            this.TXTEdad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.TextApellido = new System.Windows.Forms.TextBox();
+            this.TXTApellido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TextNombre = new System.Windows.Forms.TextBox();
+            this.TXTNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TextIdentificacion = new System.Windows.Forms.TextBox();
+            this.TXTIdentidad = new System.Windows.Forms.TextBox();
             this.LblUsuario = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,14 +129,14 @@ namespace Presentacion
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,16 +146,16 @@ namespace Presentacion
             this.Edad,
             this.Telefono,
             this.Direccion});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(202, 419);
+            this.dataGridView1.Location = new System.Drawing.Point(139, 409);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -212,9 +212,9 @@ namespace Presentacion
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.groupBox2.Controls.Add(this.TextDireccion);
+            this.groupBox2.Controls.Add(this.TXTDireccion);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.TextTelefono);
+            this.groupBox2.Controls.Add(this.TXTTelefono);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.Location = new System.Drawing.Point(731, 174);
@@ -224,14 +224,14 @@ namespace Presentacion
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion de contacto";
             // 
-            // TextDireccion
+            // TXTDireccion
             // 
-            this.TextDireccion.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.TextDireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.TextDireccion.Location = new System.Drawing.Point(179, 76);
-            this.TextDireccion.Name = "TextDireccion";
-            this.TextDireccion.Size = new System.Drawing.Size(206, 33);
-            this.TextDireccion.TabIndex = 10;
+            this.TXTDireccion.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TXTDireccion.ForeColor = System.Drawing.Color.DimGray;
+            this.TXTDireccion.Location = new System.Drawing.Point(179, 76);
+            this.TXTDireccion.Name = "TXTDireccion";
+            this.TXTDireccion.Size = new System.Drawing.Size(206, 33);
+            this.TXTDireccion.TabIndex = 10;
             // 
             // label5
             // 
@@ -243,15 +243,15 @@ namespace Presentacion
             this.label5.TabIndex = 9;
             this.label5.Text = "Direccion:";
             // 
-            // TextTelefono
+            // TXTTelefono
             // 
-            this.TextTelefono.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.TextTelefono.ForeColor = System.Drawing.Color.DimGray;
-            this.TextTelefono.Location = new System.Drawing.Point(179, 28);
-            this.TextTelefono.Name = "TextTelefono";
-            this.TextTelefono.Size = new System.Drawing.Size(206, 33);
-            this.TextTelefono.TabIndex = 8;
-            this.TextTelefono.Validating += new System.ComponentModel.CancelEventHandler(this.TextTelefono_Validating);
+            this.TXTTelefono.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TXTTelefono.ForeColor = System.Drawing.Color.DimGray;
+            this.TXTTelefono.Location = new System.Drawing.Point(179, 28);
+            this.TXTTelefono.Name = "TXTTelefono";
+            this.TXTTelefono.Size = new System.Drawing.Size(206, 33);
+            this.TXTTelefono.TabIndex = 8;
+            this.TXTTelefono.Validating += new System.ComponentModel.CancelEventHandler(this.TextTelefono_Validating);
             // 
             // label4
             // 
@@ -266,13 +266,13 @@ namespace Presentacion
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.TextEdad);
+            this.groupBox1.Controls.Add(this.TXTEdad);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.TextApellido);
+            this.groupBox1.Controls.Add(this.TXTApellido);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.TextNombre);
+            this.groupBox1.Controls.Add(this.TXTNombre);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.TextIdentificacion);
+            this.groupBox1.Controls.Add(this.TXTIdentidad);
             this.groupBox1.Controls.Add(this.LblUsuario);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(202, 123);
@@ -282,15 +282,15 @@ namespace Presentacion
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion basica del cliente";
             // 
-            // TextEdad
+            // TXTEdad
             // 
-            this.TextEdad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.TextEdad.ForeColor = System.Drawing.Color.DimGray;
-            this.TextEdad.Location = new System.Drawing.Point(157, 180);
-            this.TextEdad.Name = "TextEdad";
-            this.TextEdad.Size = new System.Drawing.Size(91, 33);
-            this.TextEdad.TabIndex = 12;
-            this.TextEdad.Validating += new System.ComponentModel.CancelEventHandler(this.TextEdad_Validating);
+            this.TXTEdad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TXTEdad.ForeColor = System.Drawing.Color.DimGray;
+            this.TXTEdad.Location = new System.Drawing.Point(157, 180);
+            this.TXTEdad.Name = "TXTEdad";
+            this.TXTEdad.Size = new System.Drawing.Size(91, 33);
+            this.TXTEdad.TabIndex = 12;
+            this.TXTEdad.Validating += new System.ComponentModel.CancelEventHandler(this.TextEdad_Validating);
             // 
             // label3
             // 
@@ -302,15 +302,15 @@ namespace Presentacion
             this.label3.TabIndex = 11;
             this.label3.Text = "Edad:";
             // 
-            // TextApellido
+            // TXTApellido
             // 
-            this.TextApellido.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.TextApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.TextApellido.Location = new System.Drawing.Point(157, 131);
-            this.TextApellido.Name = "TextApellido";
-            this.TextApellido.Size = new System.Drawing.Size(316, 33);
-            this.TextApellido.TabIndex = 10;
-            this.TextApellido.Validating += new System.ComponentModel.CancelEventHandler(this.TextApellido_Validating);
+            this.TXTApellido.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TXTApellido.ForeColor = System.Drawing.Color.DimGray;
+            this.TXTApellido.Location = new System.Drawing.Point(157, 131);
+            this.TXTApellido.Name = "TXTApellido";
+            this.TXTApellido.Size = new System.Drawing.Size(316, 33);
+            this.TXTApellido.TabIndex = 10;
+            this.TXTApellido.Validating += new System.ComponentModel.CancelEventHandler(this.TextApellido_Validating);
             // 
             // label2
             // 
@@ -322,15 +322,15 @@ namespace Presentacion
             this.label2.TabIndex = 9;
             this.label2.Text = "Apellido:";
             // 
-            // TextNombre
+            // TXTNombre
             // 
-            this.TextNombre.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.TextNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.TextNombre.Location = new System.Drawing.Point(157, 82);
-            this.TextNombre.Name = "TextNombre";
-            this.TextNombre.Size = new System.Drawing.Size(316, 33);
-            this.TextNombre.TabIndex = 8;
-            this.TextNombre.Validating += new System.ComponentModel.CancelEventHandler(this.TextNombre_Validating);
+            this.TXTNombre.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TXTNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.TXTNombre.Location = new System.Drawing.Point(157, 82);
+            this.TXTNombre.Name = "TXTNombre";
+            this.TXTNombre.Size = new System.Drawing.Size(316, 33);
+            this.TXTNombre.TabIndex = 8;
+            this.TXTNombre.Validating += new System.ComponentModel.CancelEventHandler(this.TextNombre_Validating);
             // 
             // label1
             // 
@@ -342,15 +342,15 @@ namespace Presentacion
             this.label1.TabIndex = 7;
             this.label1.Text = "Nombre:";
             // 
-            // TextIdentificacion
+            // TXTIdentidad
             // 
-            this.TextIdentificacion.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.TextIdentificacion.ForeColor = System.Drawing.Color.DimGray;
-            this.TextIdentificacion.Location = new System.Drawing.Point(157, 33);
-            this.TextIdentificacion.Name = "TextIdentificacion";
-            this.TextIdentificacion.Size = new System.Drawing.Size(316, 33);
-            this.TextIdentificacion.TabIndex = 6;
-            this.TextIdentificacion.Validating += new System.ComponentModel.CancelEventHandler(this.TextIdentificacion_Validating);
+            this.TXTIdentidad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.TXTIdentidad.ForeColor = System.Drawing.Color.DimGray;
+            this.TXTIdentidad.Location = new System.Drawing.Point(157, 33);
+            this.TXTIdentidad.Name = "TXTIdentidad";
+            this.TXTIdentidad.Size = new System.Drawing.Size(316, 33);
+            this.TXTIdentidad.TabIndex = 6;
+            this.TXTIdentidad.Validating += new System.ComponentModel.CancelEventHandler(this.TextIdentificacion_Validating);
             // 
             // LblUsuario
             // 
@@ -406,18 +406,18 @@ namespace Presentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox TextDireccion;
+        private System.Windows.Forms.TextBox TXTDireccion;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TextTelefono;
+        private System.Windows.Forms.TextBox TXTTelefono;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TextEdad;
+        private System.Windows.Forms.TextBox TXTEdad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TextApellido;
+        private System.Windows.Forms.TextBox TXTApellido;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TextNombre;
+        private System.Windows.Forms.TextBox TXTNombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TextIdentificacion;
+        private System.Windows.Forms.TextBox TXTIdentidad;
         private System.Windows.Forms.Label LblUsuario;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }

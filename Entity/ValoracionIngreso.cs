@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class ValoracionIngreso
+    public class ValoracionIngreso
     {
         public string Deportiva { get; set; }
         public String DiagnosticoRemision { get; set; }
-        public byte ImagenDiagnostico { get; set; }
+        public string ImagenDiagnostico { get; set; }
         public Lesion Lesion { get; set;}
-        public ValoracionIngreso(string deportiva, string diagnosticoRemision, byte imagenDiagnostico, string caracteristicas, string antecedentes)
+        public ValoracionIngreso(string deportiva, string diagnosticoRemision, string imagenDiagnostico, string caracteristicas, string antecedentes)
         {
             Deportiva = deportiva;
             DiagnosticoRemision = diagnosticoRemision;

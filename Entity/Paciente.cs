@@ -2,7 +2,7 @@
 
 namespace Entity
 {
-    class Paciente
+    public class Paciente
     {
         public int Identificacion { get; set; }
         public string Nombre { get; set; }
@@ -11,6 +11,10 @@ namespace Entity
         public int Telefono { get; set; }
         public string Afiliacion { get; set; }
 
+        public Paciente()
+        {
+                
+        }
         public Paciente(int identificacion, string nombre, string apellido, int edad, int telefono, string afiliacion)
         {
             Identificacion = identificacion;

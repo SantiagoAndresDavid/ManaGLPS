@@ -20,17 +20,12 @@ namespace Presentacion
 
         private void OcultarSubMenuIniciar()
         {
-            RTBuscarPaciente.Visible = true;
-            BtnGuardarConsultaPaciente.Visible = true;
-            if ((RTBuscarPaciente.Visible = true) && (BtnGuardarConsultaPaciente.Visible = true))
-            {
-
-                LblLetrero.Text = "Ingrese el codigo del paciente";
-
-
-            }
-            RTBusquedaExpediente.Visible = false;
-            BtnGuardarConsultaExpediente.Visible = false;
+            RTBuscarConsulta.Visible = false;
+            BtnBuscarConsulta.Visible = false;
+            PctConsulta.Visible = false;
+            RTBusquedaExpediente.Visible = true;
+            BtnGuardarConsultaExpediente.Visible = true;
+            PctExpediente.Visible = true;
         }
 
         private void Abrir(object formHija)
@@ -49,14 +44,14 @@ namespace Presentacion
         {
 
             bool ok = true;
-            if (RTBuscarPaciente.Text.Equals("Ingrese el codigo del Paciente") || RTBuscarPaciente.Text.Equals(""))
+            if (RTBuscarConsulta.Text.Equals("Ingrese el codigo del Paciente") || RTBuscarConsulta.Text.Equals(""))
             {
                 ok = false;
-                errorProvider1.SetError(RTBuscarPaciente, "Estes campo esta vacio, por favor ingrese un codigo");
+                errorProvider1.SetError(RTBuscarConsulta, "Estes campo esta vacio, por favor ingrese un codigo");
             }
             else
             {
-                errorProvider1.SetError(RTBuscarPaciente, "");
+                errorProvider1.SetError(RTBuscarConsulta, "");
             }
 
 
@@ -85,36 +80,30 @@ namespace Presentacion
         private void BtnGuardarConsultaPaciente_Click(object sender, EventArgs e)
         {
             ValidarCamposPaciente();
-            if (RTBuscarPaciente.Text == "1234")
+            if (RTBuscarConsulta.Text == "1234")
             {
-                RTBuscarPaciente.Visible = false;
-                BtnGuardarConsultaPaciente.Visible = false;
-                PctPaciente.Visible = false;
-                RTBusquedaExpediente.Visible = true;
-                BtnGuardarConsultaExpediente.Visible = true;
-                PctExpediente.Visible = true;
-                if ((RTBusquedaExpediente.Visible = true) && (BtnGuardarConsultaExpediente.Visible = true))
-                {
-                    LblLetrero.Text = "Ingrese el codigo del expediente";
-
-
-                }
-
+                RTBuscarConsulta.Visible = false;
+                BtnBuscarConsulta.Visible = false;
+                PctConsulta.Visible = false;
+                RTBusquedaExpediente.Visible = false;
+                BtnGuardarConsultaExpediente.Visible = false;
+                PctExpediente.Visible = false;
+                Abrir(new FrmFormularioConsultaMedica());
             }
             else
             {
-                if (!(RTBuscarPaciente.Text == "1234") && (!(RTBuscarPaciente.Text == "")) && (!(RTBuscarPaciente.Text == "Ingrese el codigo del Paciente")))
+                if (!(RTBuscarConsulta.Text == "1234") && (!(RTBuscarConsulta.Text == "")) && (!(RTBuscarConsulta.Text == "Ingrese el codigo de la Consulta")))
                 {
                     MessageBoxButtons botones = MessageBoxButtons.OK;
-                    DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
+                    DialogResult dr = MessageBox.Show("EstaConsulta no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
                     if (dr == DialogResult.OK)
                     {
-                        RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
-                        RTBuscarPaciente.ForeColor = Color.DimGray;
-                        RTBuscarPaciente.Font = new Font(RTBuscarPaciente.Font, FontStyle.Italic);
-                        RTBuscarPaciente.Visible = true;
-                        BtnGuardarConsultaPaciente.Visible = true;
-                        PctPaciente.Visible = true;
+                        RTBuscarConsulta.Text = "Ingrese el codigo de la Consulta ";
+                        RTBuscarConsulta.ForeColor = Color.DimGray;
+                        RTBuscarConsulta.Font = new Font(RTBuscarConsulta.Font, FontStyle.Italic);
+                        RTBuscarConsulta.Visible = true;
+                        BtnBuscarConsulta.Visible = true;
+                        PctConsulta.Visible = true;
 
                     }
 
@@ -138,8 +127,10 @@ namespace Presentacion
                 RTBusquedaExpediente.Visible = false;
                 BtnGuardarConsultaExpediente.Visible = false;
                 PctExpediente.Visible = false;
-                LblLetrero.Visible = false;
-                Abrir(new FrmFormularioConsultaMedica());
+                RTBuscarConsulta.Visible = true;
+                BtnBuscarConsulta.Visible = true;
+                PctConsulta.Visible = true;
+              
             }
             else
             {
@@ -168,20 +159,20 @@ namespace Presentacion
 
         private void RTBuscarPaciente_Enter(object sender, EventArgs e)
         {
-            if (RTBuscarPaciente.Text == "Ingrese el codigo del Paciente")
+            if (RTBuscarConsulta.Text == "Ingrese el codigo de la Consulta")
             {
-                RTBuscarPaciente.Text = "";
-                RTBuscarPaciente.ForeColor = Color.Black;
-                RTBuscarPaciente.Font = new Font(RTBuscarPaciente.Font, FontStyle.Regular);
+                RTBuscarConsulta.Text = "";
+                RTBuscarConsulta.ForeColor = Color.Black;
+                RTBuscarConsulta.Font = new Font(RTBuscarConsulta.Font, FontStyle.Regular);
             }
         }
 
         private void RTBuscarPaciente_Leave(object sender, EventArgs e)
         {
-            if (RTBuscarPaciente.Text == "")
+            if (RTBuscarConsulta.Text == "")
             {
-                RTBuscarPaciente.Text = "Ingrese el codigo del Paciente";
-                RTBuscarPaciente.ForeColor = Color.DimGray;
+                RTBuscarConsulta.Text = "Ingrese el codigo de la Consulta";
+                RTBuscarConsulta.ForeColor = Color.DimGray;
             }
         }
 

@@ -122,7 +122,7 @@ namespace Presentacion
 
         private void BtnAgregarExpediente_Click(object sender, EventArgs e)
         {
-            Abrir(new FrmBuscarExpediente());
+            Abrir(new FrmFormularioExpediente());
 
         }
 
@@ -133,7 +133,7 @@ namespace Presentacion
 
         private void BtnPaciente_Click(object sender, EventArgs e)
         {
-            Abrir(new FrmRegistrarPaciente());
+            Abrir(new FrmBuscarPaciente());
         }
 
         private void BtnConsultarExpediente_Click(object sender, EventArgs e)

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Entity;
 namespace Presentacion
 {
     public partial class FrmFormularioExpediente : Form
@@ -19,11 +19,17 @@ namespace Presentacion
         }
 
         
-
-        
-
         private void BtnGuardar1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private HistoriaMedica MapearHistoriaMedica()
+        {
+            HistoriaMedica mapearHistoriaMedica = new HistoriaMedica();
+            mapearHistoriaMedica.FechaDeCreacion = 
+
+            return null;
         }
     }
 }

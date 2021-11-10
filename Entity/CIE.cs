@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class CIE
+    public class CIE
     {
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
 
         public CIE(string codigo, string descripcion)
         {
-            this.Codigo = codigo;
+            Codigo = codigo;
             Descripcion = descripcion;
         }
     }

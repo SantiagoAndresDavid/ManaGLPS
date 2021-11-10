@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class HistoriaMedica
+    public class HistoriaMedica
     {
         public DateTime FechaDeCreacion { get; set; }
         public DateTime UltimaFechaDeEdicion { get; set; }
@@ -18,6 +18,10 @@ namespace Entity
 
         public Paciente Paciente { get; set; }
 
+        public HistoriaMedica()
+        {
+
+        }
 
         public HistoriaMedica(DateTime fechaDeCreacion, DateTime ultimaFechaDeEdicion, DateTime fechaDeFinalizacion,
             string titutlo, int codigo, string estado, int identificacion, string nombre, string apellido, int edad,

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Temporalidad
+    public class Temporalidad
     {
         public DateTime FechaCreada { get; set; }
         public DateTime UltimaModificacion { get; set; }
