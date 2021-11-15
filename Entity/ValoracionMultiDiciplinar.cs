@@ -8,6 +8,7 @@ namespace Entity
 {
     public class ValoracionMultiDiciplinar
     {
+        public int Codigo { get; set; }
         public string InformeIndividual { get; set; }
         public string InformeGrupal { get; set; }
 

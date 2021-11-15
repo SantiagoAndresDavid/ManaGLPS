@@ -27,7 +27,7 @@ namespace Presentacion
         private HistoriaMedica MapearHistoriaMedica()
         {
             HistoriaMedica mapearHistoriaMedica = new HistoriaMedica();
-            mapearHistoriaMedica.FechaDeCreacion = 
+            
 
             return null;
         }

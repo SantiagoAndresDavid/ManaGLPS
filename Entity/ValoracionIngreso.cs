@@ -8,6 +8,8 @@ namespace Entity
 {
     public class ValoracionIngreso
     {
+        public int Codigo { get; set; }
+        
         public string Deportiva { get; set; }
         public String DiagnosticoRemision { get; set; }
         public string ImagenDiagnostico { get; set; }

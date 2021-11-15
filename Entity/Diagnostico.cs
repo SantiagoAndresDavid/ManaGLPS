@@ -9,6 +9,7 @@ namespace Entity
     public class Diagnostico
     {
         public string ObservacionesExtra { get; set; }
+        public int Codigo { get; set; }
         
         public IList<CIE> Diagnosticos { get; set; }
 

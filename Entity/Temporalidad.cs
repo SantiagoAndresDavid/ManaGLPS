@@ -8,6 +8,7 @@ namespace Entity
 {
     public class Temporalidad
     {
+        public int codigo { get; set; }
         public DateTime FechaCreada { get; set; }
         public DateTime UltimaModificacion { get; set; }
 

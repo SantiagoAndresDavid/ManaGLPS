@@ -9,6 +9,8 @@ namespace Entity
     public class Lesion
     {
         public string Caracteristicas { get; set; }
+
+        public int Codigo { get; set; }
         
         public string Antecedentes { get; set;  }
 

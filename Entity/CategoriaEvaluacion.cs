@@ -8,6 +8,7 @@ namespace Entity
 {
     public class CategoriaEvaluacion
     {
+        public int Codigo { get; set; }
         public int EscalaDolor { get; set; }
         public string Localizacion { get; set; }
         public int FrecuenciaAumento { get; set; }

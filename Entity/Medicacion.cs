@@ -8,6 +8,7 @@ namespace Entity
 {
     public class Medicacion
     {
+        public int codigo { get; set; }
         public string Prescripcion { get; set; }
         public string Rehabilitacion { get; set; }
 
