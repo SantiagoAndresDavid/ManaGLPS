@@ -128,7 +128,7 @@ namespace Presentacion
 
         private void BtnAgregarDatosConsulta_Click(object sender, EventArgs e)
         {
-            Abrir(new FrmBuscarConsultaMedica());
+            Abrir(new FrmFiltroConsultaMedica());
         }
 
         private void BtnPaciente_Click(object sender, EventArgs e)

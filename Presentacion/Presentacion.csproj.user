@@ -25,6 +25,9 @@
     <Compile Update="FrmDesactivarOActivarExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmFiltroConsultaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

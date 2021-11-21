@@ -42,12 +42,10 @@ namespace Presentacion
 
         public ConsultaMedica Mapear()
         {
-            Random random = new Random();
-            int codigo = random.Next(1, 9999);
             string estado = "Activo";
             int fase = ((int)NMFaseTratamiento.Value);
-            string diagnostico = TXTDiagnostico.Text;
-
+           
+            
             DateTime fechaCreada = DTPFechaCreada.Value.Date;
             DateTime ultimaModificacion = DTPUltimaModificacion.Value.Date;
             string prescripcion = TXTPrescripcion.Text;
@@ -60,11 +58,10 @@ namespace Presentacion
             int disminucion = FrecuenciaDisminucion();
             string deportiva = TXTDeportividad.Text;
             string diagnosticoRemision = TXTDiagnostico.Text;
-            string imagenDiagnostico = this.Imagen.FileName;
+            string imagenDiagnostico = Imagen.FileName;
             string caracteristicas = TXTCaracteristicas.Text;
             string antecedentes = TXTAntecedentes.Text;
-
-            Consulta.Codigo = codigo;
+            
             Consulta.Estado = estado;
             Consulta.FaseTratamiento = fase;
             Consulta.Temporalidad = new Temporalidad(fechaCreada, ultimaModificacion);

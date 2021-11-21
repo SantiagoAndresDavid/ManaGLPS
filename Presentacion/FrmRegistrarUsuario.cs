@@ -7,16 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using Entity;
 
 namespace Presentacion
 {
     public partial class FrmRegistrarUsuario : Form
     {
+
+        UsuarioService usuarioService;
+
         public FrmRegistrarUsuario()
         {
             InitializeComponent();
+            usuarioService = new UsuarioService(ConfigConnectionString.ConnectionString);
         }
-
         private void TextCorreoElectronico_Enter(object sender, EventArgs e)
         {
             if (TextCorreoElectronico.Text == "usuario@ejemplo.com")
@@ -163,13 +168,23 @@ namespace Presentacion
                 BorrarMensaje();
             }
             return ok;
-
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             ValidarCampos();
+            string correo = TextCorreoElectronico.Text;
+            string nombreUsuario = TextNombreDeUsuario.Text;
+            string rol = CmbTipoDeUsuario.Text;
+            string contraseña = TextContraseña.Text;
+            Usuario usuario = new Usuario(nombreUsuario,contraseña,rol,correo);
+            string mensaje = usuarioService.Guardar(usuario);
+            MessageBox.Show(mensaje, "Guardar Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+
+
+        
 
         private void TextNombreDeUsuario_Validating(object sender, CancelEventArgs e)
         {

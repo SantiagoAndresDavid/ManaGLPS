@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 using Entity;
 
 namespace Presentacion
 {
     public partial class FrmRegistrarPaciente : Form
     {
-        Paciente paciente = new Paciente();
+        PacienteService pacienteService;
 
         public FrmRegistrarPaciente()
         {
             InitializeComponent();
+            pacienteService = new PacienteService(ConfigConnectionString.ConnectionString);
         }
 
         public void BorrarMensaje()
@@ -31,21 +33,6 @@ namespace Presentacion
 
         }
         
-        public HistoriaMedica Mapear()
-        {
-
-            paciente.Identificacion = Convert.ToInt32(TXTIdentidad.Text);
-            paciente.Nombre = TXTNombre.Text;
-            paciente.Apellido = TXTApellido.Text;
-            paciente.Edad = Convert.ToInt32(TXTEdad.Text);
-            paciente.Telefono = Convert.ToInt32(TXTTelefono);
-            paciente.Afiliacion = "Activa";
-
-
-
-
-            return null;
-        }
 
         private bool ValidarCampos()
         {
@@ -116,6 +103,14 @@ namespace Presentacion
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             ValidarCampos();
+            Paciente paciente = new Paciente();
+            paciente.Identificacion = Convert.ToInt32(TXTIdentidad.Text);
+            paciente.Nombre = TXTNombre.Text;
+            paciente.Apellido = TXTApellido.Text;
+            paciente.Edad = Convert.ToInt32(TXTEdad.Text);
+            paciente.Telefono = Convert.ToInt32(TXTTelefono);
+            paciente.Afiliacion = "Activa";
+            pacienteService.Guardar(paciente);
         }
 
         private void TextIdentificacion_Validating(object sender, CancelEventArgs e)

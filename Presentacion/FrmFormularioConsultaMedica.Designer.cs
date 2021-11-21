@@ -813,12 +813,13 @@ namespace Presentacion
             // 
             // BtnGuardarCIE
             // 
-            this.BtnGuardarCIE.Location = new System.Drawing.Point(708, 70);
+            this.BtnGuardarCIE.BackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCIE.Image = global::Presentacion.Properties.Resources.Guardar_48;
+            this.BtnGuardarCIE.Location = new System.Drawing.Point(708, 59);
             this.BtnGuardarCIE.Name = "BtnGuardarCIE";
-            this.BtnGuardarCIE.Size = new System.Drawing.Size(74, 36);
+            this.BtnGuardarCIE.Size = new System.Drawing.Size(61, 59);
             this.BtnGuardarCIE.TabIndex = 46;
-            this.BtnGuardarCIE.Text = "button1";
-            this.BtnGuardarCIE.UseVisualStyleBackColor = true;
+            this.BtnGuardarCIE.UseVisualStyleBackColor = false;
             this.BtnGuardarCIE.Click += new System.EventHandler(this.BtnGuardarCIE_Click);
             // 
             // TXTDescripcionCIE
