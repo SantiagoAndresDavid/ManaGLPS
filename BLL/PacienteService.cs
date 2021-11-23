@@ -36,5 +36,40 @@ namespace BLL
             return "se guardo con exito";
         }
         
+        public Paciente buscarPaciente(int Identificacion)
+        {
+            try
+            {
+                _connectionManager.Open();
+               return _pacienteRepository.BuscarPorID(Identificacion);
+
+            }
+            catch
+            {
+
+            }
+            return null;
+        }
+
+        public string Modificar(int codigo)
+        {
+            try
+            {
+                _connectionManager.Open();
+                string estado = _pacienteRepository.BuscarEstado(codigo);
+                if(estado.Equals("Desactivado")){
+                    _pacienteRepository.Activar(codigo); 
+                }
+                _pacienteRepository.Desactivar(codigo);
+            }
+            catch (Exception e)
+            {
+                return "Se presento el siguiente error" + e.Message;
+            }
+
+            return "se modifico con Exito";
+        }
+        
+
     }
 }

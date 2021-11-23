@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using Entity;
@@ -14,15 +7,18 @@ namespace Presentacion
 {
     public partial class FrmFormularioExpediente : Form
     {
-        HistoriaMedicaService historiaMedicaService;
+        HistoriaMedicaService _historiaMedicaService;
+        PacienteService _PacienteServices;
+        Paciente paciente;
+
 
         public FrmFormularioExpediente()
         {
             InitializeComponent();
-            historiaMedicaService = new HistoriaMedicaService(ConfigConnectionString.ConnectionString);
+            _historiaMedicaService = new HistoriaMedicaService(ConfigConnectionString.ConnectionString);
+            _PacienteServices = new PacienteService(ConfigConnectionString.ConnectionString);
         }
-
-
+        
         private void BtnGuarda2_Click(object sender, EventArgs e)
         {
             HistoriaMedica historiaMedica = new HistoriaMedica();
@@ -31,8 +27,22 @@ namespace Presentacion
             historiaMedica.UltimaFechaDeEdicion = DateTime.Now;
             historiaMedica.FechaDeFinalizacion = Convert.ToDateTime(DTPFechaFinalizacion.Text);
             historiaMedica.Estado = "Activo";
-            string mensaje = historiaMedicaService.Guardar(historiaMedica);
+            historiaMedica.Paciente = new Paciente();
+            historiaMedica.Paciente.Identificacion = paciente.Identificacion;
+            string mensaje = _historiaMedicaService.Guardar(historiaMedica);
             MessageBox.Show(mensaje, "Guardar Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarPaciente_Click(object sender, EventArgs e)
+        {
+           paciente =  _PacienteServices.buscarPaciente(Convert.ToInt32(TXTIdentificacionPaciente.Text));
+           TXTNombrePaciente.Text =  paciente.Nombre;
+      
         }
     }
 }

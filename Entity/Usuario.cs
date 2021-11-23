@@ -9,6 +9,11 @@ namespace Entity
         public string Rol { get; set; }
         public string Email { get; set; }
 
+
+        public Usuario()
+        {
+        }
+
         public Usuario(string nombreDeUsuario, string contraseña, string rol, string email)
         {
             NombreDeUsuario = nombreDeUsuario;

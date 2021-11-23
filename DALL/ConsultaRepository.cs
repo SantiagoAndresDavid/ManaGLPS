@@ -22,9 +22,9 @@ namespace DALL
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into Usuario (Estado,FaseTratamiento) values (@Estado,@FaseTratamiento)";
+                command.CommandText = "insert into ConsultasMedicas (Estado,FaseTratamiento) values (@Estado,@FaseTratamiento)";
                 command.Parameters.Add(new SqlParameter("@Estado",consulta.Estado));
-                command.Parameters.Add(new SqlParameter("@FaseTratamient",consulta.FaseTratamiento));
+                command.Parameters.Add(new SqlParameter("@FaseTratamiento",consulta.FaseTratamiento));
                 int fila = command.ExecuteNonQuery();
 
             }

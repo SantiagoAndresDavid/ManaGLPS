@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,16 +15,19 @@ namespace Presentacion
 {
     public partial class FrmBuscarExpediente : Form
     {
+        HistoriaMedicaService _historiaMedicaService;
         public FrmBuscarExpediente()
         {
             InitializeComponent();
-
+            _historiaMedicaService = new HistoriaMedicaService(ConfigConnectionString.ConnectionString);
         }
 
         private void RTBusquedaExpediente_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
+
+
         private void Abrir(object formHija)
         {
             if (this.PnlContenedor.Controls.Count > 0)
@@ -40,15 +45,15 @@ namespace Presentacion
         {
 
             bool ok = true;
-            if (RTBusquedaPaciente.Text == "Ingrese el codigo del Expediente" || RTBusquedaPaciente.Text == "")
+            if (RTBusquedaExpediente.Text == "Ingrese el codigo del Expediente" || RTBusquedaExpediente.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(RTBusquedaPaciente, "Este campo esta vacio, Por favor ingrese un codigo");
+                errorProvider1.SetError(RTBusquedaExpediente, "Este campo esta vacio, Por favor ingrese un codigo");
 
             }
             else
             {
-                errorProvider1.SetError(RTBusquedaPaciente, "");
+                errorProvider1.SetError(RTBusquedaExpediente, "");
             }
             return ok;
         }
@@ -56,53 +61,34 @@ namespace Presentacion
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            ValidarCampos();
-            if (RTBusquedaPaciente.Text == "1234")
-            {
-                Abrir(new FrmFormularioExpediente());
-                RTBusquedaPaciente.Visible = false;
-                BtnGuardar.Visible = false;
-                PctPaciente.Visible = false;
+            HistoriaMedica historiaMedica = _historiaMedicaService.Buscar(Convert.ToInt32(RTBusquedaExpediente.Text));
+            Abrir(new FrmMostrarExpediente(historiaMedica));
+            RTBusquedaExpediente.Visible = false;
+            BtnGuardar.Visible = false;
+            PctPaciente.Visible = false;
 
 
-            }
-            else
-            {
-                if (!(RTBusquedaPaciente.Text == "1234") && (!(RTBusquedaPaciente.Text == "")) && (!(RTBusquedaPaciente.Text == "Ingrese el codigo del Expediente")))
-                {
-                    MessageBoxButtons botones = MessageBoxButtons.OK;
-                    DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                    if (dr == DialogResult.OK)
-                    {
-                        RTBusquedaPaciente.Text = "Ingrese el codigo del paciente";
-                        RTBusquedaPaciente.ForeColor = Color.DimGray;
-                        RTBusquedaPaciente.Font = new Font(RTBusquedaPaciente.Font, FontStyle.Italic);
-                        RTBusquedaPaciente.Visible = true;
-                        BtnGuardar.Visible = true;
-                    }
-                }
 
-            }
         }
 
         private void RTBusquedaExpediente_Enter(object sender, EventArgs e)
         {
-            if (RTBusquedaPaciente.Text == "Ingrese el codigo del Expediente")
+            if (RTBusquedaExpediente.Text == "Ingrese el codigo del Expediente")
             {
-                RTBusquedaPaciente.Text = "";
-                RTBusquedaPaciente.ForeColor = Color.Black;
-                RTBusquedaPaciente.Font = new Font(RTBusquedaPaciente.Font, FontStyle.Regular);
+                RTBusquedaExpediente.Text = "";
+                RTBusquedaExpediente.ForeColor = Color.Black;
+                RTBusquedaExpediente.Font = new Font(RTBusquedaExpediente.Font, FontStyle.Regular);
 
             }
         }
 
         private void RTBusquedaPaciente_Leave(object sender, EventArgs e)
         {
-            if (RTBusquedaPaciente.Text == "")
+            if (RTBusquedaExpediente.Text == "")
             {
-                RTBusquedaPaciente.Text = "Ingrese el codigo del Expediente";
-                RTBusquedaPaciente.ForeColor = Color.DimGray;
-                RTBusquedaPaciente.Font = new Font(RTBusquedaPaciente.Font, FontStyle.Italic);
+                RTBusquedaExpediente.Text = "Ingrese el codigo del Expediente";
+                RTBusquedaExpediente.ForeColor = Color.DimGray;
+                RTBusquedaExpediente.Font = new Font(RTBusquedaExpediente.Font, FontStyle.Italic);
             }
         }
 

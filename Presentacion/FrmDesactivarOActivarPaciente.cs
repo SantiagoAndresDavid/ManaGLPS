@@ -7,35 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace Presentacion
 {
     public partial class FrmDesactivarOActivarPaciente : Form
     {
+        HistoriaMedicaService _historiaMedicaService;
+        PacienteService _PacienteService;
         public FrmDesactivarOActivarPaciente()
         {
             InitializeComponent();
+            _historiaMedicaService = new HistoriaMedicaService(ConfigConnectionString.ConnectionString);
+            _PacienteService = new PacienteService(ConfigConnectionString.ConnectionString);
         }
 
 
         private void BtnBuscarExpediente_Click(object sender, EventArgs e)
         {
-            MessageBoxButtons botones = MessageBoxButtons.OK;
-            if (RTBuscarExpediente.Text == "1234")
-            {
-                DialogResult dr = MessageBox.Show("Se ha Desactivado Correctamente el paciente correctamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-            }
-            else
-            {
-
-                DialogResult dr = MessageBox.Show("Este paciente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                if (dr == DialogResult.OK)
-                {
-                    RTBuscarExpediente.Text = ""; 
-                }
-            }
+            int codigo = _historiaMedicaService.BuscarIdPersona(Convert.ToInt32(RTBuscarExpediente.Text));
+            string mensaje = _PacienteService.Modificar(codigo);
+            MessageBox.Show(mensaje, "Se modifico con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
+        
         private void RTBuscarExpediente_Leave(object sender, EventArgs e)
         {
             if (RTBuscarExpediente.Text == "")

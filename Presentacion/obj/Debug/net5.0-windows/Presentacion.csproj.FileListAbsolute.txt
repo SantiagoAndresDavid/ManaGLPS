@@ -178,3 +178,7 @@ C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\bin\Debug\net5.0-windows\appsettings.json
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmMostrarConsultaMedica.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmMostrarPaciente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.MostrarExpediente.resources
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\Presentacion\obj\Debug\net5.0-windows\Presentacion.FrmMostrarExpediente.resources

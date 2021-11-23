@@ -108,9 +108,10 @@ namespace Presentacion
             paciente.Nombre = TXTNombre.Text;
             paciente.Apellido = TXTApellido.Text;
             paciente.Edad = Convert.ToInt32(TXTEdad.Text);
-            paciente.Telefono = Convert.ToInt32(TXTTelefono);
+            paciente.Telefono = Convert.ToInt32(TXTTelefono.Text);
             paciente.Afiliacion = "Activa";
-            pacienteService.Guardar(paciente);
+            string mensaje =  pacienteService.Guardar(paciente);
+            MessageBox.Show(mensaje, "Guardar Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void TextIdentificacion_Validating(object sender, CancelEventArgs e)

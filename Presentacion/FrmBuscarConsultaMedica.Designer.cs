@@ -76,7 +76,7 @@ namespace Presentacion
             this.BtnGuardarConsultaExpediente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnGuardarConsultaExpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardarConsultaExpediente.Image = global::Presentacion.Properties.Resources.Buscar_321;
-            this.BtnGuardarConsultaExpediente.Location = new System.Drawing.Point(962, 308);
+            this.BtnGuardarConsultaExpediente.Location = new System.Drawing.Point(962, 300);
             this.BtnGuardarConsultaExpediente.Name = "BtnGuardarConsultaExpediente";
             this.BtnGuardarConsultaExpediente.Size = new System.Drawing.Size(70, 68);
             this.BtnGuardarConsultaExpediente.TabIndex = 12;
@@ -92,7 +92,7 @@ namespace Presentacion
             this.BtnBuscarConsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnBuscarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscarConsulta.Image = global::Presentacion.Properties.Resources.Buscar_321;
-            this.BtnBuscarConsulta.Location = new System.Drawing.Point(962, 308);
+            this.BtnBuscarConsulta.Location = new System.Drawing.Point(962, 300);
             this.BtnBuscarConsulta.Name = "BtnBuscarConsulta";
             this.BtnBuscarConsulta.Size = new System.Drawing.Size(70, 68);
             this.BtnBuscarConsulta.TabIndex = 14;

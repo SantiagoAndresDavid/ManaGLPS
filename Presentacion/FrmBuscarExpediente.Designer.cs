@@ -34,7 +34,7 @@ namespace Presentacion
             this.PnlContenedor = new System.Windows.Forms.Panel();
             this.PctPaciente = new System.Windows.Forms.PictureBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
-            this.RTBusquedaPaciente = new System.Windows.Forms.RichTextBox();
+            this.RTBusquedaExpediente = new System.Windows.Forms.RichTextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctPaciente)).BeginInit();
@@ -45,7 +45,7 @@ namespace Presentacion
             // 
             this.PnlContenedor.Controls.Add(this.PctPaciente);
             this.PnlContenedor.Controls.Add(this.BtnGuardar);
-            this.PnlContenedor.Controls.Add(this.RTBusquedaPaciente);
+            this.PnlContenedor.Controls.Add(this.RTBusquedaExpediente);
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.PnlContenedor.Name = "PnlContenedor";
@@ -78,18 +78,18 @@ namespace Presentacion
             this.BtnGuardar.UseVisualStyleBackColor = true;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
-            // RTBusquedaPaciente
+            // RTBusquedaExpediente
             // 
-            this.RTBusquedaPaciente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.RTBusquedaPaciente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBusquedaPaciente.Location = new System.Drawing.Point(213, 322);
-            this.RTBusquedaPaciente.Name = "RTBusquedaPaciente";
-            this.RTBusquedaPaciente.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.RTBusquedaPaciente.Size = new System.Drawing.Size(644, 36);
-            this.RTBusquedaPaciente.TabIndex = 11;
-            this.RTBusquedaPaciente.Text = "Ingrese el codigo del Expediente";
-            this.RTBusquedaPaciente.Enter += new System.EventHandler(this.RTBusquedaExpediente_Enter);
-            this.RTBusquedaPaciente.Leave += new System.EventHandler(this.RTBusquedaPaciente_Leave);
+            this.RTBusquedaExpediente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.RTBusquedaExpediente.ForeColor = System.Drawing.Color.DimGray;
+            this.RTBusquedaExpediente.Location = new System.Drawing.Point(207, 322);
+            this.RTBusquedaExpediente.Name = "RTBusquedaExpediente";
+            this.RTBusquedaExpediente.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.RTBusquedaExpediente.Size = new System.Drawing.Size(644, 36);
+            this.RTBusquedaExpediente.TabIndex = 11;
+            this.RTBusquedaExpediente.Text = "Ingrese el codigo del Expediente";
+            this.RTBusquedaExpediente.Enter += new System.EventHandler(this.RTBusquedaExpediente_Enter);
+            this.RTBusquedaExpediente.Leave += new System.EventHandler(this.RTBusquedaPaciente_Leave);
             // 
             // errorProvider1
             // 
@@ -117,6 +117,6 @@ namespace Presentacion
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.PictureBox PctPaciente;
         private System.Windows.Forms.Button BtnGuardar;
-        private System.Windows.Forms.RichTextBox RTBusquedaPaciente;
+        private System.Windows.Forms.RichTextBox RTBusquedaExpediente;
     }
 }

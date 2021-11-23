@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace Presentacion
 {
     public partial class FrmDesactivarOActivarExpediente : Form
     {
+        HistoriaMedicaService _historiaMedicaService;
+
+
         public FrmDesactivarOActivarExpediente()
         {
             InitializeComponent();
             OcultarSubMenuIniciar();
+            _historiaMedicaService = new HistoriaMedicaService(ConfigConnectionString.ConnectionString);
         }
 
         private void Abrir(object formHija)
@@ -28,7 +33,6 @@ namespace Presentacion
             this.PnlContenedor.Controls.Add(fh);
             this.PnlContenedor.Tag = fh;
             fh.Show();
-
         }
 
         private void OcultarSubMenuIniciar()
@@ -39,31 +43,15 @@ namespace Presentacion
 
         private void BtnBuscarExpediente_Click(object sender, EventArgs e)
         {
-
-            MessageBoxButtons botones = MessageBoxButtons.OK;
-
-            if (RTBuscarExpediente.Text == "1234")
-            {
-                DialogResult a = MessageBox.Show("Se ha Desactivado la Expediente medica", "Mensaje de informacion", botones, MessageBoxIcon.Information);
-                if (a == DialogResult.OK)
-                {
-                    RTBuscarExpediente.Text = "";
-                    RTBuscarExpediente.Visible = false;
-                    BtnBuscarExpediente.Visible = false;
-                }
-            }
-            else
-            {
-                DialogResult dr = MessageBox.Show("Este Expediente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                if (dr == DialogResult.OK)
-                {
-                    RTBuscarExpediente.Text = "";
-                    RTBuscarExpediente.Visible = true;
-                    RTBuscarExpediente.Visible = true;
-                }
-            }
+            
+            int codigo = Convert.ToInt32(RTBuscarExpediente.Text);
+            string mensaje = _historiaMedicaService.Modificar(codigo);
+            MessageBox.Show(mensaje, "Se modifico con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public void Editar()
+        {
+        }
 
 
         private void RTBuscarExpediente_Enter(object sender, EventArgs e)
@@ -85,15 +73,12 @@ namespace Presentacion
         }
 
 
-
         private void PnlContenedor_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void RTBuscarPaciente_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

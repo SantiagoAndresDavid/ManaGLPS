@@ -33,5 +33,36 @@ namespace BLL
             }
             return "se guardo con exito";
         }
+
+        public string Modificar(int codigo)
+        {
+            try
+            {
+                _connectionManager.Open();
+                string estado = _historiaMedicaRepository.BuscarEstado(codigo);
+                if(estado.Equals("Desactivado")){
+                    _historiaMedicaRepository.Activar(codigo); 
+                }
+                _historiaMedicaRepository.Desactivar(codigo);
+            }
+            catch (Exception e)
+            {
+                return "Se presento el siguiente error" + e.Message;
+            }
+
+            return "se modifico con Exito";
+        }
+
+        public HistoriaMedica Buscar(int codigo)
+        {
+            _connectionManager.Open();
+            return _historiaMedicaRepository.BuscarHistoriaMedica(codigo);
+        }
+
+        public int BuscarIdPersona(int codigo)
+        {
+            _connectionManager.Open();
+            return _historiaMedicaRepository.BuscarIdentificacionPaciente(codigo);
+        }
     }
 }

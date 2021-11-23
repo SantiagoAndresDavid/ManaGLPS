@@ -17,9 +17,9 @@ namespace DALL
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into Mediaciones (Prescripcion,Rehabilitacion) values (@Prescripcion,@Rehabilitacion)";
+                command.CommandText = "insert into Medicaciones (Prescripcion,Rehabilitacion) values (@Prescripcion,@Rehabilitacion)";
                 command.Parameters.Add(new SqlParameter("@Prescripcion",medicacion.Prescripcion));
-                command.Parameters.Add(new SqlParameter("@Rehablitacion",medicacion.Rehabilitacion));
+                command.Parameters.Add(new SqlParameter("@Rehabilitacion",medicacion.Rehabilitacion));
                 int fila = command.ExecuteNonQuery();
 
             }

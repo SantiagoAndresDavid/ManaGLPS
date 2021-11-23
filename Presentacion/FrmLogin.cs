@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using Entity;
 
 namespace Presentacion
 {
     public partial class FrmLogin : Form
     {
+        UsuarioService _UsuarioService;
         public FrmLogin()
         {
             InitializeComponent();
+            _UsuarioService = new UsuarioService(ConfigConnectionString.ConnectionString);
         }
 
         private void PctCerrar_Click(object sender, EventArgs e)
@@ -67,12 +71,19 @@ namespace Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmBienvenida bienvenida = new FrmBienvenida();
-            bienvenida.ShowDialog();
-            Form menu = new FrmPrincipal();
-            this.SetVisibleCore(false);
-            menu.Show();
+            Usuario usuario = _UsuarioService.BuscarPorNombre(textUsuario.Text);
+            
+            if (usuario.NombreDeUsuario.Equals(textUsuario.Text))
+            {
+                if (usuario.Contraseña.Equals(textContraseña.Text))
+                {
+                    this.Hide();
+                    FrmBienvenida bienvenida = new FrmBienvenida();
+                    Form menu = new FrmPrincipal();
+                    this.SetVisibleCore(false);
+                    menu.Show();
+                }
+            }
         }
     }
 }

@@ -133,7 +133,7 @@ namespace Presentacion
 
         private void BtnPaciente_Click(object sender, EventArgs e)
         {
-            Abrir(new FrmBuscarPaciente());
+            Abrir(new FrmRegistrarPaciente());
         }
 
         private void BtnConsultarExpediente_Click(object sender, EventArgs e)
@@ -144,6 +144,11 @@ namespace Presentacion
         private void BtnConsultarDatosConsulta_Click(object sender, EventArgs e)
         {
             Abrir(new FrmBuscarConsultaMedica());
+        }
+
+        private void btnConsultarPaciente_Click(object sender, EventArgs e)
+        {
+            Abrir(new FrmBuscarPaciente());
         }
 
         private void PnlContenedor_Paint(object sender, PaintEventArgs e)
@@ -180,6 +185,8 @@ namespace Presentacion
         {
             Abrir(new FrmDesactivarOActivarPaciente());
         }
+
+
 
         private void PctMinimizar_Click(object sender, EventArgs e)
         {

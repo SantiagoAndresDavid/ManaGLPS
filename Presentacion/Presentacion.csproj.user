@@ -31,6 +31,15 @@
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmMostrarConsultaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmMostrarExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmMostrarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -44,6 +53,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmFormularioExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MostrarExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

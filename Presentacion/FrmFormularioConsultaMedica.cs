@@ -8,28 +8,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 using Entity;
 
 namespace Presentacion
 {
     public partial class FrmFormularioConsultaMedica : Form
     {
-        OpenFileDialog Imagen = new OpenFileDialog();
-        ConsultaMedica Consulta = new ConsultaMedica();
-
+        ConsultaMedica consulta = new ConsultaMedica(); 
+        ConsultaService _consultaService;
+        string ruta = ""; 
         public FrmFormularioConsultaMedica()
         {
             InitializeComponent();
-            BtnEditar.Visible = false;
+            
+            _consultaService = new ConsultaService(ConfigConnectionString.ConnectionString);
         }
 
         private void BtnExaminar_Click(object sender, EventArgs e)
-        { 
-            Imagen.InitialDirectory = "C:\\";
-            Imagen.Filter = "Archivos de Imagen (*.jgp)(*.jpeg)|*.jpg;*.jpeng|PNG(*.png)|*.png";
+        {
+            OpenFileDialog Imagen = new OpenFileDialog();
+            if (Imagen.ShowDialog() == DialogResult.OK)
+            {
+                ruta = Imagen.FileName;
+            }
         }
-
-
         private void BtnEditar_Click(object sender, EventArgs e)
         {
 
@@ -37,15 +40,9 @@ namespace Presentacion
 
         private void BtnGuarda2_Click(object sender, EventArgs e)
         {
-
-        } 
-
-        public ConsultaMedica Mapear()
-        {
+            
             string estado = "Activo";
             int fase = ((int)NMFaseTratamiento.Value);
-           
-            
             DateTime fechaCreada = DTPFechaCreada.Value.Date;
             DateTime ultimaModificacion = DTPUltimaModificacion.Value.Date;
             string prescripcion = TXTPrescripcion.Text;
@@ -58,28 +55,30 @@ namespace Presentacion
             int disminucion = FrecuenciaDisminucion();
             string deportiva = TXTDeportividad.Text;
             string diagnosticoRemision = TXTDiagnostico.Text;
-            string imagenDiagnostico = Imagen.FileName;
+            string imagenDiagnostico = ruta;
             string caracteristicas = TXTCaracteristicas.Text;
             string antecedentes = TXTAntecedentes.Text;
-            
-            Consulta.Estado = estado;
-            Consulta.FaseTratamiento = fase;
-            Consulta.Temporalidad = new Temporalidad(fechaCreada, ultimaModificacion);
-            Consulta.Medicacion = new Medicacion(prescripcion, rehabilitacion);
-            Consulta.ValoracionMultiDiciplinar = new ValoracionMultiDiciplinar(informeIndividual, informeGrupal, escala,
+            consulta.Estado = estado;
+            consulta.FaseTratamiento = fase;
+            consulta.Temporalidad = new Temporalidad(fechaCreada, ultimaModificacion);
+            consulta.Medicacion = new Medicacion(prescripcion, rehabilitacion);
+            consulta.ValoracionMultiDiciplinar = new ValoracionMultiDiciplinar(informeIndividual, informeGrupal, escala,
                 localizacion, aumento, disminucion);
-            Consulta.ValoracionIngreso = new ValoracionIngreso(deportiva, diagnosticoRemision, imagenDiagnostico,
+            consulta.ValoracionIngreso = new ValoracionIngreso(deportiva, diagnosticoRemision, imagenDiagnostico,
                 caracteristicas, antecedentes);
-            return null;
-        }
-
-
+            
+            string mensaje = _consultaService.Guardar(consulta);
+            MessageBox.Show(mensaje, "Guardar Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        } 
+        
         private void BtnGuardarCIE_Click(object sender, EventArgs e)
         {
             string codigoCIE = TXTCodigo.Text;
             string descripcionCIE = TXTDescripcionCIE.Text;
             CIE cie = new CIE(codigoCIE,descripcionCIE);
-            Consulta.Diagnostico.AgregarCIE(cie);
+            string observacionesExtra = TextObservacionesExtra.Text;
+            consulta.Diagnostico = new Diagnostico(observacionesExtra);
+            consulta.Diagnostico.AgregarCIE(cie);
         }
 
         public int Escala()
@@ -167,5 +166,9 @@ namespace Presentacion
             return 0;
         }
 
+        private void TXTDiagnostico_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

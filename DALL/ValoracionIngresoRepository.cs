@@ -17,13 +17,14 @@ namespace DALL
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into ValoracionesIngreso (Deportiva,DiagnosticoRemision,ImagenDiagostica ) values (@Deportiva,@DiagnosticoRemision,@ImagenDiagostica)";
+                command.CommandText = "insert into ValoracionesIngreso (Deportiva,DiagnosticoRemision,ImagenDiagnostica) values (@Deportiva,@DiagnosticoRemision,@ImagenDiagnostica)";
                 command.Parameters.Add(new SqlParameter("@Deportiva",valoracionIngreso.Deportiva));
-                command.Parameters.Add(new SqlParameter("@DiagnositoRemison",valoracionIngreso.DiagnosticoRemision));
+                command.Parameters.Add(new SqlParameter("@DiagnosticoRemision",valoracionIngreso.DiagnosticoRemision));
                 command.Parameters.Add(new SqlParameter("@ImagenDiagnostica",valoracionIngreso.ImagenDiagnostico));
                 int fila = command.ExecuteNonQuery();
 
             }
+
         }
         
     }

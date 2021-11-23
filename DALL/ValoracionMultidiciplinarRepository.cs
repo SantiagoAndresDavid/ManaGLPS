@@ -13,13 +13,13 @@ namespace DALL
             _connection = connection;
         }
         
-        public void GuardarValoracionMultidiciplinar(ConsultaMedica consulta)
+        public void GuardarValoracionMultidiciplinar(ValoracionMultiDiciplinar valoracionMultiDiciplinar)
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into Temporalidades (InformeIndividual,InformeGrupal) values (@InformeIndividual,@InformeGrupal)";
-                command.Parameters.Add(new SqlParameter("@InformeIndividual",consulta.ValoracionMultiDiciplinar.InformeIndividual));
-                command.Parameters.Add(new SqlParameter("@InformeGrupal",consulta.ValoracionMultiDiciplinar.InformeGrupal));
+                command.CommandText = "insert into ValoracionesMultidiciplinar (InformeIndividual,InformeGrupal) values (@InformeIndividual,@InformeGrupal)";
+                command.Parameters.Add(new SqlParameter("@InformeIndividual",valoracionMultiDiciplinar.InformeIndividual));
+                command.Parameters.Add(new SqlParameter("@InformeGrupal",valoracionMultiDiciplinar.InformeGrupal));
                 
                 int fila = command.ExecuteNonQuery();
 

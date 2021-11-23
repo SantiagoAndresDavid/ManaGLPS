@@ -19,8 +19,7 @@ namespace Entity
         {
 
         }
-        public ConsultaMedica(int codigo, string estado, int faseTratamiento, string diagnostico, string codigoCIE,
-            string descripcionCIE, DateTime fechacreada, DateTime ultimaModificacion, string prescripcion,
+        public ConsultaMedica(int codigo, string estado, int faseTratamiento, string observacionesExtra, DateTime fechacreada, DateTime ultimaModificacion, string prescripcion,
             string rehabilitacion, string informeIndividual, string informeGrupal, int escala, string localizacion,
             int aumento, int disminucion, string deportiva, string diagnosticoRemision, string imagenDiagnostico,
             string caracteristicas, string antecedentes)
@@ -28,7 +27,7 @@ namespace Entity
             Codigo = codigo;
             Estado = estado;
             FaseTratamiento = faseTratamiento;
-            Diagnostico = new Diagnostico();
+            Diagnostico = new Diagnostico(observacionesExtra);
             Temporalidad = new Temporalidad(fechacreada, ultimaModificacion);
             Medicacion = new Medicacion(prescripcion, rehabilitacion);
             ValoracionMultiDiciplinar = new ValoracionMultiDiciplinar(informeIndividual, informeGrupal, escala,

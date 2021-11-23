@@ -35,10 +35,12 @@ namespace Presentacion
             this.RTBusquedaExpediente = new System.Windows.Forms.RichTextBox();
             this.PnlContenedor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PctPaciente)).BeginInit();
+            this.PnlContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // PctPaciente
             // 
+            this.PctPaciente.BackColor = System.Drawing.Color.White;
             this.PctPaciente.Image = global::Presentacion.Properties.Resources.Usuario;
             this.PctPaciente.Location = new System.Drawing.Point(839, 347);
             this.PctPaciente.Name = "PctPaciente";
@@ -49,17 +51,18 @@ namespace Presentacion
             // 
             // BtnGuardar
             // 
+            this.BtnGuardar.BackColor = System.Drawing.Color.White;
             this.BtnGuardar.FlatAppearance.BorderSize = 0;
             this.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
-            this.BtnGuardar.Location = new System.Drawing.Point(911, 329);
+            this.BtnGuardar.Location = new System.Drawing.Point(913, 324);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(84, 69);
             this.BtnGuardar.TabIndex = 16;
             this.BtnGuardar.Text = "Consultar";
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.UseVisualStyleBackColor = false;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // RTBusquedaExpediente
@@ -77,6 +80,8 @@ namespace Presentacion
             // 
             // PnlContenedor
             // 
+            this.PnlContenedor.BackColor = System.Drawing.Color.White;
+            this.PnlContenedor.Controls.Add(this.BtnGuardar);
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.PnlContenedor.Name = "PnlContenedor";
@@ -90,13 +95,13 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.PctPaciente);
-            this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.RTBusquedaExpediente);
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmBuscarPaciente";
             this.Text = "FrmBuscarPaciente";
             ((System.ComponentModel.ISupportInitialize)(this.PctPaciente)).EndInit();
+            this.PnlContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -34,5 +34,21 @@ namespace BLL
 
             return "se guardo con exito";
         }
+        
+        public Usuario BuscarPorNombre(string nombre){
+            try
+            {
+               _connectionManager.Open();
+               return  _usuarioReprository.buscarPorNombre(nombre);
+            }
+            finally
+            {
+               _connectionManager.Close(); 
+            }
+            
+            
+        }
+        
     }
+
 }
