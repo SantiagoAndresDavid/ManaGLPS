@@ -13,7 +13,7 @@ namespace DALL
             _connection = connection;
         }
         
-        public void GuardarValoracionIngreso(ValoracionIngreso valoracionIngreso,int codigoConsultaMedica)
+        public void GuardarValoracionIngreso(ValoracionIngreso valoracionIngreso,int codigo)
         {
             using (var command = _connection.CreateCommand())
             {
@@ -21,7 +21,7 @@ namespace DALL
                 command.Parameters.Add(new SqlParameter("@Deportiva",valoracionIngreso.Deportiva));
                 command.Parameters.Add(new SqlParameter("@DiagnosticoRemision",valoracionIngreso.DiagnosticoRemision));
                 command.Parameters.Add(new SqlParameter("@ImagenDiagnostica",valoracionIngreso.ImagenDiagnostico));
-                command.Parameters.Add(new SqlParameter("@CodigoConsultaMedica",codigoConsultaMedica)); 
+                command.Parameters.Add(new SqlParameter("@CodigoConsultaMedica",codigo)); 
                 int fila = command.ExecuteNonQuery();
 
             }

@@ -100,7 +100,6 @@ namespace DALL
                     reader.Close();
                     return consulta;
                 }
-
                 return null;
             }
         }

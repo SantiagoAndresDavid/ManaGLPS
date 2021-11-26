@@ -10,7 +10,7 @@ namespace BLL
         ConsultaRepository _consultaRepository;
 
         DiagnosticoRepository _diagnosticoRepository;
-        ValoracionIngresoRepository _validacionIngresoRepository;
+        ValoracionIngresoRepository _valoracionIngresoRepository;
         LesionRepository _lesionRepository;
         MedicacionesRepository _medicacionesRepository;
         ValoracionMultidiciplinarRepository _valoracionMultidiciplinarRepository;
@@ -23,7 +23,7 @@ namespace BLL
             _connectionManager = new ConnectionManager(connectionString);
             _consultaRepository = new ConsultaRepository(_connectionManager.Connection);
             _diagnosticoRepository = new DiagnosticoRepository(_connectionManager.Connection);
-            _validacionIngresoRepository = new ValoracionIngresoRepository(_connectionManager.Connection);
+            _valoracionIngresoRepository= new ValoracionIngresoRepository(_connectionManager.Connection);
             _lesionRepository = new LesionRepository(_connectionManager.Connection);
             _medicacionesRepository = new MedicacionesRepository(_connectionManager.Connection);
             _valoracionMultidiciplinarRepository =
@@ -38,18 +38,15 @@ namespace BLL
             {
                 _connectionManager.Open();
                 _consultaRepository.GuardarConsulta(consultaMedica, codigoHistoriaMedica);
-                int codigoConsulta =
-                    _consultaRepository.BuscarCodigoCansulta(codigoHistoriaMedica, consultaMedica.FechaCreada);
-                _valoracionMultidiciplinarRepository.GuardarValoracionMultidiciplinar(
-                    consultaMedica.ValoracionMultiDiciplinar, codigoConsulta);
+                int codigoConsulta = _consultaRepository.BuscarCodigoCansulta(codigoHistoriaMedica, consultaMedica.FechaCreada);
+                _valoracionMultidiciplinarRepository.GuardarValoracionMultidiciplinar(consultaMedica.ValoracionMultiDiciplinar, codigoConsulta);
                 _medicacionesRepository.GuardarMedicacion(consultaMedica.Medicacion, codigoConsulta);
                 _diagnosticoRepository.GuardarDiagnostico(consultaMedica.Diagnostico, codigoConsulta);
-                int codigoValoracionMultiDiciplinar =
-                    _valoracionMultidiciplinarRepository.BuscarCodigoValoracionMultiDiciplinar(codigoConsulta);
-                _categoriaEvaluacionRepository.GuardarCategoriaEvaluacion(
-                    consultaMedica.ValoracionMultiDiciplinar.CategoriaEvaluacion, codigoValoracionMultiDiciplinar);
-                _validacionIngresoRepository.GuardarValoracionIngreso(consultaMedica.ValoracionIngreso,
-                    codigoHistoriaMedica);
+                int codigoValoracionMultiDiciplinar = _valoracionMultidiciplinarRepository.BuscarCodigoValoracionMultiDiciplinar(codigoConsulta);
+                _categoriaEvaluacionRepository.GuardarCategoriaEvaluacion(consultaMedica.ValoracionMultiDiciplinar.CategoriaEvaluacion, codigoValoracionMultiDiciplinar);
+
+                _valoracionIngresoRepository.GuardarValoracionIngreso(consultaMedica.ValoracionIngreso,codigoConsulta);
+
                 int codigoDiagostico = _diagnosticoRepository.BuscarCodigoDiagnostico(codigoConsulta);
                 foreach (CIE cie in consultaMedica.Diagnostico.CIE)
                 {
@@ -57,7 +54,7 @@ namespace BLL
                 }
 
                 int codigoValidacionIngreso =
-                    _validacionIngresoRepository.BuscarCodigoValoracionIngreso(codigoConsulta);
+                    _valoracionIngresoRepository.BuscarCodigoValoracionIngreso(codigoConsulta);
                 _lesionRepository.GuardarLesion(consultaMedica.ValoracionIngreso.Lesion, codigoValidacionIngreso);
             }
             catch (Exception e)

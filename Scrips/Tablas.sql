@@ -2,7 +2,7 @@ Use ManaGLPS
 
 
 
-/*create table Pacientes(
+create table Pacientes(
 Identificacion int primary key not null,
 Nombre VARCHAR(MAX) not null,
 Apellido VARCHAR(MAX) not null,
@@ -87,11 +87,12 @@ Correo VARCHAR(MAX),
 NombreUsuario VARCHAR(MAX),
 Rol VARCHAR(MAX),
 Contraseña VARCHAR(MAX)
-);*/
+);
 
 
 
 use ManaGLPS
+select *from HistoriasMedicas;
 select *from ConsultasMedicas;
 select *from ValoracionesMultidiciplinar;
 select *from Medicaciones;
@@ -102,9 +103,11 @@ select *from CIE;
 select *from Lesiones;
 
 use ManaGLPS
-select FaseTratamiento,FechaCreada,InformeIndividual,InformeGrupal,Prescripcion,Rehabilitacion,ObservacionesExtra,
-Deportiva,DiagnosticoRemision,ImagenDiagnostica,EscalaDolor,FrecuenciaAumento,FrecuenciaDisminucion,Localizacion,
-CIE.Codigo,Descripcion,Caracteristica,Antecedentes from ConsultasMedicas 
+select DISTINCT ConsultasMedicas.Estado,ConsultasMedicas.FaseTratamiento,
+ConsultasMedicas.FechaCreada,ValoracionesMultidiciplinar.InformeIndividual,
+ValoracionesMultidiciplinar.InformeGrupal,CategoriaEvaluaciones.EscalaDolor,
+CategoriaEvaluaciones.Localizacion,CategoriaEvaluaciones.FrecuenciaAumento,
+CategoriaEvaluaciones.FrecuenciaDisminucion,Medicaciones.Prescripcion,Medicaciones.Rehabilitacion,Diagnosticos.ObservacionesExtra,ValoracionesIngreso.Deportiva,ValoracionesIngreso.DiagnosticoRemision,ValoracionesIngreso.ImagenDiagnostica,Lesiones.Caracteristica,Lesiones.Antecedentes from ConsultasMedicas
 join ValoracionesMultidiciplinar on ConsultasMedicas.Codigo = ValoracionesMultidiciplinar.CodigoConsultaMedica 
 join Medicaciones on ConsultasMedicas.Codigo = Medicaciones.CodigoConsultaMedica
 join Diagnosticos on ConsultasMedicas.Codigo = Diagnosticos.CodigoConsultaMedica
@@ -112,9 +115,12 @@ join ValoracionesIngreso on ConsultasMedicas.Codigo = ValoracionesIngreso.Codigo
 join CategoriaEvaluaciones on ValoracionesMultidiciplinar.Codigo = CategoriaEvaluaciones.CodigoValoracionMultiDiciplinar
 join CIE on Diagnosticos.Codigo = CIE.CodigoDiagnostico
 join Lesiones on ValoracionesIngreso.Codigo = Lesiones.CodigoValoracionIngreso
-where ConsultasMedicas.CodigoHistoriaMedica = 1
+where ConsultasMedicas.CodigoHistoriaMedica = 1 and ConsultasMedicas.Codigo = 2
 
 
+
+use ManaGLPS
+select CIE.Codigo,CIE.Descripcion from Diagnosticos join CIE on Diagnosticos.Codigo = CIE.CodigoDiagnostico  where Diagnosticos.CodigoConsultaMedica = 1 
 
 
 /*drop table ConsultasMedicas;
