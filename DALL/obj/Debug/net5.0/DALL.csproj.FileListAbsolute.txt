@@ -87,3 +87,4 @@ C:\Users\santi\Documents\Programacion3\ManaGLPS\DALL\obj\Debug\net5.0\DALL.cspro
 C:\Users\santi\Documents\Programacion3\ManaGLPS\DALL\obj\Debug\net5.0\DALL.dll
 C:\Users\santi\Documents\Programacion3\ManaGLPS\DALL\obj\Debug\net5.0\ref\DALL.dll
 C:\Users\santi\Documents\Programacion3\ManaGLPS\DALL\obj\Debug\net5.0\DALL.pdb
+C:\Users\santi\Documents\Programacion3\Proyecto\ManaGLPS\DALL\obj\Debug\net5.0\DALL.csproj.CopyComplete

@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace Presentacion
 {
     public partial class FrmDesactivarOActivarCitaMedica : Form
     {
+        ConsultaService _consultaService;
+
         public FrmDesactivarOActivarCitaMedica()
         {
             InitializeComponent();
             OcultarSubMenuIniciar();
+            _consultaService = new ConsultaService(ConfigConnectionString.ConnectionString);
         }
 
 
@@ -29,12 +33,10 @@ namespace Presentacion
             this.PnlContenedor.Controls.Add(fh);
             this.PnlContenedor.Tag = fh;
             fh.Show();
-
         }
 
         private void OcultarSubMenuIniciar()
         {
-
             RTBuscarExpediente.Visible = true;
             BtnBuscarExpediente.Visible = true;
             RTBuscarCitaMedica.Visible = false;
@@ -42,64 +44,38 @@ namespace Presentacion
         }
 
 
-
         private void BtnBuscarCitaMedica_Click(object sender, EventArgs e)
         {
             MessageBoxButtons botones = MessageBoxButtons.OK;
 
-            if (RTBuscarExpediente.Text == "1234")
+            try
             {
-                DialogResult dr = MessageBox.Show("Se ha Desactivado la Consulta correctamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-
                 RTBuscarExpediente.Visible = false;
                 BtnBuscarExpediente.Visible = false;
                 RTBuscarCitaMedica.Visible = false;
                 BtnBuscarCitaMedica.Visible = false;
+                string xd = _consultaService.ModificarEstado(Convert.ToInt32(RTBuscarExpediente.Text),Convert.ToInt32(RTBuscarCitaMedica.Text));
+                DialogResult dr = MessageBox.Show("Se ha ModificadoCorrectamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
             }
-            else
+            catch
             {
-                DialogResult dr = MessageBox.Show("Este Cita Medica no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                if (dr == DialogResult.OK)
-                {
-                    
-                    RTBuscarExpediente.Visible = true;
-                    BtnBuscarExpediente.Visible = true;
-                }
+                RTBuscarExpediente.Visible = true;
+                BtnBuscarExpediente.Visible = true;
+                DialogResult dr = MessageBox.Show("Se ha ModificadoCorrectamente" + e , "Mensaje de Informacion", botones, MessageBoxIcon.Information);
             }
         }
 
         private void BtnBuscarExpediente_Click(object sender, EventArgs e)
         {
-            MessageBoxButtons botones = MessageBoxButtons.OK;
-            if (RTBuscarExpediente.Text == "1234")
-            {
-
-               
-
-                RTBuscarExpediente.Visible = false;
-                BtnBuscarExpediente.Visible = false;
-                RTBuscarCitaMedica.Visible = true;
-                BtnBuscarCitaMedica.Visible = true;
-
-
-            }
-            else
-            {
-                DialogResult dr = MessageBox.Show("Este Expediente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                if (dr == DialogResult.OK)
-                {
-                    
-                    RTBuscarExpediente.Visible = true;
-                    BtnBuscarExpediente.Visible = true;
-                }
-            }
+            RTBuscarExpediente.Visible = false;
+            BtnBuscarExpediente.Visible = false;
+            RTBuscarCitaMedica.Visible = true;
+            BtnBuscarCitaMedica.Visible = true;
         }
-
 
 
         private void PnlContenedor_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void RTBuscarCitaMedica_Leave(object sender, EventArgs e)
@@ -139,20 +115,13 @@ namespace Presentacion
         }
 
 
-
         private void RTBuscarCitaMedica_TextChanged(object sender, EventArgs e)
         {
-
         }
 
-        private void RTBuscarPaciente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void RTBuscarExpediente_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

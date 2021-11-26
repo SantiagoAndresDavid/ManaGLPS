@@ -43,10 +43,17 @@ namespace Presentacion
 
         private void BtnBuscarExpediente_Click(object sender, EventArgs e)
         {
-            
-            int codigo = Convert.ToInt32(RTBuscarExpediente.Text);
-            string mensaje = _historiaMedicaService.Modificar(codigo);
-            MessageBox.Show(mensaje, "Se modifico con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                int codigo = Convert.ToInt32(RTBuscarExpediente.Text);
+                string mensaje = _historiaMedicaService.Modificar(codigo);
+                MessageBox.Show(mensaje, "Se modifico con exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                DialogResult dr = MessageBox.Show("Este Expediente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         public void Editar()

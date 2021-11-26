@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
 using Entity;
@@ -15,36 +8,30 @@ namespace Presentacion
 {
     public partial class FrmFormularioConsultaMedica : Form
     {
-        ConsultaMedica consulta = new ConsultaMedica(); 
+        ConsultaMedica consulta = new ConsultaMedica();
         ConsultaService _consultaService;
-        string ruta = ""; 
-        public FrmFormularioConsultaMedica()
+        int CodigoHistoriaMedica;
+        string ruta = "";
+        IList<CIE> ListCIE { get; set; }
+
+        public FrmFormularioConsultaMedica(int codigoHistoriaMedica)
         {
             InitializeComponent();
-            
             _consultaService = new ConsultaService(ConfigConnectionString.ConnectionString);
+            CodigoHistoriaMedica = codigoHistoriaMedica;
+            ListCIE = new List<CIE>();
         }
 
-        private void BtnExaminar_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog Imagen = new OpenFileDialog();
-            if (Imagen.ShowDialog() == DialogResult.OK)
-            {
-                ruta = Imagen.FileName;
-            }
-        }
+
         private void BtnEditar_Click(object sender, EventArgs e)
         {
-
         }
 
         private void BtnGuarda2_Click(object sender, EventArgs e)
         {
-            
             string estado = "Activo";
-            int fase = ((int)NMFaseTratamiento.Value);
+            int fase = ((int) NMFaseTratamiento.Value);
             DateTime fechaCreada = DTPFechaCreada.Value.Date;
-            DateTime ultimaModificacion = DTPUltimaModificacion.Value.Date;
             string prescripcion = TXTPrescripcion.Text;
             string rehabilitacion = TXTRehabilitacion.Text;
             string informeIndividual = TXTInformeIndividual.Text;
@@ -60,115 +47,149 @@ namespace Presentacion
             string antecedentes = TXTAntecedentes.Text;
             consulta.Estado = estado;
             consulta.FaseTratamiento = fase;
-            consulta.Temporalidad = new Temporalidad(fechaCreada, ultimaModificacion);
+            consulta.FechaCreada = fechaCreada;
             consulta.Medicacion = new Medicacion(prescripcion, rehabilitacion);
             consulta.ValoracionMultiDiciplinar = new ValoracionMultiDiciplinar(informeIndividual, informeGrupal, escala,
                 localizacion, aumento, disminucion);
             consulta.ValoracionIngreso = new ValoracionIngreso(deportiva, diagnosticoRemision, imagenDiagnostico,
                 caracteristicas, antecedentes);
-            
-            string mensaje = _consultaService.Guardar(consulta);
+
+            string observacionesExtra = TextObservacionesExtra.Text;
+            consulta.Diagnostico = new Diagnostico(observacionesExtra);
+            foreach (CIE cie in ListCIE)
+            {
+                consulta.Diagnostico.AgregarCIE(cie);
+            }
+
+            string mensaje = _consultaService.Guardar(consulta, CodigoHistoriaMedica);
+
+
             MessageBox.Show(mensaje, "Guardar Usuario", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        } 
-        
+        }
+
         private void BtnGuardarCIE_Click(object sender, EventArgs e)
         {
             string codigoCIE = TXTCodigo.Text;
             string descripcionCIE = TXTDescripcionCIE.Text;
-            CIE cie = new CIE(codigoCIE,descripcionCIE);
-            string observacionesExtra = TextObservacionesExtra.Text;
-            consulta.Diagnostico = new Diagnostico(observacionesExtra);
-            consulta.Diagnostico.AgregarCIE(cie);
+            CIE cie = new CIE(codigoCIE, descripcionCIE);
+            ListCIE.Add(cie);
+            TXTCodigo.Text = "";
+            TXTDescripcionCIE.Text = "";
         }
 
         public int Escala()
         {
-            if (RBESinDolor.Checked == true)
+            if (RBESinDolor.Checked)
             {
                 return 0;
             }
-            else if (RBELeve.Checked == true)
+
+            if (RBELeve.Checked)
             {
                 return 1;
             }
-            else if (RBEModerado.Checked == true)
+
+            if (RBEModerado.Checked)
             {
                 return 2;
             }
-            else if (RBESevero.Checked == true)
+
+            if (RBESevero.Checked)
             {
                 return 3;
             }
-            else if (RBEMuySevero.Checked == true)
+
+            if (RBEMuySevero.Checked)
             {
                 return 4;
             }
-            else if (RBEMaximo.Checked == true)
+
+            if (RBEMaximo.Checked)
             {
                 return 5;
             }
+
             return 0;
         }
 
         public int FrecuenciaAumento()
         {
-            if (RDANada.Checked == true)
+            if (RDANada.Checked)
             {
                 return 0;
             }
-            else if (RDAUnPoco.Checked == true)
+
+            if (RDAUnPoco.Checked)
             {
                 return 1;
             }
-            else if (RDAPoco.Checked == true)
+
+            if (RDAPoco.Checked)
             {
                 return 2;
             }
-            else if (RDAMedio.Checked == true)
+
+            if (RDAMedio.Checked)
             {
                 return 3;
-            }else if (RDAMucho.Checked == true)
+            }
+
+            if (RDAMucho.Checked)
             {
                 return 4;
-            }else if(RDAEnExeso.Checked == true)
+            }
+
+            if (RDAEnExeso.Checked)
             {
                 return 5;
             }
+
             return 0;
         }
 
         public int FrecuenciaDisminucion()
         {
-            if (RDDNada.Checked == true)
+            if (RDDNada.Checked)
             {
                 return 0;
             }
-            else if (RDDUnPoco.Checked == true)
+
+            if (RDDUnPoco.Checked)
             {
                 return 1;
             }
-            else if (RDDPoco.Checked == true)
+
+            if (RDDPoco.Checked)
             {
                 return 2;
             }
-            else if (RDDMedio.Checked == true)
+
+            if (RDDMedio.Checked)
             {
                 return 3;
             }
-            else if (RDDMucho.Checked == true)
+
+            if (RDDMucho.Checked)
             {
                 return 4;
             }
-            else if (RDDEnExeso.Checked == true)
+
+            if (RDDEnExeso.Checked)
             {
                 return 5;
             }
+
             return 0;
         }
 
-        private void TXTDiagnostico_TextChanged(object sender, EventArgs e)
-        {
 
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Imagen = new OpenFileDialog();
+            if (Imagen.ShowDialog() == DialogResult.OK)
+            {
+                ruta = Imagen.FileName;
+            }
         }
     }
 }

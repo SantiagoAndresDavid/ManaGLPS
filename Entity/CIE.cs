@@ -11,6 +11,10 @@ namespace Entity
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
 
+        public CIE()
+        {
+        }
+
         public CIE(string codigo, string descripcion)
         {
             Codigo = codigo;

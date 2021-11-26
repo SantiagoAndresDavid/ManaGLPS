@@ -69,7 +69,7 @@ namespace Presentacion
             // 
             this.RTBusquedaExpediente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.RTBusquedaExpediente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBusquedaExpediente.Location = new System.Drawing.Point(171, 347);
+            this.RTBusquedaExpediente.Location = new System.Drawing.Point(178, 347);
             this.RTBusquedaExpediente.Name = "RTBusquedaExpediente";
             this.RTBusquedaExpediente.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RTBusquedaExpediente.Size = new System.Drawing.Size(644, 36);
@@ -82,6 +82,7 @@ namespace Presentacion
             // 
             this.PnlContenedor.BackColor = System.Drawing.Color.White;
             this.PnlContenedor.Controls.Add(this.BtnGuardar);
+            this.PnlContenedor.Controls.Add(this.RTBusquedaExpediente);
             this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.PnlContenedor.Name = "PnlContenedor";
@@ -95,7 +96,6 @@ namespace Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.PctPaciente);
-            this.Controls.Add(this.RTBusquedaExpediente);
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmBuscarPaciente";

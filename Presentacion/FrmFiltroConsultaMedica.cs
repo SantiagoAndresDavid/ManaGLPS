@@ -56,30 +56,11 @@ namespace Presentacion
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             
-            if (RTBusquedaeExpediente.Text == "1234")
-            {
-                Abrir(new FrmFormularioConsultaMedica());
                 RTBusquedaeExpediente.Visible = false;
                 BtnGuardar.Visible = false;
                 PctPaciente.Visible = false;
-            }
-            else
-            {
-                if (!(RTBusquedaeExpediente.Text == "1234") && (!(RTBusquedaeExpediente.Text == "")) && (!(RTBusquedaeExpediente.Text == "Ingrese el codigo de la Consulta")))
-                {
-                    MessageBoxButtons botones = MessageBoxButtons.OK;
-                    DialogResult dr = MessageBox.Show("EstaConsulta no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                    if (dr == DialogResult.OK)
-                    {
-                        RTBusquedaeExpediente.Text = "Ingrese el codigo de la Consulta ";
-                        RTBusquedaeExpediente.ForeColor = Color.DimGray;
-                        RTBusquedaeExpediente.Font = new Font(RTBusquedaeExpediente.Font, FontStyle.Italic);
-                        RTBusquedaeExpediente.Visible = true;
-                        RTBusquedaeExpediente.Visible = true;
+                Abrir(new FrmFormularioConsultaMedica(Convert.ToInt32(RTBusquedaeExpediente.Text)));
 
-                    }
-                }
-            }
         }
     }
 }

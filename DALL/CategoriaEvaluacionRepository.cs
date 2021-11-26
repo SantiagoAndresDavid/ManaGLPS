@@ -13,17 +13,17 @@ namespace DALL
             _connection = connection;
         }
         
-        public void GuardarCategoriaEvaluacion(CategoriaEvaluacion categoriaEvaluacion)
+        public void GuardarCategoriaEvaluacion(CategoriaEvaluacion categoriaEvaluacion, int codigoValoracionMultidiciplinar)
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into CategoriaEvaluaciones (EscalaDolor,Localizacion,FrecuenciaAumento,FrecuenciaDisminucion) values (@EscalaDolor,@Localizacion,@FrecuenciaAumento,@FrecuenciaDisminucion)";
+                command.CommandText = "insert into CategoriaEvaluaciones (EscalaDolor,Localizacion,FrecuenciaAumento,FrecuenciaDisminucion,CodigoValoracionMultiDiciplinar) values (@EscalaDolor,@Localizacion,@FrecuenciaAumento,@FrecuenciaDisminucion,@CodigoValoracionMultiDiciplinar)";
                 command.Parameters.Add(new SqlParameter("@EscalaDolor",categoriaEvaluacion.EscalaDolor));
                 command.Parameters.Add(new SqlParameter("@Localizacion",categoriaEvaluacion.Localizacion));
                 command.Parameters.Add(new SqlParameter("@FrecuenciaAumento",categoriaEvaluacion.FrecuenciaAumento));
                 command.Parameters.Add(new SqlParameter("@FrecuenciaDisminucion",categoriaEvaluacion.FrecuenciaDisminucion));
-                
-                int fila = command.ExecuteNonQuery();
+                command.Parameters.Add(new SqlParameter("@CodigoValoracionMultiDiciplinar",codigoValoracionMultidiciplinar));
+                command.ExecuteNonQuery();
             }
         }
         

@@ -28,6 +28,9 @@
     <Compile Update="FrmFiltroConsultaMedica.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmFormularioConsultaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -47,9 +50,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmRegistrarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmFormularioConsultaMedica.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmFormularioExpediente.cs">

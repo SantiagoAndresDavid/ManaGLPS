@@ -8,8 +8,10 @@ namespace Entity
         public int Codigo { get; set; }
         public string Estado { get; set; }
         public int FaseTratamiento { get; set; }
+        
+        public DateTime FechaCreada {get; set;}
         public Diagnostico Diagnostico { get; set; }
-        public Temporalidad Temporalidad { get; set; }
+       
         public Medicacion Medicacion { get; set; }
         public ValoracionMultiDiciplinar ValoracionMultiDiciplinar { get; set; }
         public ValoracionIngreso ValoracionIngreso { get; set; }
@@ -19,7 +21,7 @@ namespace Entity
         {
 
         }
-        public ConsultaMedica(int codigo, string estado, int faseTratamiento, string observacionesExtra, DateTime fechacreada, DateTime ultimaModificacion, string prescripcion,
+        public ConsultaMedica(int codigo, string estado, int faseTratamiento, string observacionesExtra, DateTime fechacreada, string prescripcion,
             string rehabilitacion, string informeIndividual, string informeGrupal, int escala, string localizacion,
             int aumento, int disminucion, string deportiva, string diagnosticoRemision, string imagenDiagnostico,
             string caracteristicas, string antecedentes)
@@ -27,8 +29,8 @@ namespace Entity
             Codigo = codigo;
             Estado = estado;
             FaseTratamiento = faseTratamiento;
+            FechaCreada = fechacreada;
             Diagnostico = new Diagnostico(observacionesExtra);
-            Temporalidad = new Temporalidad(fechacreada, ultimaModificacion);
             Medicacion = new Medicacion(prescripcion, rehabilitacion);
             ValoracionMultiDiciplinar = new ValoracionMultiDiciplinar(informeIndividual, informeGrupal, escala,
                 localizacion, aumento, disminucion);

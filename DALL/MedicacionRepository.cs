@@ -13,13 +13,14 @@ namespace DALL
             _connection = connection;
         }
         
-        public void GuardarMedicacion(Medicacion medicacion)
+        public void GuardarMedicacion(Medicacion medicacion,int codigo)
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into Medicaciones (Prescripcion,Rehabilitacion) values (@Prescripcion,@Rehabilitacion)";
+                command.CommandText = "insert into Medicaciones (Prescripcion,Rehabilitacion,CodigoConsultaMedica) values (@Prescripcion,@Rehabilitacion,@CodigoConsultaMedica)";
                 command.Parameters.Add(new SqlParameter("@Prescripcion",medicacion.Prescripcion));
                 command.Parameters.Add(new SqlParameter("@Rehabilitacion",medicacion.Rehabilitacion));
+                command.Parameters.Add(new SqlParameter("@CodigoConsultaMedica", codigo));
                 int fila = command.ExecuteNonQuery();
 
             }

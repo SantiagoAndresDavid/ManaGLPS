@@ -33,16 +33,20 @@ namespace Presentacion
             this.pagina1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.TXTAntecedentes = new System.Windows.Forms.RichTextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.TXTDeportividad = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.LblFechaModificada = new System.Windows.Forms.Label();
-            this.DTPUltimaModificacion = new System.Windows.Forms.DateTimePicker();
-            this.LblFechaCreacion = new System.Windows.Forms.Label();
-            this.DTPFechaCreada = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.TXTDeportividad = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnExaminar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.DTPFechaCreada = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
             this.TXTDiagnostico = new System.Windows.Forms.RichTextBox();
             this.pagina2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TXTInformeGrupal = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TXTInformeIndividual = new System.Windows.Forms.RichTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -93,12 +97,6 @@ namespace Presentacion
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BtnGuarda2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.TXTInformeIndividual = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TXTInformeGrupal = new System.Windows.Forms.RichTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tab.SuspendLayout();
             this.pagina1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -116,7 +114,6 @@ namespace Presentacion
             this.groupBox1.SuspendLayout();
             this.Page.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tab
@@ -137,10 +134,8 @@ namespace Presentacion
             // pagina1
             // 
             this.pagina1.BackColor = System.Drawing.Color.White;
-            this.pagina1.Controls.Add(this.pictureBox2);
-            this.pagina1.Controls.Add(this.label2);
             this.pagina1.Controls.Add(this.groupBox3);
-            this.pagina1.Controls.Add(this.label1);
+            this.pagina1.Controls.Add(this.label15);
             this.pagina1.Controls.Add(this.TXTDiagnostico);
             this.pagina1.Location = new System.Drawing.Point(4, 24);
             this.pagina1.Name = "pagina1";
@@ -153,86 +148,91 @@ namespace Presentacion
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.groupBox3.Controls.Add(this.TXTAntecedentes);
-            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.TXTDeportividad);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.btnExaminar);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.LblFechaModificada);
-            this.groupBox3.Controls.Add(this.DTPUltimaModificacion);
-            this.groupBox3.Controls.Add(this.LblFechaCreacion);
+            this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.DTPFechaCreada);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.Location = new System.Drawing.Point(673, 25);
+            this.groupBox3.Location = new System.Drawing.Point(681, 34);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(422, 664);
-            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acciones Posibles";
             // 
             // TXTAntecedentes
             // 
-            this.TXTAntecedentes.Location = new System.Drawing.Point(10, 308);
+            this.TXTAntecedentes.Location = new System.Drawing.Point(10, 355);
             this.TXTAntecedentes.Name = "TXTAntecedentes";
-            this.TXTAntecedentes.Size = new System.Drawing.Size(406, 344);
+            this.TXTAntecedentes.Size = new System.Drawing.Size(406, 294);
             this.TXTAntecedentes.TabIndex = 49;
             this.TXTAntecedentes.Text = "";
             // 
-            // label14
+            // label1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(145, 282);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(139, 23);
-            this.label14.TabIndex = 48;
-            this.label14.Text = "Antecedentes";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(140, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 23);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Antecedentes";
             // 
             // TXTDeportividad
             // 
             this.TXTDeportividad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.TXTDeportividad.ForeColor = System.Drawing.Color.DimGray;
-            this.TXTDeportividad.Location = new System.Drawing.Point(62, 232);
+            this.TXTDeportividad.Location = new System.Drawing.Point(64, 270);
             this.TXTDeportividad.Name = "TXTDeportividad";
             this.TXTDeportividad.Size = new System.Drawing.Size(306, 33);
             this.TXTDeportividad.TabIndex = 47;
             this.TXTDeportividad.Text = "Deportividad ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(147, 244);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 23);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Deportividad";
+            // 
+            // btnExaminar
+            // 
+            this.btnExaminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExaminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnExaminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExaminar.Location = new System.Drawing.Point(92, 180);
+            this.btnExaminar.Name = "btnExaminar";
+            this.btnExaminar.Size = new System.Drawing.Size(244, 37);
+            this.btnExaminar.TabIndex = 21;
+            this.btnExaminar.Text = "Examinar";
+            this.btnExaminar.UseVisualStyleBackColor = true;
+            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(145, 206);
+            this.label8.Location = new System.Drawing.Point(64, 139);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 23);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "Deportividad";
+            this.label8.Size = new System.Drawing.Size(313, 23);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Agregar imagenes diagnosticas ";
             // 
-            // LblFechaModificada
+            // label14
             // 
-            this.LblFechaModificada.AutoSize = true;
-            this.LblFechaModificada.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblFechaModificada.Location = new System.Drawing.Point(118, 118);
-            this.LblFechaModificada.Name = "LblFechaModificada";
-            this.LblFechaModificada.Size = new System.Drawing.Size(197, 23);
-            this.LblFechaModificada.TabIndex = 18;
-            this.LblFechaModificada.Text = "Ultima Modificacion";
-            // 
-            // DTPUltimaModificacion
-            // 
-            this.DTPUltimaModificacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DTPUltimaModificacion.Location = new System.Drawing.Point(92, 153);
-            this.DTPUltimaModificacion.Name = "DTPUltimaModificacion";
-            this.DTPUltimaModificacion.Size = new System.Drawing.Size(244, 29);
-            this.DTPUltimaModificacion.TabIndex = 17;
-            // 
-            // LblFechaCreacion
-            // 
-            this.LblFechaCreacion.AutoSize = true;
-            this.LblFechaCreacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblFechaCreacion.Location = new System.Drawing.Point(118, 37);
-            this.LblFechaCreacion.Name = "LblFechaCreacion";
-            this.LblFechaCreacion.Size = new System.Drawing.Size(188, 23);
-            this.LblFechaCreacion.TabIndex = 16;
-            this.LblFechaCreacion.Text = "Fecha de Creacion";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(118, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(188, 23);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Fecha de Creacion";
             // 
             // DTPFechaCreada
             // 
@@ -242,26 +242,25 @@ namespace Presentacion
             this.DTPFechaCreada.Size = new System.Drawing.Size(244, 29);
             this.DTPFechaCreada.TabIndex = 14;
             // 
-            // label1
+            // label15
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(194, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 23);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Diagnostico de Remision";
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(202, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(237, 23);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Diagnostico de Remision";
             // 
             // TXTDiagnostico
             // 
             this.TXTDiagnostico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TXTDiagnostico.Location = new System.Drawing.Point(19, 62);
+            this.TXTDiagnostico.Location = new System.Drawing.Point(54, 71);
             this.TXTDiagnostico.Name = "TXTDiagnostico";
-            this.TXTDiagnostico.Size = new System.Drawing.Size(637, 334);
-            this.TXTDiagnostico.TabIndex = 19;
+            this.TXTDiagnostico.Size = new System.Drawing.Size(560, 627);
+            this.TXTDiagnostico.TabIndex = 30;
             this.TXTDiagnostico.Text = "";
-            this.TXTDiagnostico.TextChanged += new System.EventHandler(this.TXTDiagnostico_TextChanged);
             // 
             // pagina2
             // 
@@ -276,6 +275,46 @@ namespace Presentacion
             this.pagina2.Size = new System.Drawing.Size(1157, 733);
             this.pagina2.TabIndex = 1;
             this.pagina2.Text = "Pagina 2 ";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(807, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 23);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Informe Grupal";
+            // 
+            // TXTInformeGrupal
+            // 
+            this.TXTInformeGrupal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXTInformeGrupal.Location = new System.Drawing.Point(604, 51);
+            this.TXTInformeGrupal.Name = "TXTInformeGrupal";
+            this.TXTInformeGrupal.Size = new System.Drawing.Size(529, 626);
+            this.TXTInformeGrupal.TabIndex = 23;
+            this.TXTInformeGrupal.Text = "";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(162, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 23);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Informe Individual ";
+            // 
+            // TXTInformeIndividual
+            // 
+            this.TXTInformeIndividual.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXTInformeIndividual.Location = new System.Drawing.Point(34, 51);
+            this.TXTInformeIndividual.Name = "TXTInformeIndividual";
+            this.TXTInformeIndividual.Size = new System.Drawing.Size(520, 626);
+            this.TXTInformeIndividual.TabIndex = 21;
+            this.TXTInformeIndividual.Text = "";
             // 
             // tabPage1
             // 
@@ -883,64 +922,6 @@ namespace Presentacion
             this.BtnGuarda2.UseVisualStyleBackColor = true;
             this.BtnGuarda2.Click += new System.EventHandler(this.BtnGuarda2_Click);
             // 
-            // TXTInformeIndividual
-            // 
-            this.TXTInformeIndividual.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXTInformeIndividual.Location = new System.Drawing.Point(34, 51);
-            this.TXTInformeIndividual.Name = "TXTInformeIndividual";
-            this.TXTInformeIndividual.Size = new System.Drawing.Size(520, 626);
-            this.TXTInformeIndividual.TabIndex = 21;
-            this.TXTInformeIndividual.Text = "";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(162, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 23);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Informe Individual ";
-            // 
-            // TXTInformeGrupal
-            // 
-            this.TXTInformeGrupal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TXTInformeGrupal.Location = new System.Drawing.Point(604, 51);
-            this.TXTInformeGrupal.Name = "TXTInformeGrupal";
-            this.TXTInformeGrupal.Size = new System.Drawing.Size(529, 626);
-            this.TXTInformeGrupal.TabIndex = 23;
-            this.TXTInformeGrupal.Text = "";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(807, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 23);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Informe Grupal";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(179, 399);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 23);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Agregar imagenes diagnosticas ";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(19, 425);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(637, 265);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
-            // 
             // FrmFormularioConsultaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -978,7 +959,6 @@ namespace Presentacion
             this.Page.ResumeLayout(false);
             this.Page.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -988,15 +968,8 @@ namespace Presentacion
         private System.Windows.Forms.TabControl tab;
         private System.Windows.Forms.TabPage pagina1;
         private System.Windows.Forms.TabPage pagina2;
-        private System.Windows.Forms.DateTimePicker DTPFechaCreada;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox TXTDiagnostico;
-        private System.Windows.Forms.Label LblFechaCreacion;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label LblFechaModificada;
-        private System.Windows.Forms.DateTimePicker DTPUltimaModificacion;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label10;
@@ -1044,16 +1017,21 @@ namespace Presentacion
         private System.Windows.Forms.RichTextBox TXTRehabilitacion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RichTextBox TXTPrescripcion;
-        private System.Windows.Forms.TextBox TXTDeportividad;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RichTextBox TXTAntecedentes;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button BtnGuardarCIE;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox TXTInformeGrupal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox TXTInformeIndividual;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RichTextBox TXTAntecedentes;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TXTDeportividad;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnExaminar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker DTPFechaCreada;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.RichTextBox TXTDiagnostico;
     }
 }

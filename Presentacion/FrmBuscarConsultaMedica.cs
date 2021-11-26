@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +14,13 @@ namespace Presentacion
 {
     public partial class FrmBuscarConsultaMedica : Form
     {
+
+        ConsultaService _consultaService;
         public FrmBuscarConsultaMedica()
         {
             InitializeComponent();
             OcultarSubMenuIniciar();
+            _consultaService = new ConsultaService(ConfigConnectionString.ConnectionString);
         }
 
         private void OcultarSubMenuIniciar()
@@ -80,35 +85,16 @@ namespace Presentacion
         private void BtnGuardarConsultaPaciente_Click(object sender, EventArgs e)
         {
             ValidarCamposPaciente();
-            if (RTBuscarConsulta.Text == "1234")
-            {
+  
                 RTBuscarConsulta.Visible = false;
                 BtnBuscarConsulta.Visible = false;
                 PctConsulta.Visible = false;
                 RTBusquedaExpediente.Visible = false;
                 BtnGuardarConsultaExpediente.Visible = false;
                 PctExpediente.Visible = false;
-                Abrir(new FrmFormularioConsultaMedica());
-            }
-            else
-            {
-                if (!(RTBuscarConsulta.Text == "1234") && (!(RTBuscarConsulta.Text == "")) && (!(RTBuscarConsulta.Text == "Ingrese el codigo de la Consulta")))
-                {
-                    MessageBoxButtons botones = MessageBoxButtons.OK;
-                    DialogResult dr = MessageBox.Show("EstaConsulta no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                    if (dr == DialogResult.OK)
-                    {
-                        RTBuscarConsulta.Text = "Ingrese el codigo de la Consulta ";
-                        RTBuscarConsulta.ForeColor = Color.DimGray;
-                        RTBuscarConsulta.Font = new Font(RTBuscarConsulta.Font, FontStyle.Italic);
-                        RTBuscarConsulta.Visible = true;
-                        BtnBuscarConsulta.Visible = true;
-                        PctConsulta.Visible = true;
+                ConsultaMedica consulta =_consultaService.BuscarConsultaMedica(Convert.ToInt32(RTBusquedaExpediente.Text),Convert.ToInt32(RTBuscarConsulta.Text));
+                Abrir(new FrmMostrarConsultaMedica(consulta));
 
-                    }
-
-                }
-            }
         }
 
         private void RTBusquedaExpediente_TextChanged(object sender, EventArgs e)
@@ -119,8 +105,7 @@ namespace Presentacion
         private void BtnGuardarConsultaExpediente_Click(object sender, EventArgs e)
         {
             ValidarCampoExpediente();
-            if (RTBusquedaExpediente.Text == "1234")
-            {
+ 
                 RTBusquedaExpediente.Visible = false;
                 BtnGuardarConsultaExpediente.Visible = false;
                 PctExpediente.Visible = false;
@@ -128,25 +113,8 @@ namespace Presentacion
                 BtnBuscarConsulta.Visible = true;
                 PctConsulta.Visible = true;
               
-            }
-            else
-            {
-                if (!(RTBusquedaExpediente.Text == "1234") && (!(RTBusquedaExpediente.Text == "")) && (!(RTBusquedaExpediente.Text == "Ingrese el codigo del Expediente")))
-                {
-                    MessageBoxButtons botones = MessageBoxButtons.OK;
-                    DialogResult dr = MessageBox.Show("Este expediente no se ha encontrado, por favor Intentelo nuevamente", "Mensaje de Informacion", botones, MessageBoxIcon.Information);
-                    if (dr == DialogResult.OK)
-                    {
-                        RTBusquedaExpediente.Text = "Ingrese el codigo del Expediente";
-                        RTBusquedaExpediente.ForeColor = Color.DimGray;
-                        RTBusquedaExpediente.Font = new Font(RTBusquedaExpediente.Font, FontStyle.Italic);
-                        RTBusquedaExpediente.Visible = true;
-                        BtnGuardarConsultaExpediente.Visible = true;
-                        PctExpediente.Visible = true;
+            
 
-                    }
-                }
-            }
         }
 
         private void PnlContenedor_Paint(object sender, PaintEventArgs e)

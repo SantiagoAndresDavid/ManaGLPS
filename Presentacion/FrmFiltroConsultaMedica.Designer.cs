@@ -35,6 +35,7 @@ namespace Presentacion
             this.RTBusquedaeExpediente = new System.Windows.Forms.RichTextBox();
             this.PnlContenedor = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PctPaciente)).BeginInit();
+            this.PnlContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // PctPaciente
@@ -68,7 +69,7 @@ namespace Presentacion
             // 
             this.RTBusquedaeExpediente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.RTBusquedaeExpediente.ForeColor = System.Drawing.Color.DimGray;
-            this.RTBusquedaeExpediente.Location = new System.Drawing.Point(171, 347);
+            this.RTBusquedaeExpediente.Location = new System.Drawing.Point(177, 345);
             this.RTBusquedaeExpediente.Name = "RTBusquedaeExpediente";
             this.RTBusquedaeExpediente.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RTBusquedaeExpediente.Size = new System.Drawing.Size(644, 36);
@@ -80,6 +81,7 @@ namespace Presentacion
             // PnlContenedor
             // 
             this.PnlContenedor.BackColor = System.Drawing.Color.White;
+            this.PnlContenedor.Controls.Add(this.RTBusquedaeExpediente);
             this.PnlContenedor.Location = new System.Drawing.Point(0, 2);
             this.PnlContenedor.Name = "PnlContenedor";
             this.PnlContenedor.Size = new System.Drawing.Size(1166, 725);
@@ -92,13 +94,13 @@ namespace Presentacion
             this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.PctPaciente);
             this.Controls.Add(this.BtnGuardar);
-            this.Controls.Add(this.RTBusquedaeExpediente);
             this.Controls.Add(this.PnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFiltroConsultaMedica";
             this.Text = "FrmFiltroConsultaMedica";
             this.Load += new System.EventHandler(this.FrmFiltroConsultaMedica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PctPaciente)).EndInit();
+            this.PnlContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

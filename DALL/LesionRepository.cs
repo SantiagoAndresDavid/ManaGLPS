@@ -13,15 +13,15 @@ namespace DALL
             _connection = connection;
         }
         
-        public void GuardarLesion(Lesion lesion)
+        public void GuardarLesion(Lesion lesion,int codigoValoracionIngreso)
         {
             using (var command = _connection.CreateCommand())
             {
-                command.CommandText = "insert into Lesiones (Caracteristica,Antecedentes) values (@Caracteristica,@Antecedentes)";
+                command.CommandText = "insert into Lesiones (Caracteristica,Antecedentes,CodigoValoracionIngreso) values (@Caracteristica,@Antecedentes,@CodigoValoracionIngreso)";
                 command.Parameters.Add(new SqlParameter("@Caracteristica",lesion.Caracteristicas));
                 command.Parameters.Add(new SqlParameter("@Antecedentes",lesion.Antecedentes));
-                int fila = command.ExecuteNonQuery();
-
+                command.Parameters.Add(new SqlParameter("@CodigoValoracionIngreso",codigoValoracionIngreso));
+                command.ExecuteNonQuery();
             }
         }
         
