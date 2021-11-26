@@ -17,6 +17,7 @@ namespace Presentacion
             InitializeComponent();
             _historiaMedicaService = new HistoriaMedicaService(ConfigConnectionString.ConnectionString);
             _PacienteServices = new PacienteService(ConfigConnectionString.ConnectionString);
+            
         }
         
         private void BtnGuarda2_Click(object sender, EventArgs e)
@@ -37,6 +38,8 @@ namespace Presentacion
         {
 
         }
+
+
 
         private void btnBuscarPaciente_Click(object sender, EventArgs e)
         {

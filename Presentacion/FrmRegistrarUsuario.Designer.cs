@@ -45,19 +45,14 @@ namespace Presentacion
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CmbTipoDeUsuario = new System.Windows.Forms.ComboBox();
             this.TextNombreDeUsuario = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DTGUsuarios = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTGUsuarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -228,16 +223,16 @@ namespace Presentacion
             this.TextNombreDeUsuario.Leave += new System.EventHandler(this.TextNombreDeUsuario_Leave);
             this.TextNombreDeUsuario.Validating += new System.ComponentModel.CancelEventHandler(this.TextNombreDeUsuario_Validating);
             // 
-            // dataGridView1
+            // DTGUsuarios
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DTGUsuarios.AllowUserToAddRows = false;
+            this.DTGUsuarios.AllowUserToDeleteRows = false;
+            this.DTGUsuarios.AllowUserToOrderColumns = true;
+            this.DTGUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.DTGUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DTGUsuarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DTGUsuarios.BackgroundColor = System.Drawing.Color.White;
+            this.DTGUsuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -245,13 +240,7 @@ namespace Presentacion
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 30;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.email,
-            this.Usuario,
-            this.TipoUsuario});
+            this.DTGUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -259,40 +248,17 @@ namespace Presentacion
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 442);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(697, 219);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // email
-            // 
-            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.email.HeaderText = "              Correo Electronico              ";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            this.email.Width = 345;
-            // 
-            // Usuario
-            // 
-            this.Usuario.HeaderText = "Nombre de Usuario";
-            this.Usuario.Name = "Usuario";
-            this.Usuario.ReadOnly = true;
-            this.Usuario.Width = 212;
-            // 
-            // TipoUsuario
-            // 
-            this.TipoUsuario.HeaderText = "Tipo de usuario";
-            this.TipoUsuario.Name = "TipoUsuario";
-            this.TipoUsuario.ReadOnly = true;
-            this.TipoUsuario.Width = 173;
+            this.DTGUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DTGUsuarios.EnableHeadersVisualStyles = false;
+            this.DTGUsuarios.Location = new System.Drawing.Point(171, 429);
+            this.DTGUsuarios.Name = "DTGUsuarios";
+            this.DTGUsuarios.ReadOnly = true;
+            this.DTGUsuarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DTGUsuarios.RowHeadersVisible = false;
+            this.DTGUsuarios.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DTGUsuarios.RowTemplate.Height = 25;
+            this.DTGUsuarios.Size = new System.Drawing.Size(480, 219);
+            this.DTGUsuarios.TabIndex = 7;
             // 
             // pictureBox2
             // 
@@ -307,44 +273,14 @@ namespace Presentacion
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.BtnGuardar);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(757, 460);
+            this.groupBox2.Location = new System.Drawing.Point(708, 445);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(385, 186);
+            this.groupBox2.Size = new System.Drawing.Size(233, 186);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones Posibles";
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::Presentacion.Properties.Resources.Eliminar_48;
-            this.button3.Location = new System.Drawing.Point(285, 50);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 90);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Eliminar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::Presentacion.Properties.Resources.Editar_48;
-            this.button2.Location = new System.Drawing.Point(152, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 90);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Editar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // BtnGuardar
             // 
@@ -352,7 +288,7 @@ namespace Presentacion
             this.BtnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
             this.BtnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGuardar.Image = global::Presentacion.Properties.Resources.Guardar_48;
-            this.BtnGuardar.Location = new System.Drawing.Point(14, 50);
+            this.BtnGuardar.Location = new System.Drawing.Point(68, 55);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(87, 90);
             this.BtnGuardar.TabIndex = 0;
@@ -373,7 +309,7 @@ namespace Presentacion
             this.ClientSize = new System.Drawing.Size(1167, 727);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DTGUsuarios);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistrarUsuario";
@@ -381,7 +317,7 @@ namespace Presentacion
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DTGUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -400,7 +336,7 @@ namespace Presentacion
         private System.Windows.Forms.ComboBox CmbTipoDeUsuario;
         private System.Windows.Forms.TextBox TextNombreDeUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DTGUsuarios;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox TextConfirmarContraseña;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
@@ -410,8 +346,6 @@ namespace Presentacion
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox TextCorreoElectronico;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }

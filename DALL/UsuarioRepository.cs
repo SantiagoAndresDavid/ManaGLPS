@@ -56,5 +56,35 @@ namespace DALL
             }
             return null;
         }
+
+        public IList<Usuario> buscarUsuarios()
+        {
+            IList<Usuario> Usuarios = new List<Usuario>();
+            using (var command = _connection.CreateCommand())
+            {
+                command.CommandText = "select * from Usuarios";
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Usuario usuario = new Usuario();
+                        usuario.Email = reader.GetString(1);
+                        usuario.NombreDeUsuario = reader.GetString(2);
+                        usuario.Rol = reader.GetString(3);
+                        usuario.Contraseña = reader.GetString(4);
+                        Usuarios.Add(usuario);
+
+                    }
+                }
+                return Usuarios;
+                reader.Close();
+            }
+            return null;
+        }
+
+
+
+
     }
 }

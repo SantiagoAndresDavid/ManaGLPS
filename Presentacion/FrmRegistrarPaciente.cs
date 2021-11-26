@@ -20,7 +20,14 @@ namespace Presentacion
         {
             InitializeComponent();
             pacienteService = new PacienteService(ConfigConnectionString.ConnectionString);
+            LlenarTabla();
         }
+
+        public void LlenarTabla()
+        {
+            DGVPaciente.DataSource = pacienteService.BuscarPacientes();
+        }
+
 
         public void BorrarMensaje()
         {

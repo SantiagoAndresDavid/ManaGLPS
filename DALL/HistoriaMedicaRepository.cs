@@ -1,4 +1,5 @@
 ﻿using Entity;
+using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlClient;
 
@@ -119,8 +120,8 @@ namespace DALL
             }
             return 0;
         }
-        
-        
-        
+
+
+
     }
 }

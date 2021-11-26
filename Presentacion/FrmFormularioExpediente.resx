@@ -69,7 +69,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BtnGuarda2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 63</value>
+    <value>88, 34</value>
   </data>
   <data name="BtnGuarda2.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 93</value>
@@ -100,10 +100,10 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>696, 458</value>
+    <value>430, 493</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>459, 200</value>
+    <value>302, 151</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -501,57 +501,6 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="dataGridView1.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <metadata name="TBCTitulo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="TBCTitulo.HeaderText" xml:space="preserve">
-    <value>Titulo</value>
-  </data>
-  <metadata name="TBCFechaCreada.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="TBCFechaCreada.HeaderText" xml:space="preserve">
-    <value>Creado</value>
-  </data>
-  <metadata name="TBDUltimaModificacion.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="TBDUltimaModificacion.HeaderText" xml:space="preserve">
-    <value>Ultima Modificacion</value>
-  </data>
-  <metadata name="TBCFechaCierre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="TBCFechaCierre.HeaderText" xml:space="preserve">
-    <value>Cierre</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 458</value>
-  </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>657, 219</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="pictureBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -583,7 +532,7 @@
     <value>None</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 12</value>
+    <value>805, 17</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 435</value>
@@ -617,30 +566,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FrmRegistroExpediente</value>
-  </data>
-  <data name="&gt;&gt;TBCTitulo.Name" xml:space="preserve">
-    <value>TBCTitulo</value>
-  </data>
-  <data name="&gt;&gt;TBCTitulo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TBCFechaCreada.Name" xml:space="preserve">
-    <value>TBCFechaCreada</value>
-  </data>
-  <data name="&gt;&gt;TBCFechaCreada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TBDUltimaModificacion.Name" xml:space="preserve">
-    <value>TBDUltimaModificacion</value>
-  </data>
-  <data name="&gt;&gt;TBDUltimaModificacion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TBCFechaCierre.Name" xml:space="preserve">
-    <value>TBCFechaCierre</value>
-  </data>
-  <data name="&gt;&gt;TBCFechaCierre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmFormularioExpediente</value>

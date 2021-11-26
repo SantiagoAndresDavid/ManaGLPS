@@ -60,6 +60,7 @@ namespace BLL
             catch (Exception e)
             {
                 return "Se presento el siguiente error" + e.Message;
+                _connectionManager.Close();
             }
             finally
             {
@@ -74,6 +75,7 @@ namespace BLL
             _connectionManager.Open();
             ConsultaMedica consulta = _consultaRepository.BuscarConsultaMedica(codigoHistoriaMedica, codigoConsulta);
             return  consulta;
+            _connectionManager.Close();
         }
 
 
@@ -84,15 +86,20 @@ namespace BLL
                 _connectionManager.Open();
                 string estado = _consultaRepository.BuscarEstado(codigoConsulta,codigoHistoriaMedica);
                 if(estado.Equals("Desactivado")){
-                    _consultaRepository.Activar(codigoConsulta); 
+                    _consultaRepository.Activar(codigoConsulta);
                 }
-                _consultaRepository.Desactivar(codigoConsulta);
+                else
+                {
+                    _consultaRepository.Desactivar(codigoConsulta);
+                }    
             }
             catch(Exception e)
             {
                 return "Se presento el siguiente error" + e.Message;
+                _connectionManager.Close();
             }
             return "No se pudo modificar";
+            _connectionManager.Close();
         }
 
 

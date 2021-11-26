@@ -21,7 +21,14 @@ namespace Presentacion
         {
             InitializeComponent();
             usuarioService = new UsuarioService(ConfigConnectionString.ConnectionString);
+            LlenarTabla();
         }
+
+        public void LlenarTabla()
+        {
+            DTGUsuarios.DataSource = usuarioService.BuscarUsusarios();
+        }
+
         private void TextCorreoElectronico_Enter(object sender, EventArgs e)
         {
             if (TextCorreoElectronico.Text == "usuario@ejemplo.com")

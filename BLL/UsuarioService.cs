@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using DALL;
 using Entity;
 
@@ -44,11 +45,25 @@ namespace BLL
             finally
             {
                _connectionManager.Close(); 
-            }
-            
+            } 
             
         }
-        
+
+        public IList<Usuario> BuscarUsusarios()
+        {
+            try
+            {
+                _connectionManager.Open();
+
+                return _usuarioReprository.buscarUsuarios();
+            }
+            finally
+            {
+                _connectionManager.Close();
+            }
+
+        }
+
     }
 
 }

@@ -173,6 +173,7 @@ namespace DALL
                 command.CommandText = "update ConsultasMedicas set Estado=@Estado where Codigo=@Codigo";
                 command.Parameters.Add(new SqlParameter("@Codigo", codigo));
                 command.Parameters.Add(new SqlParameter("@Estado", "Activado"));
+
                 command.ExecuteNonQuery();
             }
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using DALL;
 using Entity;
 
@@ -46,8 +47,9 @@ namespace BLL
             }
             catch
             {
-
+                _connectionManager.Close();
             }
+            _connectionManager.Close();
             return null;
         }
 
@@ -58,18 +60,38 @@ namespace BLL
                 _connectionManager.Open();
                 string estado = _pacienteRepository.BuscarEstado(codigo);
                 if(estado.Equals("Desactivado")){
-                    _pacienteRepository.Activar(codigo); 
+                    _pacienteRepository.Activar(codigo);
                 }
-                _pacienteRepository.Desactivar(codigo);
+                else
+                {
+                    _pacienteRepository.Desactivar(codigo);
+                }
+                
             }
             catch (Exception e)
             {
                 return "Se presento el siguiente error" + e.Message;
+                _connectionManager.Close();
             }
-
+            _connectionManager.Close();
             return "se modifico con Exito";
         }
         
+        public IList<Paciente> BuscarPacientes()
+        {
+            try
+            {
+                _connectionManager.Open();
+                return _pacienteRepository.BuscarPacientes();
+
+            }
+            catch
+            {
+                _connectionManager.Close();
+            }
+            _connectionManager.Close();
+            return null;
+        }
             
     }
 }
