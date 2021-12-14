@@ -91,7 +91,7 @@ Contraseña VARCHAR(MAX)
 
 
 
-use ManaGLPS
+/*use ManaGLPS
 select *from HistoriasMedicas;
 select *from ConsultasMedicas;
 select *from ValoracionesMultidiciplinar;
@@ -100,9 +100,13 @@ select *from Diagnosticos;
 select *from ValoracionesIngreso;
 select *from CategoriaEvaluaciones;
 select *from CIE;
-select *from Lesiones;
+select *from Lesiones;*/
 
-use ManaGLPS
+
+/*use ManaGLPS
+SELECT*FROM ValoracionesIngreso*/
+
+/*use ManaGLPS
 select DISTINCT ConsultasMedicas.Estado,ConsultasMedicas.FaseTratamiento,
 ConsultasMedicas.FechaCreada,ValoracionesMultidiciplinar.InformeIndividual,
 ValoracionesMultidiciplinar.InformeGrupal,CategoriaEvaluaciones.EscalaDolor,
@@ -115,12 +119,12 @@ join ValoracionesIngreso on ConsultasMedicas.Codigo = ValoracionesIngreso.Codigo
 join CategoriaEvaluaciones on ValoracionesMultidiciplinar.Codigo = CategoriaEvaluaciones.CodigoValoracionMultiDiciplinar
 join CIE on Diagnosticos.Codigo = CIE.CodigoDiagnostico
 join Lesiones on ValoracionesIngreso.Codigo = Lesiones.CodigoValoracionIngreso
-where ConsultasMedicas.CodigoHistoriaMedica = 1 and ConsultasMedicas.Codigo = 2
+where ConsultasMedicas.CodigoHistoriaMedica = 1 and ConsultasMedicas.Codigo = 2*/
 
 
 
-use ManaGLPS
-select CIE.Codigo,CIE.Descripcion from Diagnosticos join CIE on Diagnosticos.Codigo = CIE.CodigoDiagnostico  where Diagnosticos.CodigoConsultaMedica = 1 
+/*use ManaGLPS
+select CIE.Codigo,CIE.Descripcion from Diagnosticos join CIE on Diagnosticos.Codigo = CIE.CodigoDiagnostico  where Diagnosticos.CodigoConsultaMedica = 1*/
 
 
 /*drop table ConsultasMedicas;
